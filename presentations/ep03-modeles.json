@@ -1,0 +1,93 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "🧠 Les modèles Copilot Web — Lequel choisir?",
+  "author": "Martin Fournier",
+  "date": "2026-05-17",
+  "slides": [
+    {
+      "type": "title",
+      "title": "🤖 La minute Copilot",
+      "subtitle": "🧠 Les modèles Copilot Web",
+      "footer": "Auto · Quick Response · Think Deeper · GPT-5.2 à 5.5 • Pour IT et non-IT • Institution financière",
+      "speaker_notes": "Accueil: «Vous avez peut-être remarqué que Copilot propose plusieurs modes et modèles. Auto, Quick Response, Think Deeper... GPT-5.2 à 5.5. On démystifie ça en 5 minutes!»"
+    },
+    {
+      "type": "tips",
+      "title": "🎯 Les 3 modes de Copilot Web",
+      "subtitle": "Le sélecteur en haut de votre écran Copilot — un outil, trois façons de penser",
+      "speaker_notes": "Montrer l'interface Copilot. Expliquer les 3 modes simplement. L'AUTO c'est le mode par défaut, Copilot choisit pour vous. Le QUICK c'est pour les questions rapides. Le THINK DEEPER c'est pour les problèmes complexes qui méritent une réflexion approfondie.",
+      "bullets": [
+        "Auto (par défaut) → Copilot choisit le meilleur modèle selon la tâche",
+        "Quick Response → Réponse instantanée, idéal pour tâches simples",
+        "Think Deeper → Raisonnement approfondi, pour problèmes complexes"
+      ],
+      "cards": [
+        {"icon": "⚡", "title": "Auto (recommandé)", "color": "blue", "lines": ["Utilisé 80% du temps", "", "Délègue au bon modèle", "selon la complexité", "de votre demande", "", "✅ Meilleur choix", "   par défaut"]},
+        {"icon": "🚀", "title": "Quick Response", "color": "green", "lines": ["Réponse en 2-5 secondes", "", "Utilise GPT-5.5 Quick", "ou GPT-5.3 Instant", "", "✅ Idéal pour:", "   courriels, résumés,", "   questions rapides"]},
+        {"icon": "🧠", "title": "Think Deeper", "color": "amber", "lines": ["Réponse en 15-60 secondes", "", "Utilise GPT-5.5 Think", "Deeper ou GPT-5.4", "", "✅ Idéal pour:", "   analyse, code,", "   décisions complexes"]}
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "📊 La gamme de modèles — GPT-5.x",
+      "subtitle": "Chaque version est plus puissante — mais pas toujours nécessaire",
+      "speaker_notes": "Expliquer la hiérarchie: 5.2 est l'ancien modèle encore disponible. 5.3 et 5.5 Quick sont rapides. 5.4 et 5.5 Think Deeper sont les modèles de raisonnement. L'important c'est de choisir le bon outil pour la bonne tâche — pas besoin de Think Deeper pour un courriel!",
+      "bullets": [
+        "GPT-5.5 Quick et 5.5 Think Deeper: les plus récents (avril 2026)",
+        "GPT-5.4 Thinking: raisonnement, conservateur, fiable",
+        "GPT-5.3 Instant: rapide, bon équilibre vitesse/qualité",
+        "GPT-5.2: modèle hérité, toujours disponible si nécessaire"
+      ],
+      "cards": [
+        {"icon": "🚀", "title": "Quick Response", "color": "blue", "lines": ["GPT-5.5 Quick", "   (dernier cri)", "", "GPT-5.3 Instant", "   (équilibré)", "", "→ Secondes", "   Tâches quotidiennes"]},
+        {"icon": "🧠", "title": "Think Deeper", "color": "amber", "lines": ["GPT-5.5 Think Deeper", "   (dernier cri)", "", "GPT-5.4 Thinking", "   (fiable, conservateur)", "", "→ Minutes", "   Analyse, code, risque"]},
+        {"icon": "🕰️", "title": "Héritage", "color": "red", "lines": ["GPT-5.2", "", "Modèle précédent", "encore disponible", "", "Compatibilité", "pour tâches", "existantes"]}
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "🏦 Scénarios en institution financière",
+      "subtitle": "Quand utiliser quel mode — exemples concrets",
+      "speaker_notes": "Adapter au contexte financier. Expliquer pourquoi Think Deeper est crucial pour l'analyse de risques mais overkill pour un courriel. Insister: AUTO fait le bon choix 80% du temps. Les experts peuvent forcer le mode pour des cas spécifiques.",
+      "bullets": [
+        "Auto: 80% du temps — laissez Copilot décider",
+        "Quick Response: tâches simples, courriels, résumés rapides",
+        "Think Deeper: analyse de risques, code complexe, conformité"
+      ],
+      "cards": [
+        {"icon": "🚀", "title": "Quick Response", "color": "blue", "lines": ["📧 Répondre à un courriel", "📋 Résumer un fil Teams", "📝 Rédiger un document", "🔍 Chercher une information", "✅ Quand tu veux une", "   réponse vite"]},
+        {"icon": "🧠", "title": "Think Deeper", "color": "amber", "lines": ["📊 Analyser des données", "💻 Écrire du code complexe", "⚖️ Évaluer la conformité", "📈 Analyse de risques", "✅ Quand la précision", "   prime sur la vitesse"]},
+        {"icon": "⚡", "title": "Auto (le bon choix)", "color": "green", "lines": ["80% des cas", "Copilot choisit le bon", "modèle pour vous", "", "Vous n'avez pas à", "y penser!", "", "✅ Laisser faire!" ]}
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "💡 Trucs et astuces",
+      "subtitle": "Comment tirer le meilleur de chaque mode",
+      "speaker_notes": "Rappeler que le mode est persistant — si vous passez en Think Deeper, il reste pour la session suivante. Pensez à revenir à Auto! Aussi: les prompts longs et détaillés bénéficient plus du Think Deeper. Pour la conformité, le Think Deeper est plus fiable car il raisonne plus longtemps.",
+      "bullets": [
+        "Le mode choisi est conservé entre les sessions — pensez à vérifier!",
+        "Les prompts longs et détaillés bénéficient plus du Think Deeper",
+        "Pour les questions de conformité: Think Deeper = réponse plus fiable",
+        "Quick Response est parfait pour les courriels et résumés quotidiens"
+      ],
+      "cards": [
+        {"icon": "💡", "title": "Astuce 1", "color": "blue", "lines": ["Le mode Auto est excellent", "mais si votre tâche est", "complexe, passez en", "Think Deeper manuellement"]},
+        {"icon": "💡", "title": "Astuce 2", "color": "green", "lines": ["En institution financière,", "utilisez Think Deeper pour", "toute analyse impliquant", "des données sensibles"]},
+        {"icon": "💡", "title": "Astuce 3", "color": "amber", "lines": ["Quick Response pour les", "courriels, Auto pour le", "reste. Vous gagnerez", "du temps chaque jour!"]}
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "🎯 À retenir — Les modèles Copilot",
+      "speaker_notes": "Résumé: Auto par défaut, Quick pour la vitesse, Think Deeper pour la profondeur. Les modèles (5.2 à 5.5) sont gérés automatiquement par Copilot — vous n'avez pas à y penser. Défi de la semaine: essayer Think Deeper sur une tâche que vous faites normalement en Auto!",
+      "cards": [
+        {"icon": "⚡", "title": "Auto (défaut)", "desc": "80% du temps\nCopilot choisit pour vous"},
+        {"icon": "🚀", "title": "Quick Response", "desc": "Tâches simples\nCourriels, résumés"},
+        {"icon": "🧠", "title": "Think Deeper", "desc": "Analyse complexe\nCode, risques, conformité"}
+      ],
+      "bonus": "🎯 Défi: Essayez Think Deeper sur votre prochaine tâche complexe!",
+      "footer": "La minute Copilot — À la semaine prochaine! 👋"
+    }
+  ]
+}
