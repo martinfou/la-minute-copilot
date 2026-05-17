@@ -1,0 +1,92 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "🔗 Copilot et vos données: SharePoint, OneDrive et le contexte",
+  "author": "Martin Fournier",
+  "date": "2026-05-17",
+  "slides": [
+    {
+      "type": "title",
+      "title": "🤖 La minute Copilot",
+      "subtitle": "🔗 Copilot se connecte à vos données",
+      "footer": "SharePoint · OneDrive · Microsoft Graph · Contexte · Sécurité • IT & non-IT",
+      "speaker_notes": "Accueil: «Saviez-vous que Copilot peut lire vos documents SharePoint et OneDrive pour vous donner de meilleures réponses? Aujourd'hui on voit comment ça marche et pourquoi c'est utile — et sécuritaire.»"
+    },
+    {
+      "type": "tips",
+      "title": "🔗 Comment Copilot accède à vos données",
+      "subtitle": "Microsoft Graph: le pont entre Copilot et vos fichiers",
+      "speaker_notes": "Expliquer Microsoft Graph simplement: c'est l'API unifiée de Microsoft 365. Copilot l'utilise pour chercher dans vos fichiers, courriels, calendrier, Teams. Mais il ne voit que ce à quoi vous avez déjà accès — mêmes permissions, mêmes restrictions.",
+      "bullets": [
+        "Copilot utilise Microsoft Graph — l'API qui relie tous les services M365",
+        "Il peut lire: SharePoint, OneDrive, Teams, Outlook, Calendrier, etc.",
+        "Respecte vos permissions existantes: il ne voit que vos documents",
+        "Aucun accès supplémentaire — vos droits d'accès sont la seule limite"
+      ],
+      "cards": [
+        {"icon": "📁", "title": "OneDrive", "color": "blue", "lines": ["Vos fichiers personnels", "", "Documents Word, Excel,", "PowerPoint, PDF...", "", "✅ Accessibles si", "   vous êtes le", "   propriétaire"]},
+        {"icon": "🏢", "title": "SharePoint", "color": "green", "lines": ["Sites d'équipe", "et de département", "", "Procédures, politiques,", "bibliothèques partagées", "", "✅ Accessibles selon", "   vos permissions"]},
+        {"icon": "🔐", "title": "Sécurité", "color": "amber", "lines": ["Mêmes permissions", "que votre compte", "", "Aucun accès à des", "documents que vous", "ne pouvez pas voir", "", "✅ Conforme aux", "   règles IT"]}
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "💡 Pourquoi c'est puissant pour vous",
+      "subtitle": "Des réponses qui tiennent compte de VOS documents, pas juste du web",
+      "speaker_notes": "Montrer la différence: sans accès aux données, Copilot répond de façon générique. Avec accès à SharePoint/OneDrive, il peut répondre à partir de vos politiques, procédures, documents internes. C'est ça la vraie valeur de Copilot!",
+      "bullets": [
+        "Sans contexte: Copilot répond de façon générique, comme ChatGPT",
+        "Avec contexte: Copilot utilise VOS documents, VOS procédures",
+        "Exemple: «Résume la politique de sécurité informatique» → va chercher le document sur SharePoint"
+      ],
+      "cards": [
+        {"icon": "❌", "title": "Sans connexion aux docs", "color": "red", "lines": ["«Écris une politique de", "sécurité informatique»", "", "→ Réponse générique", "   qui pourrait être", "   celle de n'importe", "   quelle entreprise", "", "   À jeter ou à", "   tout réécrire"]},
+        {"icon": "✅", "title": "Avec connexion aux docs", "color": "green", "lines": ["«Résume notre politique", "de sécurité disponible", "sur SharePoint»", "", "→ Copilot va chercher", "   le document, le lit,", "   et vous fait un", "   résumé sur mesure", "", "   Prêt à utiliser!"]}
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "🏦 Exemples concrets en institution financière",
+      "subtitle": "3 scénarios où le contexte SharePoint/OneDrive change tout",
+      "speaker_notes": "Adapter au contexte de l'institution financière. Montrer des exemples pratiques que les gens vivent au quotidien. Insister sur le fait que la donnée reste dans le tenant Microsoft 365 — elle ne quitte pas l'organisation.",
+      "bullets": [
+        "Copilot ne partage pas vos documents — il les lit, point.",
+        "Les données restent dans le périmètre Microsoft 365 de l'institution",
+        "Les permissions SharePoint sont appliquées — rien de plus"
+      ],
+      "cards": [
+        {"icon": "📋", "title": "Scénario 1: Procédures", "color": "blue", "lines": ["«Trouve la procédure de", "demande d'accès pour", "l'application X sur", "SharePoint et résume-la", "en 5 étapes»", "", "→ Copilot cherche dans", "   SharePoint, lit le doc,", "   résume. 30 secondes!"]},
+        {"icon": "📊", "title": "Scénario 2: Rapports", "color": "green", "lines": ["«Compare les chiffres", "de ce trimestre avec", "ceux du rapport du", "trimestre dernier dans", "le dossier Partages»", "", "→ Analyse deux fichiers", "   OneDrive/SharePoint,", "   compare, résume"]},
+        {"icon": "📝", "title": "Scénario 3: Réunions", "color": "amber", "lines": ["«Résume les notes de", "la rencontre de lundi", "dans le site SharePoint", "de l'équipe et liste", "les tâches à faire»", "", "→ Accès au site, lit", "   le document, liste", "   les action items"]}
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "💡 Comment bien utiliser le contexte",
+      "subtitle": "Astuces pour que Copilot trouve vos documents",
+      "speaker_notes": "Conseils pratiques: être précis dans la demande, mentionner le site SharePoint ou le nom du fichier. Si Copilot ne trouve pas, vérifier les permissions. Aussi: les fichiers récents sont plus faciles à trouver.",
+      "bullets": [
+        "Soyez précis: mentionnez le nom du site SharePoint ou du fichier",
+        "«Dans le site SharePoint de l'équipe Sécurité, trouve le document Politique...»",
+        "Les fichiers ouverts récemment sont prioritaires dans la recherche",
+        "Si Copilot ne trouve pas: vérifiez vos permissions d'accès"
+      ],
+      "cards": [
+        {"icon": "✅", "title": "Bon prompt", "color": "green", "lines": ["«Dans le site SharePoint", "Informatique, résume", "le document Politique", "de sécurité 2026 en", "3 points.»", "", "→ Copilot sait où", "   chercher!"]},
+        {"icon": "❌", "title": "Prompt vague", "color": "red", "lines": ["«Trouve la politique", "de sécurité.»", "", "→ Copilot ne sait pas", "   où chercher. Il va", "   chercher partout ou", "   répondre de façon", "   générique."]},
+        {"icon": "💡", "title": "Rappel sécurité", "color": "blue", "lines": ["Copilot respecte vos", "permissions existantes.", "", "Données confidentielles", "restent confidentielles.", "", "Aucune donnée ne quitte", "le tenant M365."]}
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "🎯 À retenir",
+      "speaker_notes": "Résumé: Copilot + SharePoint/OneDrive = réponses personnalisées à partir de VOS documents. Mentionner le fichier ou le site dans votre prompt. Les permissions sont respectées.",
+      "cards": [
+        {"icon": "🔗", "title": "1. Connexion", "desc": "Copilot lit vos docs\nSharePoint et OneDrive"},
+        {"icon": "🔐", "title": "2. Sécurité", "desc": "Mêmes permissions\nque votre compte"},
+        {"icon": "💡", "title": "3. Astuce", "desc": "Mentionnez le site\nou fichier dans le prompt"}
+      ],
+      "bonus": "🎯 Défi: Essayez «Trouve le document X sur SharePoint et résume-le» cette semaine!",
+      "footer": "La minute Copilot — À la semaine prochaine! 👋"
+    }
+  ]
+}
