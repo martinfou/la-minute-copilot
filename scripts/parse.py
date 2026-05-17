@@ -36,7 +36,7 @@ FOOTER_BLUE = RGBColor(0xAA, 0xD4, 0xF0)
 BONUS_BG = RGBColor(0xFF, 0xF3, 0xCD)
 BONUS_TEXT = RGBColor(0x85, 0x6E, 0x04)
 
-PALETTE = {'blue': BLUE, 'green': GREEN, 'amber': AMBER}
+PALETTE = {'blue': BLUE, 'green': GREEN, 'amber': AMBER, 'red': RGBColor(0xEF, 0x44, 0x44)}
 
 def add_bg(slide, color):
     slide.background.fill.solid()
