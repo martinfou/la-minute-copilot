@@ -5,6 +5,8 @@ Votre session hebdomadaire de 5 minutes pour maîtriser Microsoft Copilot au quo
 
 **Contenu dissocié du contenant.** Modifiez le JSON pour changer le texte ; le générateur produit le PowerPoint.
 
+**OpenClaw (agent Telegram)** : voir **[OPENCLAW.md](OPENCLAW.md)** — but de la série, carte du dépôt, contrat JSON et checklist pour produire un épisode.
+
 Ce dépôt inclut la **[méthode BMAD](https://github.com/bmad-code-org/BMAD-METHOD)** (Build More Architect Dreams) pour guider le développement assisté par IA dans Cursor : workflows, agents spécialisés et compétences (`bmad-help`, PRD, architecture, stories, etc.).
 
 ## Structure
@@ -19,11 +21,12 @@ la-minute-copilot/
 │   └── la-minute-copilot.schema.json
 ├── prompts/                    ← Archive des prompts Copilot
 ├── _bmad/                      ← BMAD : config, agents, workflows (v6.7.1)
-├── _bmad-output/               ← Artefacts BMAD (PRD, planning, stories…) — gitignored
+├── _bmad-output/               ← Artefacts BMAD (PRD, architecture, epics, sprint) — versionné Git
 ├── .agents/skills/             ← Compétences Cursor générées par BMAD (44 skills)
 ├── assets/icons/cache/         ← Cache PNG des icônes (généré, ignoré par git)
 ├── pyproject.toml
 ├── generate.sh                 ← Détecte uv ou pip, lance le générateur
+├── OPENCLAW.md                 ← Guide agent OpenClaw (JSON, éditorial, navigation)
 └── README.md
 ```
 
@@ -52,7 +55,38 @@ Installation déjà effectuée dans ce projet :
 
 1. Ouvrir ce dossier dans Cursor.
 2. Dans le chat, invoquer la compétence **`bmad-help`** (ex. « Que dois-je faire ensuite? »).
-3. Les artefacts produits (PRD, architecture, stories…) vont dans `_bmad-output/`.
+3. Les artefacts produits (PRD, architecture, stories…) vont dans `_bmad-output/` (versionné dans Git).
+
+### Travail sur plusieurs ordinateurs
+
+Pour avoir **la même version BMAD** et le **même contexte de planification** partout :
+
+| Quoi | Où | Action sur chaque poste |
+|------|-----|-------------------------|
+| Version BMAD | `_bmad/_config/manifest.yaml` (ex. **6.7.1**) | `git pull` — ne pas relancer `install` sans raison |
+| Compétences Cursor | `.agents/skills/` | `git pull` |
+| PRD, architecture, epics | `_bmad-output/planning-artifacts/` | `git pull` / commit après session BMAD |
+| Sprint et stories | `_bmad-output/implementation-artifacts/` | idem |
+| Règles agents | `_bmad-output/project-context.md`, `OPENCLAW.md` | idem |
+| Config perso | `_bmad/custom/config.user.toml` | **gitignored** — recréer localement si besoin |
+
+**Routine :** `git pull` → ouvrir Cursor → continuer avec `bmad-help` ou la story en cours.
+
+**Monter BMAD (une fois, puis commit pour tous) :**
+
+```bash
+npx bmad-method install --yes \
+  --directory "$(pwd)" \
+  --modules bmm \
+  --tools cursor \
+  --set core.communication_language=French \
+  --set core.document_output_language=French
+git add .agents _bmad
+git commit -m "Bump BMAD to <version>"
+git push
+```
+
+Les autres machines : `git pull` seulement (pas de `install` sauf si le manifest a changé).
 
 ### Réinstaller ou mettre à jour BMAD
 

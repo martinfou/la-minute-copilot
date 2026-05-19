@@ -12,8 +12,8 @@ assets/icons/cache/
 # Generated presentations (source JSON is the source de vérité)
 presentations/*.pptx
 
-# BMAD Method — artefacts générés et config personnelle
-_bmad-output/
+# BMAD Method — config personnelle uniquement (ne pas versionner)
+# _bmad-output/ est versionné pour synchroniser PRD, architecture, epics et sprint entre postes.
 _bmad/custom/config.user.toml
 
 # OS
