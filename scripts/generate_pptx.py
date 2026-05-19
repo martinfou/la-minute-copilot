@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
 """
-Parser PowerPoint pour La minute Copilot.
-Lit un fichier JSON de contenu et génère un .pptx.
+Générateur PowerPoint pour La minute Copilot.
+Lit un fichier JSON de contenu (avec schéma validé) et génère un .pptx.
 
-Format du JSON:
-  slides[].title          → Titre de la diapositive
-  slides[].subtitle       → Sous-titre
-  slides[].bullets[]      → Points clés (affichés sur la slide)
-  slides[].speaker_notes  → Notes du présentateur (cachées dans le PPT)
-  slides[].cards[]        → Cartes visuelles (optionnelles)
-  slides[].footer         → Pied de page
-  slides[].bonus          → Bannière bonus (summary)
+Le format JSON est documenté dans schema/la-minute-copilot.schema.json.
 
 Usage:
-    python3 parse.py presentations/ep01-outlook.json
-    python3 parse.py presentations/ep01-outlook.json -o mon_fichier.pptx
+    python3 scripts/generate_pptx.py presentations/ep01-outlook.json
+    python3 scripts/generate_pptx.py presentations/ep01-outlook.json -o mon_fichier.pptx
+
+Dépendances: python-pptx (pip install python-pptx)
 """
 
 import json, sys, os, argparse

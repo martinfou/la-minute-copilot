@@ -2,4 +2,4 @@
 # Générer la présentation à partir du JSON
 cd "$(dirname "$0")/.."
 source .venv/bin/activate
-python3 scripts/parse.py "$@"
+python3 scripts/generate_pptx.py "$@"

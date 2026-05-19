@@ -9,7 +9,7 @@ Votre session hebdomadaire de 5 minutes pour maîtriser Microsoft Copilot au quo
 la-minute-copilot/
 ├── presentations/          ← JSON (contenu) + .pptx (présentation générée)
 ├── scripts/
-│   └── parse.py            ← Générateur PowerPoint (lit le JSON, produit le .pptx)
+│   └── generate_pptx.py     ← Générateur PowerPoint (lit le JSON, produit le .pptx)
 ├── schema/
 │   └── la-minute-copilot.schema.json  ← Schéma JSON (partageable avec d'autres outils)
 ├── prompts/                ← Archive des prompts Copilot
