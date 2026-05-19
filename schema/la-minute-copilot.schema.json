@@ -1,0 +1,214 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json",
+  "title": "La Minute Copilot — Schéma de présentation",
+  "description": "Schéma JSON décrivant le contenu d'un épisode de «La Minute Copilot». Chaque fichier JSON représente une présentation complète avec diapositives, notes du présentateur, cartes visuelles et métadonnées.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Référence optionnelle vers ce schéma pour l'auto-complétion dans VS Code / Copilot",
+      "examples": ["https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"]
+    },
+    "title": {
+      "type": "string",
+      "description": "Titre principal de la série (constant: «La minute Copilot»)",
+      "default": "La minute Copilot"
+    },
+    "subtitle": {
+      "type": "string",
+      "description": "Sous-titre de l'épisode, décrivant le sujet du jour",
+      "examples": [
+        "Copilot dans Outlook",
+        "L'importance des personas dans les prompts",
+        "Architecture d'un prompt Copilot en entreprise"
+      ]
+    },
+    "author": {
+      "type": "string",
+      "description": "Auteur de la présentation",
+      "default": "Martin Fournier"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date de création ou de présentation de l'épisode (format ISO 8601: YYYY-MM-DD)",
+      "examples": ["2026-05-17"]
+    },
+    "slides": {
+      "type": "array",
+      "description": "Tableau des diapositives composant la présentation, dans l'ordre d'affichage",
+      "minItems": 3,
+      "items": {
+        "$ref": "#/$defs/slide"
+      }
+    }
+  },
+  "required": ["title", "subtitle", "slides"],
+  "$defs": {
+    "slide": {
+      "type": "object",
+      "description": "Une diapositive de la présentation. Le type détermine la mise en page visuelle.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Type de diapositive déterminant la mise en page PowerPoint",
+          "enum": ["title", "tips", "bonus", "summary"],
+          "enumDescriptions": [
+            "Diapositive titre — fond bleu, titre centré, sous-titre, footer. Utilisée en 1ère slide.",
+            "Diapositive de contenu — fond blanc, titre + sous-titre + puces + cartes visuelles.",
+            "Diapositive bonus — fond gris clair, astuce supplémentaire avec cartes ou puces.",
+            "Diapositive de résumé — fond bleu, cartes récapitulatives + bannière bonus + footer."
+          ]
+        },
+        "title": {
+          "type": "string",
+          "description": "Titre de la diapositive (visible en haut)",
+          "examples": ["🎭 Qu'est-ce qu'un persona?", "📦 Votre prompt n'arrive jamais seul"]
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "Sous-titre affiché sous le titre",
+          "examples": ["Un rôle, un contexte, une expertise", "Ce que Microsoft ajoute AVANT d'envoyer votre requête au modèle"]
+        },
+        "footer": {
+          "type": "string",
+          "description": "Pied de page pour les diapositives title et summary",
+          "examples": ["3 astuces pour IT et non-IT  •  Sauvegarder ses prompts"]
+        },
+        "speaker_notes": {
+          "type": "string",
+          "description": "Notes du présentateur (cachées dans le PPTX, visibles en mode présentateur). Rédaction au style direct, comme une animatrice qui parle.",
+          "examples": [
+            "Accueil: «Bonjour à tous! Aujourd'hui on va voir comment Copilot peut vous faire gagner du temps dans Outlook.»",
+            "Démo: Ouvrir un long fil Outlook. Montrer le bouton Copilot. Cliquer sur Summarize."
+          ]
+        },
+        "bullets": {
+          "type": "array",
+          "description": "Liste de points clés affichés sous forme de puces sur la diapositive",
+          "items": {
+            "type": "string",
+            "description": "Un point clé. Peut inclure des émojis ou du texte avec deux-points pour structurer."
+          },
+          "examples": [
+            ["Un persona = un rôle + un contexte + un ton", "Sans persona: réponse générique et moyenne"]
+          ]
+        },
+        "cards": {
+          "type": "array",
+          "description": "Cartes visuelles affichées côte à côte (2-3 par slide, selon la largeur disponible)",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/card"
+          }
+        },
+        "bonus": {
+          "type": "string",
+          "description": "Texte bonus affiché dans une bannière jaune sur la diapositive summary",
+          "examples": ["💾 Sauvegardez vos prompts avec Quick Parts!", "🎯 Défi: Ajoutez un persona à TOUS vos prompts cette semaine!"]
+        }
+      },
+      "required": ["type", "title"],
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "title" } } },
+          "then": { "required": ["subtitle"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "summary" } } },
+          "then": { "required": ["cards"] }
+        }
+      ]
+    },
+    "card": {
+      "type": "object",
+      "description": "Carte visuelle individuelle affichée dans une diapositive. Combine une icône, un titre, une couleur d'accent et du contenu textuel.",
+      "properties": {
+        "icon": {
+          "type": "string",
+          "description": "Émoji ou icône pour identifier la carte visuellement",
+          "examples": ["💬", "🎯", "👔", "✅", "❌", "📝", "🧠"]
+        },
+        "title": {
+          "type": "string",
+          "description": "Titre de la carte (affiché en gras avec la couleur d'accent)",
+          "examples": ["Exemples de prompts", "Persona professionnel", "Sans persona (moyen)"]
+        },
+        "color": {
+          "type": "string",
+          "description": "Couleur d'accentuation de la carte (titre + bordure visuelle)",
+          "enum": ["green", "amber", "blue", "red"],
+          "enumDescriptions": [
+            "Vert — succès, positif",
+            "Ambre — attention, astuce",
+            "Bleu — information, technique",
+            "Rouge — erreur, à éviter"
+          ]
+        },
+        "lines": {
+          "type": "array",
+          "description": "Lignes de texte affichées dans la carte. Supports retours à la ligne via des chaînes vides.",
+          "items": {
+            "type": "string",
+            "description": "Une ligne de texte. Les chaînes vides créent un espacement. L'icône 🎯 peut marquer une conclusion."
+          },
+          "examples": [
+            ["«Résume ce fil et liste les décisions prises»", "", "«Quelles sont les dates de livraison?»"]
+          ]
+        },
+        "desc": {
+          "type": "string",
+          "description": "Texte descriptif court pour les cartes de type summary. Alternative à lines pour les diapositives de résumé.",
+          "examples": ["Fini les longs fils", "Donnez un rôle à Copilot"]
+        }
+      },
+      "required": ["icon", "title"],
+      "oneOf": [
+        { "required": ["lines"] },
+        { "required": ["desc"] }
+      ]
+    }
+  },
+  "examples": [
+    {
+      "title": "La minute Copilot",
+      "subtitle": "Copilot dans Outlook",
+      "author": "Martin Fournier",
+      "date": "2026-05-17",
+      "slides": [
+        {
+          "type": "title",
+          "title": "🤖 La minute Copilot",
+          "subtitle": "Copilot dans Outlook",
+          "footer": "3 astuces pour IT et non-IT  •  Sauvegarder ses prompts"
+        },
+        {
+          "type": "tips",
+          "title": "🧠 Astuce 1 — Résumer un fil de discussion",
+          "subtitle": "Fini les longues lectures de 15 courriels",
+          "bullets": ["Ouvrir un courriel dans un long fil", "Cliquer sur l'icône Copilot", "Choisir «Summarize»"],
+          "cards": [
+            {
+              "icon": "💬",
+              "title": "Exemples de prompts",
+              "color": "green",
+              "lines": ["«Résume ce fil»", "«Quelles sont les dates?»"]
+            }
+          ]
+        },
+        {
+          "type": "summary",
+          "title": "🎯 Les 3 astuces + le bonus",
+          "cards": [
+            { "icon": "🧠", "title": "Résumer", "desc": "Fini les longs fils" },
+            { "icon": "✍️", "title": "Rédiger", "desc": "5 mots → Copilot écrit" }
+          ],
+          "bonus": "💾 Sauvegardez vos prompts avec Quick Parts!",
+          "footer": "La minute Copilot — À la semaine prochaine! 👋"
+        }
+      ]
+    }
+  ]
+}

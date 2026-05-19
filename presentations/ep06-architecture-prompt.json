@@ -23,9 +23,46 @@
         "C'est ce qui différencie Copilot entreprise de ChatGPT standard"
       ],
       "cards": [
-        {"icon": "📤", "title": "Ce que vous écrivez", "color": "blue", "lines": ["«Résume ce document", "et liste les actions»", "", "↕ 20-50 tokens"]},
-        {"icon": "⚙️", "title": "Ce que le serveur reçoit", "color": "amber", "lines": ["[Métaprompt système]", "  • Instructions de sécurité", "  • Politiques conformité", "  • Sources autorisées", "  • Format de réponse", "  • Règles anti-hallucination", "", "[Votre prompt]", "  • Résume ce document..."]},
-        {"icon": "🧠", "title": "Total au modèle", "color": "green", "lines": ["Métaprompt: ~10 000 tokens", "+ Votre message: ~50 tokens", "= 10 050 tokens", "", "💡 Le métaprompt mange", "   la majorité du contexte!"]}
+        {
+          "icon": "📤",
+          "title": "Ce que vous écrivez",
+          "color": "blue",
+          "lines": [
+            "«Résume ce document",
+            "et liste les actions»",
+            "",
+            "↕ 20-50 tokens"
+          ]
+        },
+        {
+          "icon": "⚙️",
+          "title": "Ce que le serveur reçoit",
+          "color": "amber",
+          "lines": [
+            "[Métaprompt système]",
+            "  • Instructions de sécurité",
+            "  • Politiques conformité",
+            "  • Sources autorisées",
+            "  • Format de réponse",
+            "  • Règles anti-hallucination",
+            "",
+            "[Votre prompt]",
+            "  • Résume ce document..."
+          ]
+        },
+        {
+          "icon": "🧠",
+          "title": "Total au modèle",
+          "color": "green",
+          "lines": [
+            "Métaprompt: ~10 000 tokens",
+            "+ Votre message: ~50 tokens",
+            "= 10 050 tokens",
+            "",
+            "💡 Le métaprompt mange",
+            "   la majorité du contexte!"
+          ]
+        }
       ]
     },
     {
@@ -40,9 +77,49 @@
         "Vous ne pouvez pas changer ce paramètre — Microsoft le gère"
       ],
       "cards": [
-        {"icon": "🧊", "title": "Basse (0.1-0.3)", "color": "blue", "lines": ["Copilot M365", "", "✅ Réponse fiable", "✅ Déterministe", "✅ Reproductible", "", "📋 Documents, courriels", "   analyses financières"]},
-        {"icon": "🌡️", "title": "Moyenne (0.3-0.7)", "color": "amber", "lines": ["Copilot Web (Quick)", "", "🔄 Un peu de créativité", "✅ Reste fiable", "", "💬 Chat, brainstorming", "   idées générales"]},
-        {"icon": "🔥", "title": "Haute (0.7-1.0+)", "color": "red", "lines": ["Non utilisé en entreprise", "", "❌ Risque d'hallucination", "❌ Réponses imprévisibles", "", "🎨 Création artistique", "   (hors cadre M365)"]}
+        {
+          "icon": "🧊",
+          "title": "Basse (0.1-0.3)",
+          "color": "blue",
+          "lines": [
+            "Copilot M365",
+            "",
+            "✅ Réponse fiable",
+            "✅ Déterministe",
+            "✅ Reproductible",
+            "",
+            "📋 Documents, courriels",
+            "   analyses financières"
+          ]
+        },
+        {
+          "icon": "🌡️",
+          "title": "Moyenne (0.3-0.7)",
+          "color": "amber",
+          "lines": [
+            "Copilot Web (Quick)",
+            "",
+            "🔄 Un peu de créativité",
+            "✅ Reste fiable",
+            "",
+            "💬 Chat, brainstorming",
+            "   idées générales"
+          ]
+        },
+        {
+          "icon": "🔥",
+          "title": "Haute (0.7-1.0+)",
+          "color": "red",
+          "lines": [
+            "Non utilisé en entreprise",
+            "",
+            "❌ Risque d'hallucination",
+            "❌ Réponses imprévisibles",
+            "",
+            "🎨 Création artistique",
+            "   (hors cadre M365)"
+          ]
+        }
       ]
     },
     {
@@ -57,8 +134,43 @@
         "Les tokens sont comptés en entrée + sortie = coût par requête"
       ],
       "cards": [
-        {"icon": "💾", "title": "Cache serveur", "color": "blue", "lines": ["🔹 Même prompt + contexte", "   = même résultat en cache", "", "🔹 Par tenant uniquement", "   (jamais entre clients)", "", "🔹 Accélère les réponses", "   fréquentes", "", "✅ Sécurité: pas de fuite", "   entre organisations"]},
-        {"icon": "🎫", "title": "Limites de tokens", "color": "green", "lines": ["GPT-5.5: 128K tokens max", "", "Ce qui consomme:", "  • Métaprompt: ~10K", "  • Votre prompt: variable", "  • Contexte SharePoint:", "    peut être énorme", "  • Réponse générée", "", "💡 Si le doc est trop", "   long, Copilot le", "   résume d'abord"]}
+        {
+          "icon": "💾",
+          "title": "Cache serveur",
+          "color": "blue",
+          "lines": [
+            "🔹 Même prompt + contexte",
+            "   = même résultat en cache",
+            "",
+            "🔹 Par tenant uniquement",
+            "   (jamais entre clients)",
+            "",
+            "🔹 Accélère les réponses",
+            "   fréquentes",
+            "",
+            "✅ Sécurité: pas de fuite",
+            "   entre organisations"
+          ]
+        },
+        {
+          "icon": "🎫",
+          "title": "Limites de tokens",
+          "color": "green",
+          "lines": [
+            "GPT-5.5: 128K tokens max",
+            "",
+            "Ce qui consomme:",
+            "  • Métaprompt: ~10K",
+            "  • Votre prompt: variable",
+            "  • Contexte SharePoint:",
+            "    peut être énorme",
+            "  • Réponse générée",
+            "",
+            "💡 Si le doc est trop",
+            "   long, Copilot le",
+            "   résume d'abord"
+          ]
+        }
       ]
     },
     {
@@ -73,10 +185,58 @@
         "Filtre de sortie: analyse la réponse avant de vous l'afficher"
       ],
       "cards": [
-        {"icon": "🚪", "title": "1. Filtre d'entrée", "color": "blue", "lines": ["Vérifie le prompt avant", "traitement", "", "🔹 Prompt injection?", "🔹 Contenu dangereux?", "🔹 Demande illégale?"]},
-        {"icon": "🔍", "title": "2. Détection PII", "color": "green", "lines": ["Recherche les données", "personnelles", "", "🔹 NAS / SSN", "🔹 Numéros de carte", "🔹 Adresses, téléphones"]},
-        {"icon": "🎯", "title": "3. Grounding", "color": "amber", "lines": ["Vérifie les sources", "", "🔹 La réponse cite-t-elle", "   des sources réelles?", "🔹 Pas d'hallucination", "🔹 Vérifiable vs données"]},
-        {"icon": "🚪", "title": "4. Filtre de sortie", "color": "red", "lines": ["Analyse la réponse", "avant de l'afficher", "", "🔹 Contenu inapproprié?", "🔹 Information sensible?", "🔹 Conforme aux règles?"]}
+        {
+          "icon": "🚪",
+          "title": "1. Filtre d'entrée",
+          "color": "blue",
+          "lines": [
+            "Vérifie le prompt avant",
+            "traitement",
+            "",
+            "🔹 Prompt injection?",
+            "🔹 Contenu dangereux?",
+            "🔹 Demande illégale?"
+          ]
+        },
+        {
+          "icon": "🔍",
+          "title": "2. Détection PII",
+          "color": "green",
+          "lines": [
+            "Recherche les données",
+            "personnelles",
+            "",
+            "🔹 NAS / SSN",
+            "🔹 Numéros de carte",
+            "🔹 Adresses, téléphones"
+          ]
+        },
+        {
+          "icon": "🎯",
+          "title": "3. Grounding",
+          "color": "amber",
+          "lines": [
+            "Vérifie les sources",
+            "",
+            "🔹 La réponse cite-t-elle",
+            "   des sources réelles?",
+            "🔹 Pas d'hallucination",
+            "🔹 Vérifiable vs données"
+          ]
+        },
+        {
+          "icon": "🚪",
+          "title": "4. Filtre de sortie",
+          "color": "red",
+          "lines": [
+            "Analyse la réponse",
+            "avant de l'afficher",
+            "",
+            "🔹 Contenu inapproprié?",
+            "🔹 Information sensible?",
+            "🔹 Conforme aux règles?"
+          ]
+        }
       ]
     },
     {
@@ -84,13 +244,30 @@
       "title": "🎯 À retenir — L'architecture en bref",
       "speaker_notes": "Résumé: votre prompt est enveloppé dans un métaprompt Microsoft, traité avec une température basse pour la fiabilité, les réponses sont mises en cache par tenant, et 4 couches de filtres protègent vos données avant ET après la génération. C'est ce qui fait de Copilot un outil sécuritaire pour l'entreprise.",
       "cards": [
-        {"icon": "📦", "title": "1. Métaprompt", "desc": "Microsoft ajoute 10K tokens\nd'instructions AVANT votre prompt"},
-        {"icon": "🌡️", "title": "2. Température", "desc": "Basse (0.1-0.3)\n= fiable, pas créatif"},
-        {"icon": "⚡", "title": "3. Cache & Tokens", "desc": "Cache par tenant\n128K tokens max"},
-        {"icon": "🛡️", "title": "4. Sécurité", "desc": "4 couches de filtres\nPII, entrée, sortie, grounding"}
+        {
+          "icon": "📦",
+          "title": "1. Métaprompt",
+          "desc": "Microsoft ajoute 10K tokens\nd'instructions AVANT votre prompt"
+        },
+        {
+          "icon": "🌡️",
+          "title": "2. Température",
+          "desc": "Basse (0.1-0.3)\n= fiable, pas créatif"
+        },
+        {
+          "icon": "⚡",
+          "title": "3. Cache & Tokens",
+          "desc": "Cache par tenant\n128K tokens max"
+        },
+        {
+          "icon": "🛡️",
+          "title": "4. Sécurité",
+          "desc": "4 couches de filtres\nPII, entrée, sortie, grounding"
+        }
       ],
       "bonus": "💡 En entreprise, la fiabilité et la sécurité passent avant la créativité — c'est le choix de conception de Copilot!",
       "footer": "La minute Copilot — À la semaine prochaine! 👋"
     }
-  ]
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
 }

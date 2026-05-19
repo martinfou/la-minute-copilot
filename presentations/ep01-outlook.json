@@ -146,12 +146,25 @@
       "title": "🎯 Les 3 astuces + le bonus",
       "speaker_notes": "Récapitulation rapide. Encourager à essayer AU MOINS UNE astuce cette semaine. Rappeler le prochain rendez-vous!",
       "cards": [
-        { "icon": "🧠", "title": "Résumer", "desc": "Fini les longs fils" },
-        { "icon": "✍️", "title": "Rédiger", "desc": "5 mots → Copilot écrit" },
-        { "icon": "🎯", "title": "Prioriser", "desc": "50 courriels triés en 30s" }
+        {
+          "icon": "🧠",
+          "title": "Résumer",
+          "desc": "Fini les longs fils"
+        },
+        {
+          "icon": "✍️",
+          "title": "Rédiger",
+          "desc": "5 mots → Copilot écrit"
+        },
+        {
+          "icon": "🎯",
+          "title": "Prioriser",
+          "desc": "50 courriels triés en 30s"
+        }
       ],
       "bonus": "💾 Sauvegardez vos prompts avec Quick Parts!",
       "footer": "La minute Copilot — À la semaine prochaine! 👋"
     }
-  ]
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
 }

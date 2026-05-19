@@ -22,8 +22,35 @@
         "Fonctionne avec TOUS les modèles, même en Quick Response"
       ],
       "cards": [
-        {"icon": "❌", "title": "Sans CoT (risque d'erreur)", "color": "red", "lines": ["«Est-ce que cette dépense", "est conforme à notre", "politique?»", "", "→ Copilot répond vite,", "   peut oublier des", "   détails importants"]},
-        {"icon": "✅", "title": "Avec CoT (fiable)", "color": "green", "lines": ["«Analyse cette dépense", "étape par étape en", "suivant notre politique.", "Est-elle conforme?»", "", "→ Copilot décompose,", "   vérifie chaque point,", "   réponse fiable"]}
+        {
+          "icon": "❌",
+          "title": "Sans CoT (risque d'erreur)",
+          "color": "red",
+          "lines": [
+            "«Est-ce que cette dépense",
+            "est conforme à notre",
+            "politique?»",
+            "",
+            "→ Copilot répond vite,",
+            "   peut oublier des",
+            "   détails importants"
+          ]
+        },
+        {
+          "icon": "✅",
+          "title": "Avec CoT (fiable)",
+          "color": "green",
+          "lines": [
+            "«Analyse cette dépense",
+            "étape par étape en",
+            "suivant notre politique.",
+            "Est-elle conforme?»",
+            "",
+            "→ Copilot décompose,",
+            "   vérifie chaque point,",
+            "   réponse fiable"
+          ]
+        }
       ]
     },
     {
@@ -37,8 +64,33 @@
         "Idéal pour prises de décision, analyses de risques, planification"
       ],
       "cards": [
-        {"icon": "🌳", "title": "Exemple ToT", "color": "blue", "lines": ["«Nous devons migrer notre", "serveur de fichiers. Explore", "3 options: SharePoint,", "OneDrive, Azure Files.", "Compare coûts, sécurité,", "effort et recommande."]},
-        {"icon": "📊", "title": "Quand l'utiliser", "color": "green", "lines": ["✅ Décisions stratégiques", "✅ Analyse coûts/bénéfices", "✅ Choix techniques", "✅ Planification de projet", "", "💡 En mode Think Deeper", "   pour meilleurs résultats"]}
+        {
+          "icon": "🌳",
+          "title": "Exemple ToT",
+          "color": "blue",
+          "lines": [
+            "«Nous devons migrer notre",
+            "serveur de fichiers. Explore",
+            "3 options: SharePoint,",
+            "OneDrive, Azure Files.",
+            "Compare coûts, sécurité,",
+            "effort et recommande."
+          ]
+        },
+        {
+          "icon": "📊",
+          "title": "Quand l'utiliser",
+          "color": "green",
+          "lines": [
+            "✅ Décisions stratégiques",
+            "✅ Analyse coûts/bénéfices",
+            "✅ Choix techniques",
+            "✅ Planification de projet",
+            "",
+            "💡 En mode Think Deeper",
+            "   pour meilleurs résultats"
+          ]
+        }
       ]
     },
     {
@@ -53,9 +105,46 @@
         "Parfait pour conformité, sécurité, décisions importantes"
       ],
       "cards": [
-        {"icon": "🔵", "title": "Blue Team", "color": "blue", "lines": ["Propose la meilleure", "solution", "", "Optimiste", " centré sur les", "opportunités"]},
-        {"icon": "🔴", "title": "Red Team", "color": "red", "lines": ["Cherche les failles", "et les risques", "", "Pessimiste", " centré sur la", "sécurité"]},
-        {"icon": "⚡", "title": "Résultat", "color": "amber", "lines": ["Les deux visions", "combinées donnent", "une décision", "éclairée et robuste", "", "💰 Indispensable en", "   finance!"]}
+        {
+          "icon": "🔵",
+          "title": "Blue Team",
+          "color": "blue",
+          "lines": [
+            "Propose la meilleure",
+            "solution",
+            "",
+            "Optimiste",
+            " centré sur les",
+            "opportunités"
+          ]
+        },
+        {
+          "icon": "🔴",
+          "title": "Red Team",
+          "color": "red",
+          "lines": [
+            "Cherche les failles",
+            "et les risques",
+            "",
+            "Pessimiste",
+            " centré sur la",
+            "sécurité"
+          ]
+        },
+        {
+          "icon": "⚡",
+          "title": "Résultat",
+          "color": "amber",
+          "lines": [
+            "Les deux visions",
+            "combinées donnent",
+            "une décision",
+            "éclairée et robuste",
+            "",
+            "💰 Indispensable en",
+            "   finance!"
+          ]
+        }
       ]
     },
     {
@@ -70,10 +159,46 @@
         "Tout ça dans un seul prompt!"
       ],
       "cards": [
-        {"icon": "📝", "title": "Le prompt complet", "color": "blue", "lines": ["«En tant que chef de projet", "senior, analyse étape par", "étape si nous devons", "approuver ce budget.", "",
-            "Explore 2 scénarios:", "  A) Approuver tel quel", "  B) Demander des", "     modifications", "",
-            "Puis joue le rôle de", "l'auditeur interne (Red", "Team) et challenge ta", "propre recommandation.»"]},
-        {"icon": "🎯", "title": "Pourquoi ça marche", "color": "green", "lines": ["✅ CoT: raisonnement", "   structuré, pas de saut", "", "✅ ToT: 2 options", "   explorées, comparées", "", "✅ Red Team: biais", "   réduit, décision", "   robuste", "", "🎯 Utilisez-le sur votre", "   prochaine décision!"]}
+        {
+          "icon": "📝",
+          "title": "Le prompt complet",
+          "color": "blue",
+          "lines": [
+            "«En tant que chef de projet",
+            "senior, analyse étape par",
+            "étape si nous devons",
+            "approuver ce budget.",
+            "",
+            "Explore 2 scénarios:",
+            "  A) Approuver tel quel",
+            "  B) Demander des",
+            "     modifications",
+            "",
+            "Puis joue le rôle de",
+            "l'auditeur interne (Red",
+            "Team) et challenge ta",
+            "propre recommandation.»"
+          ]
+        },
+        {
+          "icon": "🎯",
+          "title": "Pourquoi ça marche",
+          "color": "green",
+          "lines": [
+            "✅ CoT: raisonnement",
+            "   structuré, pas de saut",
+            "",
+            "✅ ToT: 2 options",
+            "   explorées, comparées",
+            "",
+            "✅ Red Team: biais",
+            "   réduit, décision",
+            "   robuste",
+            "",
+            "🎯 Utilisez-le sur votre",
+            "   prochaine décision!"
+          ]
+        }
       ]
     },
     {
@@ -81,12 +206,25 @@
       "title": "🎯 Les 3 techniques avancées",
       "speaker_notes": "Résumé rapide. Défi: essayer au moins une technique cette semaine. Le Chain of Thought est le plus facile pour commencer. Le Red/Blue Team est le plus puissant pour les décisions importantes.",
       "cards": [
-        {"icon": "🧠", "title": "Chain of Thought", "desc": "«Raisonne étape\npar étape»\nMoins d'erreurs"},
-        {"icon": "🌳", "title": "Tree of Thought", "desc": "Explore plusieurs\noptions, compare,\nrecommande"},
-        {"icon": "⚔️", "title": "Red/Blue Team", "desc": "Propose + critique\nDécisions robustes"}
+        {
+          "icon": "🧠",
+          "title": "Chain of Thought",
+          "desc": "«Raisonne étape\npar étape»\nMoins d'erreurs"
+        },
+        {
+          "icon": "🌳",
+          "title": "Tree of Thought",
+          "desc": "Explore plusieurs\noptions, compare,\nrecommande"
+        },
+        {
+          "icon": "⚔️",
+          "title": "Red/Blue Team",
+          "desc": "Propose + critique\nDécisions robustes"
+        }
       ],
       "bonus": "🎯 Défi: Essayez «Analyse étape par étape... puis challenge ta réponse» cette semaine!",
       "footer": "La minute Copilot — À la semaine prochaine! 👋"
     }
-  ]
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
 }

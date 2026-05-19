@@ -23,9 +23,52 @@
         "Aucun accès supplémentaire — vos droits d'accès sont la seule limite"
       ],
       "cards": [
-        {"icon": "📁", "title": "OneDrive", "color": "blue", "lines": ["Vos fichiers personnels", "", "Documents Word, Excel,", "PowerPoint, PDF...", "", "✅ Accessibles si", "   vous êtes le", "   propriétaire"]},
-        {"icon": "🏢", "title": "SharePoint", "color": "green", "lines": ["Sites d'équipe", "et de département", "", "Procédures, politiques,", "bibliothèques partagées", "", "✅ Accessibles selon", "   vos permissions"]},
-        {"icon": "🔐", "title": "Sécurité", "color": "amber", "lines": ["Mêmes permissions", "que votre compte", "", "Aucun accès à des", "documents que vous", "ne pouvez pas voir", "", "✅ Conforme aux", "   règles IT"]}
+        {
+          "icon": "📁",
+          "title": "OneDrive",
+          "color": "blue",
+          "lines": [
+            "Vos fichiers personnels",
+            "",
+            "Documents Word, Excel,",
+            "PowerPoint, PDF...",
+            "",
+            "✅ Accessibles si",
+            "   vous êtes le",
+            "   propriétaire"
+          ]
+        },
+        {
+          "icon": "🏢",
+          "title": "SharePoint",
+          "color": "green",
+          "lines": [
+            "Sites d'équipe",
+            "et de département",
+            "",
+            "Procédures, politiques,",
+            "bibliothèques partagées",
+            "",
+            "✅ Accessibles selon",
+            "   vos permissions"
+          ]
+        },
+        {
+          "icon": "🔐",
+          "title": "Sécurité",
+          "color": "amber",
+          "lines": [
+            "Mêmes permissions",
+            "que votre compte",
+            "",
+            "Aucun accès à des",
+            "documents que vous",
+            "ne pouvez pas voir",
+            "",
+            "✅ Conforme aux",
+            "   règles IT"
+          ]
+        }
       ]
     },
     {
@@ -39,8 +82,40 @@
         "Exemple: «Résume la politique de sécurité informatique» → va chercher le document sur SharePoint"
       ],
       "cards": [
-        {"icon": "❌", "title": "Sans connexion aux docs", "color": "red", "lines": ["«Écris une politique de", "sécurité informatique»", "", "→ Réponse générique", "   qui pourrait être", "   celle de n'importe", "   quelle entreprise", "", "   À jeter ou à", "   tout réécrire"]},
-        {"icon": "✅", "title": "Avec connexion aux docs", "color": "green", "lines": ["«Résume notre politique", "de sécurité disponible", "sur SharePoint»", "", "→ Copilot va chercher", "   le document, le lit,", "   et vous fait un", "   résumé sur mesure", "", "   Prêt à utiliser!"]}
+        {
+          "icon": "❌",
+          "title": "Sans connexion aux docs",
+          "color": "red",
+          "lines": [
+            "«Écris une politique de",
+            "sécurité informatique»",
+            "",
+            "→ Réponse générique",
+            "   qui pourrait être",
+            "   celle de n'importe",
+            "   quelle entreprise",
+            "",
+            "   À jeter ou à",
+            "   tout réécrire"
+          ]
+        },
+        {
+          "icon": "✅",
+          "title": "Avec connexion aux docs",
+          "color": "green",
+          "lines": [
+            "«Résume notre politique",
+            "de sécurité disponible",
+            "sur SharePoint»",
+            "",
+            "→ Copilot va chercher",
+            "   le document, le lit,",
+            "   et vous fait un",
+            "   résumé sur mesure",
+            "",
+            "   Prêt à utiliser!"
+          ]
+        }
       ]
     },
     {
@@ -54,9 +129,54 @@
         "Les permissions SharePoint sont appliquées — rien de plus"
       ],
       "cards": [
-        {"icon": "📋", "title": "Scénario 1: Procédures", "color": "blue", "lines": ["«Trouve la procédure de", "demande d'accès pour", "l'application X sur", "SharePoint et résume-la", "en 5 étapes»", "", "→ Copilot cherche dans", "   SharePoint, lit le doc,", "   résume. 30 secondes!"]},
-        {"icon": "📊", "title": "Scénario 2: Rapports", "color": "green", "lines": ["«Compare les chiffres", "de ce trimestre avec", "ceux du rapport du", "trimestre dernier dans", "le dossier Partages»", "", "→ Analyse deux fichiers", "   OneDrive/SharePoint,", "   compare, résume"]},
-        {"icon": "📝", "title": "Scénario 3: Réunions", "color": "amber", "lines": ["«Résume les notes de", "la rencontre de lundi", "dans le site SharePoint", "de l'équipe et liste", "les tâches à faire»", "", "→ Accès au site, lit", "   le document, liste", "   les action items"]}
+        {
+          "icon": "📋",
+          "title": "Scénario 1: Procédures",
+          "color": "blue",
+          "lines": [
+            "«Trouve la procédure de",
+            "demande d'accès pour",
+            "l'application X sur",
+            "SharePoint et résume-la",
+            "en 5 étapes»",
+            "",
+            "→ Copilot cherche dans",
+            "   SharePoint, lit le doc,",
+            "   résume. 30 secondes!"
+          ]
+        },
+        {
+          "icon": "📊",
+          "title": "Scénario 2: Rapports",
+          "color": "green",
+          "lines": [
+            "«Compare les chiffres",
+            "de ce trimestre avec",
+            "ceux du rapport du",
+            "trimestre dernier dans",
+            "le dossier Partages»",
+            "",
+            "→ Analyse deux fichiers",
+            "   OneDrive/SharePoint,",
+            "   compare, résume"
+          ]
+        },
+        {
+          "icon": "📝",
+          "title": "Scénario 3: Réunions",
+          "color": "amber",
+          "lines": [
+            "«Résume les notes de",
+            "la rencontre de lundi",
+            "dans le site SharePoint",
+            "de l'équipe et liste",
+            "les tâches à faire»",
+            "",
+            "→ Accès au site, lit",
+            "   le document, liste",
+            "   les action items"
+          ]
+        }
       ]
     },
     {
@@ -71,9 +191,51 @@
         "Si Copilot ne trouve pas: vérifiez vos permissions d'accès"
       ],
       "cards": [
-        {"icon": "✅", "title": "Bon prompt", "color": "green", "lines": ["«Dans le site SharePoint", "Informatique, résume", "le document Politique", "de sécurité 2026 en", "3 points.»", "", "→ Copilot sait où", "   chercher!"]},
-        {"icon": "❌", "title": "Prompt vague", "color": "red", "lines": ["«Trouve la politique", "de sécurité.»", "", "→ Copilot ne sait pas", "   où chercher. Il va", "   chercher partout ou", "   répondre de façon", "   générique."]},
-        {"icon": "💡", "title": "Rappel sécurité", "color": "blue", "lines": ["Copilot respecte vos", "permissions existantes.", "", "Données confidentielles", "restent confidentielles.", "", "Aucune donnée ne quitte", "le tenant M365."]}
+        {
+          "icon": "✅",
+          "title": "Bon prompt",
+          "color": "green",
+          "lines": [
+            "«Dans le site SharePoint",
+            "Informatique, résume",
+            "le document Politique",
+            "de sécurité 2026 en",
+            "3 points.»",
+            "",
+            "→ Copilot sait où",
+            "   chercher!"
+          ]
+        },
+        {
+          "icon": "❌",
+          "title": "Prompt vague",
+          "color": "red",
+          "lines": [
+            "«Trouve la politique",
+            "de sécurité.»",
+            "",
+            "→ Copilot ne sait pas",
+            "   où chercher. Il va",
+            "   chercher partout ou",
+            "   répondre de façon",
+            "   générique."
+          ]
+        },
+        {
+          "icon": "💡",
+          "title": "Rappel sécurité",
+          "color": "blue",
+          "lines": [
+            "Copilot respecte vos",
+            "permissions existantes.",
+            "",
+            "Données confidentielles",
+            "restent confidentielles.",
+            "",
+            "Aucune donnée ne quitte",
+            "le tenant M365."
+          ]
+        }
       ]
     },
     {
@@ -81,12 +243,25 @@
       "title": "🎯 À retenir",
       "speaker_notes": "Résumé: Copilot + SharePoint/OneDrive = réponses personnalisées à partir de VOS documents. Mentionner le fichier ou le site dans votre prompt. Les permissions sont respectées.",
       "cards": [
-        {"icon": "🔗", "title": "1. Connexion", "desc": "Copilot lit vos docs\nSharePoint et OneDrive"},
-        {"icon": "🔐", "title": "2. Sécurité", "desc": "Mêmes permissions\nque votre compte"},
-        {"icon": "💡", "title": "3. Astuce", "desc": "Mentionnez le site\nou fichier dans le prompt"}
+        {
+          "icon": "🔗",
+          "title": "1. Connexion",
+          "desc": "Copilot lit vos docs\nSharePoint et OneDrive"
+        },
+        {
+          "icon": "🔐",
+          "title": "2. Sécurité",
+          "desc": "Mêmes permissions\nque votre compte"
+        },
+        {
+          "icon": "💡",
+          "title": "3. Astuce",
+          "desc": "Mentionnez le site\nou fichier dans le prompt"
+        }
       ],
       "bonus": "🎯 Défi: Essayez «Trouve le document X sur SharePoint et résume-le» cette semaine!",
       "footer": "La minute Copilot — À la semaine prochaine! 👋"
     }
-  ]
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
 }

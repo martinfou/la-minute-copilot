@@ -183,5 +183,6 @@
       "bonus": "🎯 Défi: Ajoutez un persona à TOUS vos prompts cette semaine!",
       "footer": "La minute Copilot — À la semaine prochaine! 👋"
     }
-  ]
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
 }
