@@ -1,0 +1,209 @@
+{
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json",
+  "title": "La minute Copilot",
+  "subtitle": "Bilan de la saison — Nos astuces préférées et la suite",
+  "author": "Martin Fournier",
+  "date": "2026-06-14",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Bilan de la saison 2 — Nos astuces préférées et la suite",
+      "footer": "Top 5 des astuces • Progrès mesurés • Saison 3 arrive!",
+      "speaker_notes": "Accueil : «Bonjour à tous! Vous ne rêvez pas — c'est le dernier épisode de la saison 2! Quelle saison! (Applaudissements imaginaires...) Aujourd'hui, pas de défi technique : on célèbre nos progrès, on regarde les astuces qui ont changé le quotidien, et je vous donne un avant-goût de la saison 3. Et surtout, on veut VOS idées pour la suite! Alors, c'est parti pour un bilan en mode célébration!»"
+    },
+    {
+      "type": "tips",
+      "title": "Les astuces qui ont changé le quotidien — Top 5",
+      "subtitle": "Selon vos retours et nos statistiques d'utilisation",
+      "speaker_notes": "Diapositive spéciale : on revoit le top 5 des astuces de la saison. 5e place : «À qui donner Copilot» — le profilage des rôles a aidé les gestionnaires à prioriser les licences. 4e place : «Les personas» — donner un rôle à Copilot a transformé la qualité des réponses. 3e place : «Raccourcis et astuces» — Alt+I est devenu un réflexe! 2e place : «Conformité» — les politiques ont rassuré tout le monde. 1re place : «Outlook — les 5 astuces» — résumer, rédiger, trier, statut projet, planifier, ça a changé la gestion des courriels pour tout le département. Mention spéciale : les QuickPart, réutilisés massivement!",
+      "bullets": [
+        "5 — À qui donner Copilot : profilage des rôles et priorisation des licences",
+        "4 — Les personas : un rôle, un contexte, une expertise",
+        "3 — Raccourcis et astuces : Alt+I, slash commands, formatage",
+        "2 — Conformité et gouvernance : politiques, audit, code de conduite",
+        "1 — Outlook : résumer, rédiger, trier, statut projet, planifier"
+      ],
+      "cards": [
+        {
+          "title": "Top 5 des astuces",
+          "color": "green",
+          "lines": [
+            "🥇 Outlook — Résumer, rédiger,",
+            "   trier, statut, planifier",
+            "",
+            "🥈 Conformité — Politiques,",
+            "   audit, code de conduite",
+            "",
+            "🥉 Raccourcis — Alt+I,",
+            "   slash commands, formatage",
+            "",
+            "4. Personas — Donner un rôle",
+            "   pour des réponses ciblées",
+            "",
+            "5. Profilage — À qui donner",
+            "   Copilot selon les besoins",
+            "",
+            "Mention spéciale : QUICKPART!",
+            "Le truc le plus réutilisé de la saison"
+          ],
+          "icon": "trophy"
+        },
+        {
+          "title": "Merci à VOUS!",
+          "color": "amber",
+          "lines": [
+            "🙏 Plus de 200 personnes inscrites",
+            "🙏 Plus de 1 200 visionnements",
+            "🙏 87% de satisfaction aux sondages",
+            "🙏 64% des répondants utilisent",
+            "  Copilot au moins une fois par jour",
+            "",
+            "C'est VOUS qui faites la différence!",
+            "Continuez à utiliser, partager,",
+            "expérimenter avec Copilot.",
+            "Chaque petit prompt compte!"
+          ],
+          "icon": "heart"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Les progrès mesurés — Sondages avant/après",
+      "subtitle": "Des chiffres qui parlent : Copilot change vraiment les choses",
+      "speaker_notes": "Présentation des résultats du sondage avant/après la saison. Utilisation quotidienne de Copilot : 22% au début → 64% à la fin. Temps moyen gagné par jour : 15 min en début de saison → 45 min déclarés en fin de saison. Confiance envers l'IA : 3.2/5 → 4.1/5. Satisfaction des réponses : l'augmentation la plus marquée — quand on sait bien poser des questions, les réponses sont bien meilleures. Automatiquement des processus (QuickPart, modèles, boucles Copilot-Automate) : quelques initiés au début, maintenant une pratique courante. Conclure : «Les chiffres ne mentent pas — on est passé de l'exploration à l'adoption réelle!»",
+      "bullets": [
+        "Utilisation quotidienne : 22% → 64% (+42 points!)",
+        "Temps gagné estimé par jour : 15 min → 45 min",
+        "Confiance envers l'IA : 3.2/5 → 4.1/5",
+        "Satisfaction des réponses Copilot : en forte hausse grâce aux personas et prompts structurés"
+      ],
+      "cards": [
+        {
+          "title": "Avant la saison 2",
+          "color": "blue",
+          "lines": [
+            "📊 Utilisation quotidienne : 22%",
+            "📊 Temps gagné/jour : ~15 min",
+            "📊 Confiance IA : 3.2 / 5",
+            "📊 Prompts de base : oui/non simples",
+            "📊 Outils : Copilot Outlook seulement",
+            "📊 Automatisation : quelques initiés",
+            "",
+            "Une base solide pour construire"
+          ],
+          "icon": "trending-down"
+        },
+        {
+          "title": "Après la saison 2",
+          "color": "green",
+          "lines": [
+            "📈 Utilisation quotidienne : 64%",
+            "📈 Temps gagné/jour : ~45 min",
+            "📈 Confiance IA : 4.1 / 5",
+            "📈 Prompts avancés : personas,",
+            "   formatage, chaînes de requêtes",
+            "📈 Outils : Outlook + Word + Teams",
+            "   + Excel + PowerPoint + Copilot Web",
+            "📈 Automatisation : QuickPart,",
+            "   modèles, boucles Copilot-Automate",
+            "",
+            "On passe de l'expérimentation",
+            "à la maîtrise quotidienne!"
+          ],
+          "icon": "trending-up"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Ce qui s'en vient en saison 3",
+      "subtitle": "Un avant-goût de ce qui vous attend",
+      "speaker_notes": "Teasing de la saison 3 : «On ne lâche pas la pédale! Voici les grandes thématiques qu'on prépare pour vous.» Sujets teasés : Copilot dans Excel (analyses avancées, formule automatique), Copilot dans PowerPoint (créer des présentations en 2 minutes), Copilot et Power Automate (boucles d'automatisation complètes), Approfondissement : Copilot Agents personnalisés (créer son propre agent), Copilot et la gestion de projet (Teams + Planner + Copilot). Inviter les gens à remplir le questionnaire pour prioriser les sujets. Mentionner que les épisodes précédents restent disponibles dans la bibliothèque SharePoint. «On se retrouve à la saison 3, avec encore plus d'astuces, de démos et de défis!»",
+      "bullets": [
+        "Copilot dans Excel — analyses avancées, formules automatiques, graphiques",
+        "Copilot dans PowerPoint — créer des présentations en un clin d'œil",
+        "Copilot + Power Automate — des boucles d'automatisation complètes",
+        "Copilot Agents — créer ses propres agents personnalisés",
+        "Copilot et gestion de projet — Teams + Planner + Copilot"
+      ],
+      "cards": [
+        {
+          "title": "Thématiques saison 3",
+          "color": "green",
+          "lines": [
+            "🔥 Copilot dans Excel",
+            "  Analyses avancées, formules,",
+            "  graphiques en langage naturel",
+            "",
+            "🔥 Copilot dans PowerPoint",
+            "  Présentations complètes en 2 min",
+            "",
+            "🔥 Copilot + Power Automate",
+            "  Boucles d'automatisation sans code",
+            "",
+            "🔥 Copilot Agents personnalisés",
+            "  Créez votre propre assistant",
+            "",
+            "🔥 Gestion de projet",
+            "  Teams + Planner + Copilot"
+          ],
+          "icon": "sparkles"
+        },
+        {
+          "title": "Votre mot à dire!",
+          "color": "blue",
+          "lines": [
+            "Remplissez le questionnaire pour",
+            "prioriser les sujets de la saison 3!",
+            "",
+            "Lien : [à venir dans Teams]",
+            "",
+            "Chaque suggestion compte :",
+            "- Un sujet qui vous passionne?",
+            "- Un problème quotidien à résoudre?",
+            "- Une fonctionnalité mystérieuse?",
+            "",
+            "Vous pouvez aussi :",
+            "- Suggérer dans le canal #copilot",
+            "- Parler à votre collègue champion",
+            "- Écrire à Martin directement",
+            "",
+            "La saison 3, c'est VOUS qui la faites!"
+          ],
+          "icon": "message-square"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Merci pour cette saison 2!",
+      "speaker_notes": "Conclusion émotive mais professionnelle : «On a commencé cette saison en se demandant si Copilot allait vraiment changer notre quotidien. Aujourd'hui, on a la réponse — OUI. 64% d'utilisation quotidienne, 45 minutes gagnées par jour, la confiance qui a grimpé en flèche. Vous avez adopté les personas, les QuickPart, les slash commands. Vous avez créé des codes de conduite. Vous avez intégré des nouveaux collègues plus vite. Bref, vous avez FAIT de Copilot un vrai outil de travail, pas juste un gadget. Merci à vous tous pour votre participation, vos questions, vos suggestions et votre enthousiasme! Je suis vraiment fier de ce qu'on a accompli ensemble cette saison. Prenez une pause bien méritée — la saison 3 arrive bientôt! D'ici là, continuez à utiliser Copilot, à partager vos trucs et à explorer. On se retrouve à la prochaine saison!»",
+      "cards": [
+        {
+          "title": "Top 5 astuces",
+          "desc": "Outlook en tête!",
+          "icon": "trophy"
+        },
+        {
+          "title": "Progrès",
+          "desc": "64% utilisent Copilot chaque jour",
+          "icon": "trending-up"
+        },
+        {
+          "title": "Saison 3",
+          "desc": "Excel, PPT, Agents, Automate",
+          "icon": "sparkles"
+        },
+        {
+          "title": "Questionnaire",
+          "desc": "Suggérez vos sujets!",
+          "icon": "message-square"
+        }
+      ],
+      "bonus": "Merci d'avoir fait de cette saison 2 un succès! 🎉 Remplissez le questionnaire pour la saison 3 et restez à l'affût — on se revoit bientôt!",
+      "footer": "La minute Copilot — Saison 2 terminée! À la saison 3! 🎬👋"
+    }
+  ]
+}

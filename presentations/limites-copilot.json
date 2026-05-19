@@ -1,0 +1,196 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Les limites de Copilot — Quand ne PAS l'utiliser",
+  "author": "Martin Fournier",
+  "date": "2026-06-23",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Les limites de Copilot — Quand ne PAS l'utiliser",
+      "footer": "3 astuces • Comprendre les limites • Mieux utiliser Copilot • Saison 2",
+      "speaker_notes": "Accueil : «Bonjour à tous! Aujourd'hui, on fait une minute Copilot un peu spéciale. On ne va pas voir ce que Copilot PEUT faire, mais ce qu'il ne FAUT PAS faire avec. Pourquoi? Parce que comprendre les limites de Copilot, c'est ce qui vous permet de l'utiliser en toute confiance. P2, c'est votre meilleur allié : savoir quand Copilot n'est pas fiable, c'est ça qui réduit l'anxiété. Connaître les pièges, c'est les éviter.»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Les hallucinations : comment les reconnaître",
+      "subtitle": "Copilot peut inventer des choses avec une confiance déconcertante",
+      "speaker_notes": "Démo : montrer un exemple où Copilot a généré une réponse qui semble parfaitement crédible mais contient des informations fausses — par exemple, citer une politique interne qui n'existe pas, ou donner un chiffre qui semble précis mais est complètement inventé. Expliquer le concept d'hallucination : Copilot ne 'sait' pas, il prédit. Quand il n'a pas la réponse, il invente la plus plausible. Les signaux d'alarme : chiffres trop précis, sources vagues («selon une étude»), affirmations non vérifiables. P2 : rassurez-vous, c'est normal. La solution : toujours vérifier les sources avant d'agir.",
+      "bullets": [
+        "Copilot ne 'sait' pas — il prédit le mot le plus probable",
+        "Une hallucination = une information fausse présentée avec assurance",
+        "Les signaux d'alarme : sources vagues, chiffres trop précis, affirmations non vérifiables"
+      ],
+      "cards": [
+        {
+          "title": "Comment repérer une hallucination",
+          "color": "red",
+          "lines": [
+            "❌ «Selon une étude récente…» sans citer laquelle",
+            "❌ Un chiffre très précis sans source associée",
+            "❌ Une citation qui sonne trop parfaite",
+            "❌ Une politique ou procédure qui vous semble inconnue",
+            "",
+            "✅ Si ça vous semble 'trop beau pour être vrai', vérifiez avant de partager"
+          ],
+          "icon": "brain"
+        },
+        {
+          "title": "P2 — rassurant",
+          "color": "amber",
+          "lines": [
+            "Les hallucinations sont plus rares avec Copilot M365",
+            "Parce qu'il utilise VOS données (courriels, documents, calendrier)",
+            "Les hallucinations surviennent surtout sur des sujets généraux",
+            "Conseil : demandez vos sources — «Quels documents as-tu utilisés?»"
+          ],
+          "icon": "thumbs-up"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Quand Copilot invente des sources",
+      "subtitle": "Citations fictives, documents qui n'existent pas, auteurs imaginaires",
+      "speaker_notes": "Démo : montrer le piège classique. Demander à Copilot : «Cite des sources sur [sujet précis]». Copilot peut générer des titres d'articles, des noms d'auteurs, des revues académiques — qui n'existent tout simplement pas. Montrer un exemple où Copilot invente le titre, l'auteur et la date d'une publication. Insister : c'est le piège numéro 1 des nouveaux utilisateurs. La règle : si Copilot mentionne une source, demandez-vous «Est-ce que je peux vérifier?». Si ce n'est pas dans vos documents d'entreprise ni une source publique connue, considérez-la comme potentiellement inventée.",
+      "bullets": [
+        "Copilot peut générer des citations avec titres, auteurs et dates fictifs",
+        "Ces sources 'semblent' vraies mais n'existent pas",
+        "Règle d'or : si une source n'est pas vérifiable, ne la citez pas"
+      ],
+      "cards": [
+        {
+          "title": "Piège classique",
+          "color": "red",
+          "lines": [
+            "«Selon un article de la revue Sécurité TI de mars 2025…»",
+            "→ Cette revue n'existe peut-être pas",
+            "",
+            "«Comme le mentionne Jean Tremblay dans son rapport…»",
+            "→ Ce collègue n'a peut-être jamais écrit ce rapport",
+            "",
+            "Toujours vérifier avant de citer!"
+          ],
+          "icon": "triangle-alert"
+        },
+        {
+          "title": "Les sources fiables",
+          "color": "green",
+          "lines": [
+            "✅ Vos documents d'entreprise (citations vérifiables)",
+            "✅ Les pages web avec Copilot Edge (citations avec liens)",
+            "✅ Les courriels et fichiers dans votre tenant M365",
+            "⚠️ Les sujets généraux hors de votre organisation : vérifiez!",
+            "",
+            "Quand Copilot utilise vos données, les sources sont fiables"
+          ],
+          "icon": "shield-alert"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Les calculs précis : toujours vérifier",
+      "subtitle": "Copilot est un générateur de texte, pas une calculatrice",
+      "speaker_notes": "Démo : montrer un calcul simple «Si j'ai 15 employés à 37.5h/semaine à 35$/h, quel est le coût mensuel?». Copilot peut donner la bonne réponse… ou une réponse proche mais fausse. Expliquer pourquoi : Copilot ne 'calcule' pas comme Excel, il a appris des patterns de calcul dans ses données d'entraînement. Parfois ça marche parfaitement, parfois c'est légèrement décalé. Règle : pour des chiffres qui comptent (budget, facturation, KPI), utilisez Excel Copilot ou une vraie calculatrice. Copilot est excellent pour l'analyse conceptuelle, pas pour l'arithmétique.",
+      "bullets": [
+        "Copilot peut faire des erreurs dans des calculs simples",
+        "Pour les chiffres importants : utilisez Excel Copilot ou une calculatrice",
+        "Copilot excelle dans l'analyse conceptuelle, pas dans l'arithmétique"
+      ],
+      "cards": [
+        {
+          "title": "Ce que Copilot fait mal",
+          "color": "red",
+          "lines": [
+            "❌ Calculs arithmétiques même simples",
+            "❌ Conversions d'unités complexes",
+            "❌ Calculs de pourcentages précis",
+            "❌ Agrégations de données (somme, moyenne, écart)",
+            "",
+            "✅ Utilisez Excel Copilot pour les chiffres!"
+          ],
+          "icon": "calculator"
+        },
+        {
+          "title": "Ce que Copilot fait bien",
+          "color": "green",
+          "lines": [
+            "✅ Synthèse conceptuelle et analyse qualitative",
+            "✅ Résumé de documents et extraction d'information",
+            "✅ Rédaction et reformulation",
+            "✅ Explication de concepts",
+            "",
+            "Complétez Copilot avec les bons outils pour chaque tâche"
+          ],
+          "icon": "sparkles"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — La règle d'or",
+      "subtitle": "«Copilot est un assistant, pas une autorité»",
+      "speaker_notes": "Démonstration : c'est la règle à retenir par-dessus tout. Copilot est comme un stagiaire brillant mais qui manque d'expérience : il est enthousiaste, travaille vite, mais parfois il se trompe avec confiance. Le meilleur utilisateur de Copilot n'est pas celui qui lui fait le plus confiance, c'est celui qui sait quand vérifier. Afficher la règle d'or bien en évidence. P2 : c'est ça qui doit vous rassurer. Savoir que Copilot peut se tromper, c'est savoir quand l'utiliser et quand être vigilant. C'est un outil comme un autre — un marteau, on ne l'utilise pas pour visser.",
+      "bullets": [
+        "Copilot est un assistant, pas une autorité",
+        "Un stagiaire brillant mais qui peut se tromper avec confiance",
+        "Le meilleur utilisateur : celui qui sait quand vérifier"
+      ],
+      "cards": [
+        {
+          "title": "La règle d'or de Copilot",
+          "color": "green",
+          "lines": [
+            "« Copilot est un assistant,",
+            "  pas une autorité. »",
+            "",
+            "Vérifiez avant de décider.",
+            "Validez avant de partager.",
+            "Réfléchissez avant d'agir.",
+            "",
+            "Vous êtes le pilote.",
+            "Copilot est le copilote."
+          ],
+          "icon": "shield-alert"
+        },
+        {
+          "title": "P2 — ce que ça change",
+          "color": "amber",
+          "lines": [
+            "Moins d'anxiété : savoir les limites = savoir les éviter",
+            "Plus de confiance : vous savez quand Copilot est fiable",
+            "Meilleure utilisation : les bons outils pour chaque tâche",
+            "P2, vous êtes l'expert — Copilot vous assiste, il ne vous remplace pas"
+          ],
+          "icon": "thumbs-up"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Les 3 limites à connaître",
+      "speaker_notes": "Récapitulation : (1) Les hallucinations — Copilot invente parfois, vérifiez, (2) Les sources fictives — si ce n'est pas vérifiable, ne le citez pas, (3) Les calculs — utilisez Excel Copilot pour les chiffres. Règle d'or : Copilot est un assistant, pas une autorité. Vous êtes le pilote. P2, retenez ceci : connaître les limites de Copilot, c'est ce qui vous permet de l'utiliser en toute confiance.",
+      "cards": [
+        {
+          "title": "Hallucinations",
+          "desc": "Vérifiez avant de partager",
+          "icon": "brain"
+        },
+        {
+          "title": "Sources fictives",
+          "desc": "Vérifiable = fiable",
+          "icon": "triangle-alert"
+        },
+        {
+          "title": "Calculs",
+          "desc": "Utilisez Excel Copilot",
+          "icon": "calculator"
+        }
+      ],
+      "bonus": "Retenez la règle d'or : «Copilot est un assistant, pas une autorité». Imprimez-la, collez-la sur votre bureau!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

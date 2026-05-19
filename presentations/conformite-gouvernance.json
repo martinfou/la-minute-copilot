@@ -1,0 +1,255 @@
+{
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json",
+  "title": "La minute Copilot",
+  "subtitle": "Conformité et gouvernance des prompts",
+  "author": "Martin Fournier",
+  "date": "2026-06-07",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Conformité et gouvernance des prompts",
+      "footer": "3 astuces • Politiques, audits, données sensibles",
+      "speaker_notes": "Accueil : «Bonjour à tous! Aujourd'hui, on aborde un sujet qui fait parfois un peu peur : la conformité et la gouvernance de Copilot. Mais pas de panique — c'est plus simple qu'on le pense! On va voir comment Microsoft a pensé à tout, comment auditer l'utilisation, et surtout les règles à connaître pour utiliser Copilot en toute confiance dans notre institution financière. C'est parti!»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Les politiques d'utilisation recommandées",
+      "subtitle": "Copilot en entreprise : le cadre qui protège tout le monde",
+      "speaker_notes": "Explication : Copilot n'est pas comme ChatGPT ou les LLM publics. Dans M365, Copilot est protégé par le même cadre de conformité que vos données : chiffrement en transit et au repos, certifications SOC et ISO, données qui restent dans le tenant Microsoft. Trois politiques à mettre en place : 1) Politique d'utilisation acceptable — qui peut utiliser Copilot, pour quoi faire. 2) Politique de classification des données — quels documents peuvent être utilisés avec Copilot. 3) Politique de rétention des prompts — comment on garde trace des requêtes pour audit. Recommander de travailler avec l'équipe sécurité/conformité pour adapter ces politiques. À noter : Microsoft propose déjà des «Data Loss Prevention» (DLP) qui s'appliquent aussi aux prompts Copilot!",
+      "bullets": [
+        "Copilot M365 respecte le cadre de conformité de votre tenant : chiffrement, ISO 27001, SOC 2",
+        "Les données dans les prompts ne sortent pas du périmètre de conformité Microsoft 365",
+        "À définir avec votre équipe sécurité : utilisation acceptable, classification, rétention"
+      ],
+      "cards": [
+        {
+          "title": "Politiques à mettre en place",
+          "color": "green",
+          "lines": [
+            "1. Utilisation acceptable :",
+            "   qui peut faire quoi avec Copilot",
+            "",
+            "2. Classification des données :",
+            "   quels documents sont accessibles",
+            "   via Copilot",
+            "",
+            "3. Rétention des prompts :",
+            "   comment conserver les requêtes",
+            "   pour audit (Content Search)",
+            "",
+            "À adapter selon votre cadre",
+            "conformité déjà en place"
+          ],
+          "icon": "shield"
+        },
+        {
+          "title": "Ce que Microsoft garantit",
+          "color": "blue",
+          "lines": [
+            "Données dans le tenant uniquement",
+            "Chiffrement en transit (TLS 1.2+)",
+            "Chiffrement au repos (AES-256)",
+            "Certifications : ISO 27001, SOC 1/2/3",
+            "Conforme RGPD / LPRPDE",
+            "Pas d'entraînement sur vos données",
+            "  (Microsoft n'utilise PAS vos prompts",
+            "  pour améliorer ses modèles)",
+            "",
+            "DLP s'applique aux prompts Copilot",
+            "comme aux courriels et documents"
+          ],
+          "icon": "badge-check"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Comment auditer l'utilisation de Copilot",
+      "subtitle": "Qui pose quoi? Le journal d'audit vous dit tout",
+      "speaker_notes": "Démo : ouvrir le portail Microsoft Purview (compliance.microsoft.com). Montrer l'emplacement Audit → Recherche dans le journal d'audit. Expliquer le filtre : activité = «CopilotInteraction» ou requêtes Copilot. Tester une recherche : taper un intervalle de dates. Montrer les résultats avec utilisateur, horodatage, prompt partiel (selon ce que l'institution enregistre). Préciser : par défaut, les prompts ne sont pas stockés en clair dans le journal — l'institution doit configurer l'audit des «Copilot interactions» dans Purview. Suggérer d'activer l'audit avancé (purview.microsoft.com/audit → Audit avancé) pour une visibilité complète. Rappeler que tous les tenants M365 E5 ont déjà accès à ces fonctions.",
+      "bullets": [
+        "Le journal d'audit Purview enregistre les interactions Copilot (selon configuration)",
+        "Filtrez par activité Copilot pour voir qui pose quelles questions",
+        "L'audit avancé offre une visibilité granulaire sur les prompts et réponses"
+      ],
+      "cards": [
+        {
+          "title": "Étapes d'audit",
+          "color": "green",
+          "lines": [
+            "1. Portail Purview → Audit",
+            "   (compliance.microsoft.com)",
+            "",
+            "2. Rechercher l'activité :",
+            "   «CopilotInteraction»",
+            "",
+            "3. Filtrer par utilisateur,",
+            "   intervalle de dates, app",
+            "",
+            "4. Analyser les tendances :",
+            "   qui utilise le plus, quels sujets,",
+            "   quelles apps M365",
+            "",
+            "Pour les prompts complets :",
+            "activer l'audit avancé dans Purview"
+          ],
+          "icon": "search"
+        },
+        {
+          "title": "Bonnes pratiques d'audit",
+          "color": "amber",
+          "lines": [
+            "Auditer mensuellement les interactions",
+            "Conserver les logs 90 jours minimum",
+            "Exporter vers Sentinel ou SIEM pour corrélation",
+            "Alerter sur les mots-clés sensibles",
+            "  (via DLP + audit)",
+            "",
+            "À NOTER : les administrateurs",
+            "ont accès aux logs des utilisateurs;",
+            "ces derniers ne voient pas leur",
+            "propre historique de prompts",
+            "",
+            "Transparence = confiance"
+          ],
+          "icon": "file-bar-chart"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Les données à ne JAMAIS partager avec Copilot",
+      "subtitle": "Copilot est puissant, mais votre jugement reste essentiel",
+      "speaker_notes": "Ton sérieux mais pas alarmiste : «Copilot est sécuritaire, mais comme tout outil, certaines données ne doivent jamais s'y retrouver. C'est comme avec les courriels — on ne met pas certaines choses dans un courriel, même chiffré. Même chose ici.» Lister : NIP/numéros d'assurance sociale, mots de passe et clés API, informations bancaires personnelles de clients (numéros de compte), dossiers médicaux sans autorisation expresse, secrets d'affaires critiques non classifiés. Rappeler que Microsoft offre DLP (Data Loss Prevention) pour bloquer les prompts contenant certains types de données. L'institution peut configurer des politiques DLP qui s'appliquent automatiquement dans les prompts Copilot. Insister : «La règle d'or : si vous ne mettriez pas cette information dans un courriel à votre gestionnaire, ne la mettez pas dans Copilot.»",
+      "bullets": [
+        "Copilot respecte la conformité, mais votre jugement est la première ligne de défense",
+        "Les politiques DLP de Microsoft Purview peuvent aussi bloquer les prompts à risque",
+        "Règle d'or : si ce n'est pas approprié dans un courriel, ce ne l'est pas dans Copilot non plus"
+      ],
+      "cards": [
+        {
+          "title": "À ne JAMAIS partager",
+          "color": "red",
+          "lines": [
+            "🚫 NIP, NAS (assurance sociale), SSN",
+            "🚫 Mots de passe, clés API, secrets",
+            "🚫 Numéros de compte client",
+            "🚫 Dossiers médicaux sans autorisation",
+            "🚫 Secrets d'affaires non classifiés",
+            "🚫 Informations personnelles identifiables",
+            "   (adresse, téléphone, date naissance)",
+            "🚫 Documents classifiés confidentiels",
+            "   sans autorisation explicite",
+            "",
+            "Même si Copilot est conforme,",
+            "ces données ne devraient pas",
+            "se retrouver dans aucun prompt"
+          ],
+          "icon": "ban"
+        },
+        {
+          "title": "Ce que vous POUVEZ partager",
+          "color": "green",
+          "lines": [
+            "✅ Résumés de dossiers génériques",
+            "✅ Politiques et procédures internes non classifiées",
+            "✅ Courriels et documents de travail standards",
+            "✅ Questions sur l'organisation (structure, rôles)",
+            "✅ Extractions de données pour analyse agrégée",
+            "✅ SPÉCIFIQUE TI : configurations, scripts, logs",
+            "   (sans mots de passe ni secrets!)",
+            "",
+            "En cas de doute, demandez à votre",
+            "gestionnaire ou à l'équipe conformité",
+            "avant d'inclure une information",
+            "sensible dans un prompt"
+          ],
+          "icon": "check-circle"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Créer un « Code de conduite Copilot » pour votre équipe",
+      "speaker_notes": "Idée pratique : créer un document partagé (SharePoint ou Teams) qui contient les règles d'utilisation de Copilot dans votre équipe. Proposer le gabarit suivant. Insister : impliquer l'équipe dans la rédaction — les gens respectent mieux les règles qu'ils ont contribué à créer. Suggérer de le mettre à jour trimestriellement.",
+      "bullets": [
+        "Créez un document équipe sur SharePoint ou dans Teams",
+        "Rédigez-le collectivement pour une meilleure adoption",
+        "Révis ez-le trimestriellement avec l'équipe conformité"
+      ],
+      "cards": [
+        {
+          "title": "Gabarit du code de conduite",
+          "color": "blue",
+          "lines": [
+            "# Code de conduite Copilot — [Équipe]",
+            "",
+            "## Ce qu'on peut faire ✅",
+            "- Résumer des fils de discussion et documents internes",
+            "- Poser des questions sur les politiques et procédures",
+            "- Générer des ébauches de courriels et documents",
+            "- Analyser des données non sensibles",
+            "",
+            "## Ce qu'on évite ⚠️",
+            "- Informations identifiant un client directement",
+            "- Données classifiées sans autorisation",
+            "- Secrets et mots de passe",
+            "",
+            "## Processus 🛡️",
+            "- Poser un doute à la conformité avant d'utiliser",
+            "  Copilot sur un document sensible",
+            "- Signaler tout incident à l'équipe sécurité",
+            "- Révision trimestrielle du code de conduite"
+          ],
+          "icon": "scroll-text"
+        },
+        {
+          "title": "Pourquoi c'est important",
+          "color": "amber",
+          "lines": [
+            "Clarté : tout le monde sait ce qui est permis",
+            "Sécurité : réduire les risques d'incidents",
+            "Conformité : démontrer une gouvernance proactive",
+            "Confiance : les utilisateurs se sentent encadrés, pas restreints",
+            "",
+            "Prochaine étape : partager ce code",
+            "lors de votre prochaine réunion d'équipe",
+            "et le diffuser dans le canal #copilot",
+            "de votre équipe Teams"
+          ],
+          "icon": "users"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "3 astuces + le bonus — Conformité en toute sérénité",
+      "speaker_notes": "Récapitulation : les politiques à mettre en place avec votre équipe conformité, l'audit via Purview (activité CopilotInteraction), les données à ne jamais partager (règle d'or du courriel). Et le bonus : créer un code de conduite Copilot d'équipe! Message de la semaine : «Copilot est sécuritaire si on l'utilise avec jugement — comme tous les outils M365!»",
+      "cards": [
+        {
+          "title": "Politiques",
+          "desc": "Cadre d'utilisation acceptable",
+          "icon": "shield"
+        },
+        {
+          "title": "Audit",
+          "desc": "Surveiller via Purview",
+          "icon": "search"
+        },
+        {
+          "title": "Données sensibles",
+          "desc": "Règle d'or du courriel",
+          "icon": "ban"
+        },
+        {
+          "title": "Code de conduite",
+          "desc": "Règles claires pour l'équipe",
+          "icon": "scroll-text"
+        }
+      ],
+      "bonus": "Défi : Créez le code de conduite Copilot de votre équipe cette semaine et partagez-le dans votre canal Teams!",
+      "footer": "La minute Copilot — À la semaine prochaine! 👋"
+    }
+  ]
+}

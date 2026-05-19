@@ -1,0 +1,183 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Copilot dans Edge (Navigateur Web)",
+  "author": "Martin Fournier",
+  "date": "2026-05-26",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Copilot dans Edge (Navigateur Web)",
+      "footer": "3 astuces • Navigateur Edge • Saison 2",
+      "speaker_notes": "Accueil : «Bonjour à tous! Bienvenue à cette nouvelle minute Copilot. Aujourd'hui, on explore une fonctionnalité souvent sous-estimée : Copilot intégré directement dans le navigateur Edge. Pas besoin d'aller sur copilot.microsoft.com — Copilot est là, dans le coin supérieur droit, prêt à vous aider sur n'importe quelle page web.»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Résumer une page web en un clic",
+      "subtitle": "Plus besoin de lire l'article au complet",
+      "speaker_notes": "Démo : ouvrir une page web longue — article, documentation technique, politique RH. Montrer l'icône Copilot dans la barre d'adresse ou le menu contextuel. Cliquer sur «Résumer» et montrer le résumé généré. Insister : aussi efficace pour un article de blog de 2000 mots que pour une politique interne de 15 pages. Le résumé s'adapte automatiquement.",
+      "bullets": [
+        "Ouvrir n'importe quelle page web dans Edge",
+        "Cliquer sur l'icône Copilot dans la barre d'adresse",
+        "Choisir «Résumer» ou taper son propre prompt personnalisé"
+      ],
+      "cards": [
+        {
+          "title": "Exemples de prompts",
+          "color": "green",
+          "lines": [
+            "«Résume cette page en 3 points»",
+            "«Quels sont les arguments principaux?»",
+            "«Extrais les données chiffrées»",
+            "«Donne-moi un résumé exécutif»"
+          ],
+          "icon": "file-text"
+        },
+        {
+          "title": "Quand l'utiliser?",
+          "color": "amber",
+          "lines": [
+            "Documentation technique longue",
+            "Politiques internes de 15 pages",
+            "Articles d'actualité complexes",
+            "Retour de congé — se remettre à jour rapidement"
+          ],
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Comparer deux pages ou produits",
+      "subtitle": "Côte à côte, sans ouvrir deux fenêtres",
+      "speaker_notes": "Démo : ouvrir deux onglets — une page produit A et une page produit B. Ouvrir le volet Copilot. Demander : «Compare l'onglet actif avec le second onglet et liste les différences clés». Montrer le tableau comparatif. Copilot lit le contenu des deux onglets. Utile pour choisir un fournisseur, comparer des solutions logicielles ou analyser deux versions d'une politique.",
+      "bullets": [
+        "Avoir deux pages ouvertes dans des onglets différents",
+        "Ouvrir le volet Copilot (Ctrl+Shift+.)",
+        "Demander une comparaison entre les deux onglets"
+      ],
+      "cards": [
+        {
+          "title": "Prompts comparatifs",
+          "color": "green",
+          "lines": [
+            "«Compare ces deux pages en 5 points»",
+            "«Quels sont les avantages de chaque option?»",
+            "«Fais un tableau comparatif»",
+            "«Qu'est-ce qui distingue la page A de la page B?»"
+          ],
+          "icon": "copy-check"
+        },
+        {
+          "title": "Scénarios concrets",
+          "color": "blue",
+          "lines": [
+            "Comparer deux fournisseurs TI",
+            "Analyser deux politiques ou directives",
+            "Choisir entre deux solutions logicielles",
+            "Vérifier des spécifications techniques"
+          ],
+          "icon": "layout-panel-top"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Recherche approfondie sur un sujet",
+      "subtitle": "Copilot comme assistant de recherche, pas juste un moteur de recherche",
+      "speaker_notes": "Démo : dans le volet Copilot, poser une question complexe qui nécessite une synthèse, par exemple : «Quelles sont les meilleures pratiques pour sécuriser Teams en entreprise?». Montrer la réponse structurée. Distinction clé : ce n'est pas Google qui liste des liens. Copilot lit les pages, les synthétise et vous donne une réponse complète avec citations. Demander des précisions, reformuler, creuser — le tout dans la même conversation.",
+      "bullets": [
+        "Ouvrir le volet Copilot dans Edge",
+        "Posez une question qui nécessite une synthèse, pas une simple définition",
+        "Demandez des précisions, un format différent ou une analyse critique"
+      ],
+      "cards": [
+        {
+          "title": "Exemples de recherche avancée",
+          "color": "green",
+          "lines": [
+            "«Fais une synthèse des tendances cybersécurité 2026»",
+            "«Quels sont les avantages et inconvénients de [sujet]?»",
+            "«Explique [concept] comme si j'avais 10 ans»",
+            "«Donne-moi une analyse SWOT sur [sujet]»"
+          ],
+          "icon": "search-check"
+        },
+        {
+          "title": "P1 — astuce clé",
+          "color": "amber",
+          "lines": [
+            "Pas besoin de mots-clés parfaits",
+            "Posez la question en français comme à un collègue",
+            "Si la réponse n'est pas claire, reformulez",
+            "Copilot garde le contexte de la conversation"
+          ],
+          "icon": "thumbs-up"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Le volet Copilot dans Edge",
+      "subtitle": "Toujours accessible, même sans ouvrir Copilot Web",
+      "speaker_notes": "Démonstration : montrer l'icône Copilot dans le coin supérieur droit d'Edge. Cliquer pour ouvrir le volet latéral. Montrer qu'il reste ouvert quand on change de page — la conversation continue. Pas besoin d'aller sur copilot.microsoft.com. Les réponses tiennent compte de la page que vous regardez. C'est l'équivalent d'avoir un assistant toujours à votre droite pendant que vous naviguez.",
+      "bullets": [
+        "Icône Copilot 🪄 en haut à droite d'Edge",
+        "Volet latéral persistant — changez de page, gardez la conversation",
+        "Le contexte s'adapte automatiquement à la page active"
+      ],
+      "cards": [
+        {
+          "title": "Raccourci clavier à retenir",
+          "color": "green",
+          "lines": [
+            "Ctrl + Shift + . (point)",
+            "Ouvre et ferme le volet Copilot",
+            "",
+            "Apprenez-le cette semaine!",
+            "Un gain de 2-3 secondes à chaque utilisation"
+          ],
+          "icon": "keyboard"
+        },
+        {
+          "title": "Fonctionnalités exclusives Edge",
+          "color": "blue",
+          "lines": [
+            "Résumé de page en un clic",
+            "Comparaison d'onglets",
+            "Recherche contextuelle sans quitter la page",
+            "Rédaction assistée dans les champs texte",
+            "",
+            "Tout ça sans changer d'application"
+          ],
+          "icon": "panel-right-open"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Les 3 astuces + le bonus",
+      "speaker_notes": "Récapitulation : (1) Résumer une page web en un clic, (2) Comparer deux pages ou produits, (3) Recherche approfondie avec synthèse. Bonus : le volet Copilot et son raccourci Ctrl+Shift+.. Défi : utilisez le raccourci cette semaine et résumez votre premier document directement dans Edge!",
+      "cards": [
+        {
+          "title": "Résumer",
+          "desc": "Une page en 3 points",
+          "icon": "file-text"
+        },
+        {
+          "title": "Comparer",
+          "desc": "Deux pages côte à côte",
+          "icon": "copy-check"
+        },
+        {
+          "title": "Rechercher",
+          "desc": "Synthèse approfondie",
+          "icon": "search-check"
+        }
+      ],
+      "bonus": "Défi : utilisez Ctrl+Shift+. pour ouvrir Copilot dans Edge et résumez votre premier document cette semaine!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

@@ -1,0 +1,259 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Copilot pour Scrum Masters et PO",
+  "author": "Martin Fournier",
+  "date": "2026-07-13",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Copilot pour Scrum Masters et Product Owners",
+      "footer": "Rétro · Daily · Grooming · Planification · Copilot vous AIDE sans vous remplacer",
+      "speaker_notes": "Accueil: «Aujourd'hui, on s'adresse à nos Scrum Masters et Product Owners. Si vous gérez des cérémonies agiles semaine après semaine — rétro, daily, grooming, planification — Copilot peut vous faire gagner un temps précieux. Pas pour remplacer votre jugement, mais pour vous aider à préparer, structurer et documenter. On commence par une question qui revient souvent chez les P2: est-ce que Copilot va remplacer le SM? Réponse: non, mais il va vous libérer du temps pour ce qui compte vraiment — votre équipe.»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Préparer une rétrospective avec Copilot",
+      "subtitle": "Des données objectives pour une rétro plus productive",
+      "speaker_notes": "Démo: ouvrir le volet Copilot dans Teams ou Copilot Chat. Montrer comment utiliser les données de l'équipe — notes de daily, tickets terminés, commentaires de la dernière rétro — pour générer une analyse objective de la sprint. Insister: Copilot ne remplace PAS la conversation en équipe. Il apporte des données pour l'alimenter. Pour les P2: c'est un filet de sécurité — vous n'oublierez plus un sujet important. Montrer comment enregistrer ce prompt en Quick Part pour chaque sprint.",
+      "bullets": [
+        "Copilot analyse les notes de vos daily scrum, les tickets et les commentaires",
+        "Il génère des tendances et des suggestions — c'est VOUS qui décidez quoi garder",
+        "Combine avec le prompt «En tant que Scrum Master senior...» pour des résultats plus fins"
+      ],
+      "cards": [
+        {
+          "title": "Prompt rétrospective",
+          "color": "green",
+          "lines": [
+            "«En tant que Scrum Master,",
+            "analyse ce sprint à partir",
+            "de nos notes de daily.",
+            "",
+            "Génère 3 thèmes pour",
+            "la rétro:",
+            "1. Ce qui a bien fonctionné",
+            "2. Ce qui peut être amélioré",
+            "3. Des actions concrètes",
+            "",
+            "Ajoute les données des",
+            "tickets complétés vs",
+            "prévus.»"
+          ],
+          "icon": "refresh-ccw"
+        },
+        {
+          "title": "Pourquoi c'est utile",
+          "color": "blue",
+          "lines": [
+            "Préparez la rétro en",
+            "10 minutes au lieu de 30",
+            "",
+            "Données objectives,",
+            "pas juste des ressentis",
+            "",
+            "Actions concrètes issues",
+            "de l'analyse de la sprint",
+            "",
+            "Rétro plus productive,",
+            "équipe plus engagée"
+          ],
+          "icon": "target"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Groomer le backlog avec des personas utilisateur",
+      "subtitle": "Des user stories mieux écrites, plus vite",
+      "speaker_notes": "Démo: dans Copilot Chat (ou Word), montrer comment générer des personas utilisateur à partir d'une description de feature. Puis utiliser ces personas pour écrire des user stories. Insister: c'est un assistant de grooming — vous décrivez le besoin, Copilot propose des personas et des scénarios, puis vous validez et ajustez. Pour les PO: ça vous aide à ne pas oublier des cas d'usage. Le résultat final vous appartient — vous êtes toujours le Product Owner.",
+      "bullets": [
+        "Décrivez la feature en 2-3 phrases → Copilot génère des personas pertinents",
+        "Pour chaque persona, Copilot propose des user stories et des critères d'acceptation",
+        "Vous validez, ajustez, complétez — le backlog reste sous votre contrôle"
+      ],
+      "cards": [
+        {
+          "title": "Prompt grooming",
+          "color": "green",
+          "lines": [
+            "«En tant que Product Owner",
+            "d'une équipe TI en institution",
+            "financière, je prépare le",
+            "grooming pour une feature",
+            "de signature électronique.",
+            "",
+            "Génère 3 personas utilisateur",
+            "avec leurs besoins.",
+            "Pour chaque persona, écris",
+            "2 user stories au format",
+            "«En tant que..., je veux...",
+            "afin de...» avec des",
+            "critères d'acceptation. »"
+          ],
+          "icon": "clipboard-pen"
+        },
+        {
+          "title": "Structure du résultat",
+          "color": "blue",
+          "lines": [
+            "Persona 1: Conseiller client",
+            "→ US: Signer un contrat",
+            "   rapidement en succursale",
+            "",
+            "Persona 2: Client retail",
+            "→ US: Signer à distance",
+            "   sans me déplacer",
+            "",
+            "Persona 3: Conformité",
+            "→ US: Vérifier l'identité",
+            "   du signataire"
+          ],
+          "icon": "group"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Générer des comptes rendus de daily scrum",
+      "subtitle": "Un daily mieux structuré, un compte rendu automatique",
+      "speaker_notes": "Démo: en fin de daily, copier les notes prises dans le canal Teams et les coller dans Copilot Chat avec le prompt de compte rendu. Montrer comment Copilot structure l'information: ce qui a été fait, ce qui est prévu, les bloqueurs. Insister: on ne demande pas à Copilot d'écouter le daily (il ne le fait pas en temps réel), mais on lui donne les notes brutes et il les structure. Pour les P2: rassurer — c'est vous qui décidez ce que vous partagez, Copilot met juste en forme.",
+      "bullets": [
+        "Prenez des notes brutes pendant le daily (ou lisez le fil Teams)",
+        "Passez les notes à Copilot avec un prompt structuré de compte rendu",
+        "Copilot génère un résumé propre → partagez dans le canal avec votre équipe"
+      ],
+      "cards": [
+        {
+          "title": "Prompt compte rendu daily",
+          "color": "green",
+          "lines": [
+            "«À partir de ces notes",
+            "de daily scrum, génère",
+            "un compte rendu structuré:",
+            "",
+            "1. Ce qui a été accompli",
+            "   hier (par personne)",
+            "2. Ce qui est prévu",
+            "   aujourd'hui",
+            "3. Bloqueurs et帮",
+            "   (aide nécessaire)",
+            "",
+            "Ajoute les dépendances",
+            "entre les tâches et les",
+            "risques identifiés.",
+            "Ton professionnel, concis.»"
+          ],
+          "icon": "clipboard-list"
+        },
+        {
+          "title": "Template Quick Part",
+          "color": "blue",
+          "lines": [
+            "Sauvegardez ce prompt",
+            "en Quick Part:",
+            "«[CP-SCRUM] CR Daily»",
+            "",
+            "Chaque jour: copiez",
+            "les notes, insérez",
+            "le prompt, validez,",
+            "partagez.",
+            "",
+            "2 minutes chrono,",
+            "compte rendu parfait"
+          ],
+          "icon": "bookmark"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Générer des critères d'acceptation à partir d'une user story",
+      "subtitle": "De «En tant que...» à une liste prête pour la sprint planning",
+      "speaker_notes": "Le bonus préféré des PO: donnez une user story à Copilot et demandez-lui de générer des critères d'acceptation complets. Le résultat couvre le scénario normal, les cas d'erreur et les considérations techniques. C'est un excellent point de départ. Insister: relisez et ajustez toujours — Copilot peut oublier des contraintes spécifiques à votre institution. Mais comme base de discussion avec l'équipe, c'est imbattable.",
+      "bullets": [
+        "Collez une user story brute → Copilot génère des critères d'acceptation structurés",
+        "Couverture: scénario normal, cas d'erreur, considérations de conformité",
+        "Validez avec votre équipe technique et conformité avant la sprint planning"
+      ],
+      "cards": [
+        {
+          "title": "Prompt critères d'acceptation",
+          "color": "blue",
+          "lines": [
+            "«À partir de cette",
+            "user story, génère des",
+            "critères d'acceptation",
+            "au format Given/When/Then:",
+            "",
+            "User story: «En tant que",
+            "conseiller, je veux",
+            "pouvoir ajouter une note",
+            "de suivi au dossier client",
+            "afin de tracer mes",
+            "interactions.»",
+            "",
+            "Couvre: scénario normal,",
+            "cas d'erreur (champ vide,",
+            "client inexistant),",
+            "conformité (conservation",
+            "des données. Ajoute des",
+            "considérations techniques",
+            "si pertinentes.»"
+          ],
+          "icon": "circle-check"
+        },
+        {
+          "title": "Résultat typique",
+          "color": "green",
+          "lines": [
+            "SCÉNARIO NORMAL:",
+            "Given un dossier client ouvert",
+            "When je saisis une note",
+            "   de suivi et je sauvegarde",
+            "Then la note est ajoutée",
+            "   et visible dans l'historique",
+            "",
+            "CAS D'ERREUR:",
+            "Given un dossier client ouvert",
+            "When je sauvegarde sans",
+            "   contenu de note",
+            "Then un message d'erreur",
+            "   «Le champ note est requis»",
+            "",
+            "CONFORMITÉ:",
+            "Given une note sauvegardée",
+            "Then son horodatage et",
+            "   auteur sont enregistrés"
+          ],
+          "icon": "list-checks"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "À retenir — Scrum Masters et PO",
+      "speaker_notes": "Résumé: Copilot prépare vos rétros avec des données objectives, vous aide à groomer le backlog avec des personas, et structure vos comptes rendus de daily. Bonus: des critères d'acceptation complets à partir d'une user story. Insister sur le message rassurant: Copilot AIDE — il ne remplace ni le Scrum Master ni le PO. Vous gardez le contrôle, la décision finale est toujours la vôtre. Défi: préparez votre prochaine rétro avec Copilot — comparez avec votre préparation habituelle.",
+      "cards": [
+        {
+          "title": "Rétrospective",
+          "desc": "Données objectives\npour une rétro\nplus productive",
+          "icon": "refresh-ccw"
+        },
+        {
+          "title": "Grooming",
+          "desc": "Personas + user stories\n+ critères d'acceptation\navec Copilot",
+          "icon": "clipboard-pen"
+        },
+        {
+          "title": "Daily scrum",
+          "desc": "Des notes brutes\n→ compte rendu\nstructuré en 2 min",
+          "icon": "clipboard-list"
+        }
+      ],
+      "bonus": "Défi: Pour votre prochaine user story, demandez à Copilot de générer les critères d'acceptation — et comparez avec ce que votre équipe trouverait!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

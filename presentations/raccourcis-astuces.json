@@ -1,0 +1,242 @@
+{
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json",
+  "title": "La minute Copilot",
+  "subtitle": "Raccourcis et astuces méconnus de Copilot",
+  "author": "Martin Fournier",
+  "date": "2026-05-31",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Raccourcis et astuces méconnus",
+      "footer": "3 astuces de pro • Clavier, slash commands, formatage",
+      "speaker_notes": "Accueil : «Bonjour à tous! Aujourd'hui, je vous montre mes trucs préférés — les raccourcis et astuces que même les utilisateurs avancés ne connaissent pas toujours. Vous allez voir : en ajoutant un Alt+ ou un simple slash, vous décuplez la puissance de Copilot sans même ouvrir les menus. C'est partiiii!»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Les raccourcis clavier Copilot",
+      "subtitle": "Alt+... — la main gauche fait le travail",
+      "speaker_notes": "Démo : ouvrir un document Word ou Teams. Montrer le raccourci Alt+I (Copilot) dans différents contextes : Word, PowerPoint, Excel, Edge. Montrer la différence : dans Word le panneau s'ouvre à droite, dans Teams le volet glisse. Insister : la main gauche fait le travail — pas besoin de lâcher le clavier, pas besoin de chercher l'icône dans le ruban. Truc : Alt+I ouvre Copilot partout dans M365. Le même!",
+      "bullets": [
+        "Alt+I — Ouvrir Copilot partout dans M365 (Word, PowerPoint, Excel, Teams, Edge)",
+        "Alt+Flèche haut/bas — Naviguer entre les suggestions Copilot",
+        "Échap — Fermer le volet Copilot ou annuler une requête en cours"
+      ],
+      "cards": [
+        {
+          "title": "Raccourcis essentiels",
+          "color": "green",
+          "lines": [
+            "Alt+I → Ouvrir Copilot",
+            "  (partout : Word, PPT, Teams, Excel, Edge)",
+            "",
+            "Alt+↑ / Alt+↓ → Suggestions",
+            "  (naviguer entre les réponses proposées)",
+            "",
+            "Échap → Fermer / Annuler",
+            "  (retour au document)",
+            "",
+            "Ctrl+Enter → Envoyer le prompt",
+            "  (dans le volet Copilot)",
+            "",
+            "À retenir : Alt+I est le même",
+            "raccourci pour toutes les apps M365!"
+          ],
+          "icon": "keyboard"
+        },
+        {
+          "title": "Où les utiliser?",
+          "color": "amber",
+          "lines": [
+            "Word : rédaction, réécriture, résumé",
+            "PowerPoint : création de slides",
+            "Excel : analyse, formules, suggestions",
+            "Teams : résumés de conversation",
+            "Outlook : rédaction courriel, résumé fil",
+            "Edge : résumé de page web",
+            "",
+            "Alt+I = votre réflexe Copilot!"
+          ],
+          "icon": "monitor"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Les slash commands dans Copilot Web",
+      "subtitle": "Tapez / et découvrez des super-pouvoirs cachés",
+      "speaker_notes": "Démo : ouvrir copilot.cloud.microsoft. Dans la zone de saisie, taper un / — montrer le menu déroulant des commandes disponibles. Montrer /work, /web, /creative, /precise. Expliquer chaque mode : /work = cherche seulement dans vos données M365 (Teams, SharePoint, etc.), /web = cherche sur Internet, /creative = mode créatif pour brainstormer. Insister : «Si vous utilisez Copilot Web sans les slash commands, vous utilisez 20% de son potentiel!»",
+      "bullets": [
+        "Ouvrir copilot.cloud.microsoft et taper / dans la zone de saisie",
+        "Choisir le mode selon votre besoin : travail, web, créatif ou précis",
+        "Les slash commands changent totalement la qualité des réponses"
+      ],
+      "cards": [
+        {
+          "title": "Les slash commands disponibles",
+          "color": "green",
+          "lines": [
+            "/work → Cherche dans vos données M365",
+            "  (Teams, SharePoint, OneDrive, courriels)",
+            "",
+            "/web → Cherche sur Internet",
+            "  (sites web publics, actualités)",
+            "",
+            "/creative → Mode créatif",
+            "  (idées, brainstorm, textes originaux)",
+            "",
+            "/precise → Mode précis",
+            "  (réponses factuelles, chiffrées)",
+            "",
+            "Non officiel mais puissant :",
+            "/recent → Contexte des dernières sessions"
+          ],
+          "icon": "slash"
+        },
+        {
+          "title": "Quand utiliser quoi?",
+          "color": "blue",
+          "lines": [
+            "Travail (/work) : chercher un document",
+            "dans SharePoint, une politique interne,",
+            "l'horaire d'un collègue dans Teams",
+            "",
+            "Web (/web) : vérifier une nouvelle",
+            "réglementation, chercher un article,",
+            "comparer des fournisseurs",
+            "",
+            "Créatif (/creative) : préparer un",
+            "atelier, générer des idées de contenu",
+            "",
+            "Précis (/precise) : données",
+            "financières, statistiques, dates"
+          ],
+          "icon": "list-checks"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Les options de formatage de réponse",
+      "subtitle": "Tableaux, listes, codes — Copilot s'adapte à vous",
+      "speaker_notes": "Démo : dans Copilot, taper un prompt simple puis ajouter «en tableau». Montrer la différence — le même contenu, mieux organisé. Montrer «en liste à puces» et «en paragraphes». Puis montrer : «en code», utile pour les équipes TI qui veulent des extraits PowerShell ou des formules. Insister : l'organisation de la réponse change toute la lisibilité. Un gestionnaire veut des paragraphes, un analyste veut un tableau, un technicien veut du code.",
+      "bullets": [
+        "Ajoutez «en tableau» à votre prompt pour des données structurées",
+        "Ajoutez «en liste à puces» pour des points clés faciles à parcourir",
+        "Ajoutez «en code» pour des scripts PowerShell, formules ou extraits techniques"
+      ],
+      "cards": [
+        {
+          "title": "Exemples de formatage",
+          "color": "green",
+          "lines": [
+            "«Liste les échéances du projet en",
+            "tableau avec colonnes : tâche,",
+            "responsable, date, statut»",
+            "",
+            "«Résume les 5 priorités de la",
+            "semaine en liste à puces»",
+            "",
+            "«Génère un script PowerShell",
+            "pour exporter les utilisateurs",
+            "d'un groupe AD, en code»"
+          ],
+          "icon": "table"
+        },
+        {
+          "title": "Conseils de pro",
+          "color": "amber",
+          "lines": [
+            "Précisez le format DANS votre prompt, pas après!",
+            "  (meilleurs résultats)",
+            "",
+            "Demandez «en colonnes : » pour contrôler les colonnes d'un tableau",
+            "",
+            "Combinez : «en tableau, format",
+            "exportable vers Excel»",
+            "  → Copilot optimise pour copier-coller",
+            "",
+            "Pour les TI : prompt + «en code»",
+            "est plus fiable que «génère du code»"
+          ],
+          "icon": "sparkles"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Copilot lit les images!",
+      "subtitle": "Capture d'écran → analyse directe",
+      "speaker_notes": "Démonstration : prendre une capture d'écran d'un graphique ou d'une interface. Ouvrir Copilot, copier-coller l'image, taper «Analyse ce graphique : quelles tendances observes-tu?» ou «Explique ce que fait cette fenêtre». Montrer la réponse. Insister : «Pas besoin de décrire ce que vous voyez — Copilot voit la même chose que vous!» Utile pour analyser un tableau de bord, comprendre une interface qu'on n'a jamais vue, extraire du texte d'une image.",
+      "bullets": [
+        "Copiez une image (capture d'écran, graphique, diagramme) dans le volet Copilot",
+        "Demandez une analyse directement : tendances, explications, résumé",
+        "Fonctionne dans Copilot Web, Word et PowerPoint"
+      ],
+      "cards": [
+        {
+          "title": "Cas d'usage puissants",
+          "color": "blue",
+          "lines": [
+            "Analyse de graphique : «Quelles sont",
+            "les tendances de ce rapport?»",
+            "",
+            "Nouvelle interface : «Explique ce",
+            "que fait chaque bouton ici»",
+            "",
+            "Extraction de texte : «Copie le",
+            "texte de cette image dans un",
+            "document Word»",
+            "",
+            "Diagramme : «Résume ce processus",
+            "en 3 étapes»"
+          ],
+          "icon": "image"
+        },
+        {
+          "title": "Limites à savoir",
+          "color": "red",
+          "lines": [
+            "Résolution minimale : au moins 100 px pour être lisible",
+            "Image claire : pas de texte flou, incliné ou manuscrit",
+            "Document scanné : fonctionne pour du texte imprimé, pas pour de l'écriture",
+            "Formats supportés : PNG, JPG, GIF, BMP, WEBP",
+            "",
+            "Testez : une capture d'écran claire =",
+            "100% de succès"
+          ],
+          "icon": "info"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "3 astuces + le bonus — Devenez un pro de Copilot",
+      "speaker_notes": "Récapitulation : Alt+I = le réflexe Copilot, les slash commands /work /web /creative /precise dans Copilot Web, le formatage des réponses (tableaux, listes, code). Et le bonus magique : Copilot lit les images! Message de la semaine : «Un petit Alt+I, un petit slash, et votre productivité décolle!»",
+      "cards": [
+        {
+          "title": "Alt+I",
+          "desc": "Le réflexe partout",
+          "icon": "keyboard"
+        },
+        {
+          "title": "Slash commands",
+          "desc": "/work /web /creative",
+          "icon": "slash"
+        },
+        {
+          "title": "Formatage",
+          "desc": "Tableaux, listes, code",
+          "icon": "table"
+        },
+        {
+          "title": "Images",
+          "desc": "Capture → analyse directe",
+          "icon": "image"
+        }
+      ],
+      "bonus": "Défi : Cette semaine, utilisez AU MOINS UN slash command dans Copilot Web et un formatage différent dans chaque prompt!",
+      "footer": "La minute Copilot — À la semaine prochaine! 👋"
+    }
+  ]
+}

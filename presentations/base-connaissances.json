@@ -1,0 +1,314 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Copilot et la base de connaissances",
+  "author": "Martin Fournier",
+  "date": "2026-07-27",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Copilot et la base de connaissances",
+      "footer": "FAQ dynamique · Structure · Documents · Grounding · Pour TI et non-TI",
+      "speaker_notes": "Accueil: «Bonjour! Dans l'épisode Copilot et vos données (SharePoint/OneDrive), on a vu que Copilot peut lire vos documents pour répondre à partir de VOS informations. Aujourd'hui on va plus loin: comment CRÉER et MAINTENIR une base de connaissances que Copilot peut exploiter pleinement. FAQ dynamique, structure de l'information, mise à jour continue — et un bonus sur le 'grounding', le mécanisme qui permet à Copilot de choisir la bonne source parmi des centaines de documents.»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Créer un FAQ dynamique avec Copilot",
+      "subtitle": "Vos questions les plus fréquentes, générées et tenues à jour",
+      "speaker_notes": "Démo: ouvrir SharePoint, créer un nouveau document FAQ. Demander à Copilot dans Word de générer un FAQ à partir de 2-3 documents de référence existants (procédures, politiques). Montrer comment Copilot extrait les questions probables et y répond. Insister: le FAQ vit sur SharePoint, s'enrichit avec le temps, et Copilot peut y puiser pour répondre aux questions de l'équipe. Montrer comment ajouter manuellement des questions et demander à Copilot de mettre à jour les réponses quand la procédure change.",
+      "bullets": [
+        "Créez un document Word ou une page SharePoint pour votre FAQ d'équipe",
+        "Fournissez des documents source à Copilot: procédures, politiques, guides",
+        "Copilot extrait les questions les plus utiles et génère des réponses à partir de vos docs"
+      ],
+      "cards": [
+        {
+          "title": "Prompt FAQ",
+          "color": "green",
+          "lines": [
+            "«À partir des documents",
+            "de référence suivants",
+            "[liens vers vos docs],",
+            "génère un FAQ de 10",
+            "questions-réponses",
+            "sur notre processus",
+            "de demande d'accès.",
+            "",
+            "Classe par catégorie",
+            "et priorité des questions",
+            "les plus fréquentes.»"
+          ],
+          "icon": "book-plus"
+        },
+        {
+          "title": "FAQ qui vit",
+          "color": "blue",
+          "lines": [
+            "Stocké sur SharePoint:",
+            "accessible à toute",
+            "l'équipe et à Copilot",
+            "",
+            "Nouvelles questions:",
+            "l'équipe les ajoute,",
+            "Copilot y répond",
+            "",
+            "Mise à jour: la procédure",
+            "change → demandez à",
+            "Copilot de mettre à jour",
+            "les réponses concernées"
+          ],
+          "icon": "files"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Structurer l'information pour que Copilot réponde bien",
+      "subtitle": "Une base de connaissances bien rangée = des réponses précises",
+      "speaker_notes": "Démo: montrer deux documents — l'un mal structuré (un bloc de texte sans titres) et l'autre bien structuré (titres clairs, sections, listes). Expliquer que Copilot lit les titres, les sous-titres et la structure des documents pour comprendre de quoi parle chaque section. Un document mal structuré = réponse approximative. Un document bien structuré = réponse précise. Distribuer la checklist des bonnes pratiques aux P1 qui commencent. Lien avec l'épisode SharePoint/OneDrive: rappeler que Copilot lit ces documents AVEC vos permissions.",
+      "bullets": [
+        "Copilot utilise les titres et la structure des documents pour naviguer dans le contenu",
+        "Divisez vos documents en sections claires avec des titres descriptifs",
+        "Utilisez des listes, tableaux et mises en forme pour aider Copilot à comprendre"
+      ],
+      "cards": [
+        {
+          "title": " Bien structuré",
+          "color": "green",
+          "lines": [
+            "Titre clair:",
+            "«Procédure de demande",
+            "d'accès système»",
+            "",
+            "Sections:",
+            "1. Qui peut demander?",
+            "2. Formulaire requis",
+            "3. Délais de traitement",
+            "4. Approbations nécessaires",
+            "",
+            "Listes à puces,",
+            "tableaux, gras pour",
+            "les mots-clés"
+          ],
+          "icon": "file-text"
+        },
+        {
+          "title": " Mal structuré",
+          "color": "red",
+          "lines": [
+            "Pas de titres clairs,",
+            "un seul bloc de texte",
+            "de 5 pages",
+            "",
+            "Informations mélangées:",
+            "qui, quand, comment",
+            "dans le même paragraphe",
+            "",
+            "→ Copilot a du mal",
+            "à trouver la bonne",
+            "information. Réponse",
+            "approximative."
+          ],
+          "icon": "file-x"
+        },
+        {
+          "title": "Checklist rapide",
+          "color": "amber",
+          "lines": [
+            "✓ Titres descriptifs",
+            "✓ Sections numérotées",
+            "✓ Listes et puces",
+            "✓ Mots-clés en gras",
+            "✓ Tableaux pour données",
+            "✓ 1 sujet = 1 section",
+            "✓ Version et date de",
+            "  mise à jour visibles"
+          ],
+          "icon": "list-checks"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Maintenir à jour les documents de référence",
+      "subtitle": "Des documents frais = des réponses fiables",
+      "speaker_notes": "Démo: montrer comment demander à Copilot de vérifier la fraîcheur d'une procédure. Montrer la colonne «Date de modification» dans SharePoint. Expliquer le petit rituel: avant une mise à jour importante, demander à Copilot de comparer l'ancienne et la nouvelle version. Insister: Copilot est excellent avec des documents récents — si vos docs datent de 2 ans, les réponses seront obsolètes. Suggérer un calendrier de révision trimestriel pour les documents de référence clés.",
+      "bullets": [
+        "Copilot donne de meilleures réponses avec des documents récents et à jour",
+        "Planifiez une révision trimestrielle de vos documents de référence",
+        "Utilisez Copilot pour comparer des versions et extraire les changements"
+      ],
+      "cards": [
+        {
+          "title": "Rituel de maintenance",
+          "color": "green",
+          "lines": [
+            "Chaque trimestre:",
+            "1. Lister les documents",
+            "   de référence clés",
+            "2. Demander à Copilot:",
+            "   «Quels documents de",
+            "   cette bibliothèque",
+            "   ont été modifiés",
+            "   depuis plus de 6 mois?»",
+            "3. Mettre à jour ceux",
+            "   qui sont obsolètes",
+            "4. Ajouter la date de",
+            "   mise à jour dans",
+            "   le document"
+          ],
+          "icon": "refresh-ccw"
+        },
+        {
+          "title": "Prompt comparaison",
+          "color": "blue",
+          "lines": [
+            "«Compare la version",
+            "actuelle et la version",
+            "précédente de ce",
+            "document. Qu'est-ce",
+            "qui a changé?»",
+            "",
+            "«Cette procédure est-elle",
+            "toujours valide selon",
+            "les normes [nom]?»",
+            "",
+            "«Liste les documents",
+            "de la bibliothèque",
+            "Informatique qui",
+            "n'ont pas été modifiés",
+            "depuis plus d'un an»"
+          ],
+          "icon": "copy-plus"
+        },
+        {
+          "title": "Liens SharePoint",
+          "color": "amber",
+          "lines": [
+            "Dans SharePoint:",
+            "colonne «Date de",
+            "modification» visible",
+            "dans la bibliothèque",
+            "",
+            "Ajoutez une colonne",
+            "«Dernière révision»",
+            "pour vos documents",
+            "de référence",
+            "",
+            "Voir l'épisode",
+            "«Copilot et vos données:",
+            "SharePoint, OneDrive",
+            "et le contexte»",
+            "pour les bases!"
+          ],
+          "icon": "link"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Le grounding: comment Copilot choisit la bonne source",
+      "subtitle": "Comprendre le mécanisme derrière les réponses documentées",
+      "speaker_notes": "Explication simple: quand vous posez une question à Copilot, il ne devine pas la réponse — il cherche d'abord dans VOS documents (SharePoint, OneDrive, Teams) les informations pertinentes, puis construit sa réponse à partir de ces sources. C'est ce qu'on appelle le «grounding» ou l'ancrage. Copilot cite ses sources en bas de la réponse, avec un lien vers le document. Conseil aux P1: cliquez sur les sources pour vérifier. C'est le réflexe le plus important à acquérir. Conseil aux P3: le grounding utilise Microsoft Graph + l'index de recherche de votre tenant — les documents les mieux classés dans les résultats de recherche sont prioritaires.",
+      "bullets": [
+        "Grounding = Copilot ancre sa réponse dans VOS documents avant de répondre",
+        "Il ne crée pas la réponse à partir de rien — il synthétise ce qu'il trouve dans vos docs",
+        "Citations cliquables: Copilot montre toujours la source de chaque information"
+      ],
+      "cards": [
+        {
+          "title": "Comment ça marche",
+          "color": "green",
+          "lines": [
+            "1. Vous posez une",
+            "   question à Copilot",
+            "",
+            "2. Copilot cherche dans",
+            "   SharePoint, OneDrive",
+            "   et Teams les documents",
+            "   pertinents (selon vos",
+            "   permissions)",
+            "",
+            "3. Il lit les documents",
+            "   trouvés et construit",
+            "   sa réponse À PARTIR",
+            "   de ces sources",
+            "",
+            "4. Sous la réponse:",
+            "   citations avec liens",
+            "   vers les documents",
+            "   sources consultés"
+          ],
+          "icon": "search-check"
+        },
+        {
+          "title": "Ce qui influence le choix",
+          "color": "blue",
+          "lines": [
+            "Pertinence: le document",
+            "contient-il les mots",
+            "de votre question?",
+            "",
+            "Récence: document",
+            "récent > document",
+            "de l'année dernière",
+            "",
+            "Permissions: Copilot",
+            "ne voit que ce que",
+            "VOUS pouvez voir",
+            "",
+            "Classement: l'index",
+            "de recherche M365",
+            "influence l'ordre",
+            "des résultats"
+          ],
+          "icon": "search-code"
+        },
+        {
+          "title": "Réflexe important",
+          "color": "amber",
+          "lines": [
+            "Après chaque réponse:",
+            "regardez les sources!",
+            "",
+            "Les citations sont en",
+            "bas de la réponse,",
+            "avec le nom du doc",
+            "et un lien direct",
+            "",
+            "Si une info importante:",
+            "cliquez sur la source",
+            "pour vérifier dans",
+            "le document original"
+          ],
+          "icon": "eye"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "À retenir — Base de connaissances",
+      "speaker_notes": "Récapitulation: créez un FAQ dynamique avec Copilot à partir de vos documents existants; structurez bien vos docs (titres, sections, listes) pour des réponses précises; maintenez-les à jour trimestriellement. Bonus: le grounding explique COMMENT Copilot trouve et cite ses sources. Défi: cette semaine, prenez un de vos documents de référence, ajoutez des titres de section clairs et demandez à Copilot de le résumer. Vous verrez la différence! Et si vous avez manqué l'épisode sur SharePoint/OneDrive, je vous encourage à le rattraper — c'est la base de tout ce qu'on a vu aujourd'hui.",
+      "cards": [
+        {
+          "title": "FAQ dynamique",
+          "desc": "Générez et maintenez\nun FAQ avec Copilot\nsur SharePoint",
+          "icon": "book-plus"
+        },
+        {
+          "title": "Structure",
+          "desc": "Titres, sections,\nlistes → réponses\nplus précises",
+          "icon": "file-text"
+        },
+        {
+          "title": "Maintenance",
+          "desc": "Révision trimestrielle\nDocuments frais =\nréponses fiables",
+          "icon": "refresh-ccw"
+        }
+      ],
+      "bonus": "Défi: Ajoutez des titres de section à un de vos documents de référence, puis demandez à Copilot de le résumer — comparez avec avant!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

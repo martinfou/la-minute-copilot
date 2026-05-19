@@ -1,0 +1,257 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Copilot dans Loop et Whiteboard",
+  "author": "Martin Fournier",
+  "date": "2026-07-20",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Copilot dans Loop et Whiteboard",
+      "footer": "Brainstorming · Composants Loop · Planification · Templates · TI et non-TI",
+      "speaker_notes": "Accueil: «Aujourd'hui on découvre deux outils qui changent le travail d'équipe: Loop et Whiteboard. Loop, c'est comme des blocs Lego collaboratifs — un tableau, une liste, une note qui se synchronise partout. Whiteboard, c'est le tableau blanc numérique parfait pour le brainstorming. Et avec Copilot dedans, c'est encore plus puissant. Prêts?»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Brainstormer des idées avec Copilot dans Whiteboard",
+      "subtitle": "Un tableau blanc qui génère des idées avec vous",
+      "speaker_notes": "Démo: ouvrir Whiteboard (M365), cliquer sur l'icône Copilot dans le ruban. Montrer le prompt «Génère des idées pour...». Copilot crée des notes autocollantes directement sur le tableau. On peut ensuite les déplacer, les regrouper, les commenter. Insister: c'est un point de départ — Copilot lance les idées, l'équipe les affine. Idéal pour les séances de remue-méninges en équipe TI ou avec des non-TI.",
+      "bullets": [
+        "Ouvrir le tableau Whiteboard → cliquer sur l'icône Copilot",
+        "Écrire un prompt comme «Génère des idées pour améliorer notre processus de déploiement»",
+        "Copilot crée des notes autocollantes directement sur le tableau — prêtes à être organisées"
+      ],
+      "cards": [
+        {
+          "title": "Prompts brainstorming",
+          "color": "green",
+          "lines": [
+            "«Génère 10 idées pour",
+            "réduire le temps de",
+            "déploiement de nos",
+            "applications»",
+            "",
+            "«Propose des approches",
+            "pour améliorer la",
+            "communication entre",
+            "équipes TI et métier»",
+            "",
+            "«Quelles seraient les",
+            "étapes pour migrer",
+            "notre infrastructure»"
+          ],
+          "icon": "lightbulb"
+        },
+        {
+          "title": "Pourquoi Whiteboard?",
+          "color": "blue",
+          "lines": [
+            "Collaboratif en temps réel:",
+            "toute l'équipe voit et",
+            "ajoute au même moment",
+            "",
+            "Idées générées par Copilot",
+            "→ organisées avec l'équipe",
+            "",
+            "Résultat: un tableau",
+            "prêt pour la prochaine",
+            "étape (Loop, Teams, docs)"
+          ],
+          "icon": "users"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Créer des composants Loop avec Copilot",
+      "subtitle": "Des blocs de contenu qui se synchronisent partout dans M365",
+      "speaker_notes": "Démo: ouvrir un espace Loop (loop.cloud.microsoft), montrer l'icône Copilot dans un composant. Créer une liste de tâches, un tableau de suivi, une note de réunion. Montrer comment Copilot peut générer le contenu directement dans ces composants. Puis montrer comment le même composant Loop s'affiche dans un canal Teams, un courriel Outlook et un document Word — toujours synchronisé. Insister: c'est la magie de Loop — vous écrivez une fois, le composant se met à jour partout où il est partagé.",
+      "bullets": [
+        "Dans un espace Loop, ajouter un composant (tableau, liste, notes)",
+        "Utiliser Copilot dans le composant pour générer du contenu",
+        "Copier-coller le composant dans un canal Teams, un courriel ou un doc Word"
+      ],
+      "cards": [
+        {
+          "title": "Composants Loop utiles",
+          "color": "green",
+          "lines": [
+            "Liste de tâches avec",
+            "Copilot: «Crée une liste",
+            "des tâches pour la",
+            "migration ServiceNow",
+            "par ordre de priorité»",
+            "",
+            "Tableau de suivi:",
+            "«Génère un tableau de",
+            "suivi des risques avec",
+            "probabilité et impact»",
+            "",
+            "Notes de réunion:",
+            "«Résume les notes de",
+            "la réunion d'aujourd'hui"
+          ],
+          "icon": "layout-panel-top"
+        },
+        {
+          "title": "Où coller un composant",
+          "color": "blue",
+          "lines": [
+            "Dans un canal Teams:",
+            "tout le monde peut",
+            "éditer en temps réel",
+            "",
+            "Dans un courriel Outlook:",
+            "les destinataires voient",
+            "le contenu à jour",
+            "",
+            "Dans un document Word:",
+            "le composant reste",
+            "connecté à la source",
+            "",
+            "Changer à un endroit",
+            "= mis à jour",
+            "PARTOUT!"
+          ],
+          "icon": "waypoints"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Planifier un projet dans Loop avec Copilot",
+      "subtitle": "De l'idée au plan d'action, tout dans un espace Loop",
+      "speaker_notes": "Démo: démarrer un espace Loop vide, demander à Copilot de générer un plan de projet complet. Copilot crée des composants organisés: objectifs, jalons, tâches par phase, risques, dépendances. Chaque composant est éditable par l'équipe. Insister: Loop sert de hub central pour le projet — les composants sont réutilisables dans Teams, Outlook, Word. Plus besoin de chercher des infos dans 5 endroits différents.",
+      "bullets": [
+        "Nouvel espace Loop → demander à Copilot de générer un plan de projet",
+        "Copilot crée des composants organisés: objectifs, tâches, risques, dépendances",
+        "Chaque composant est partageable et éditable par toute l'équipe"
+      ],
+      "cards": [
+        {
+          "title": "Prompt plan de projet",
+          "color": "green",
+          "lines": [
+            "«Crée un plan de projet",
+            "pour la migration de notre",
+            "outil de gestion des",
+            "incidents vers ServiceNow.",
+            "",
+            "Inclus: objectifs, phases",
+            "avec jalons, équipe",
+            "requise, risques et",
+            "dépendances.",
+            "",
+            "Utilise des composants",
+            "Loop distincts par phase»"
+          ],
+          "icon": "workflow"
+        },
+        {
+          "title": "Structure du plan",
+          "color": "blue",
+          "lines": [
+            "Espace Loop = votre hub",
+            "de projet central",
+            "",
+            "Composant 1: Objectifs",
+            "Composant 2: Phases",
+            "   et jalons",
+            "Composant 3: Tâches",
+            "   par responsable",
+            "Composant 4: Risques",
+            "   et mitigation",
+            "Composant 5: Dépendances",
+            "   entre équipes",
+            "",
+            "Chaque composant =",
+            "partageable dans Teams,"
+          ],
+          "icon": "layout-dashboard"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Les templates Loop pour les réunions courantes",
+      "subtitle": "Un composant Loop prêt à l'emploi pour chaque type de réunion",
+      "speaker_notes": "Bonus pratique: Microsoft propose des templates Loop pour les réunions les plus courantes. On les trouve dans l'onglet Templates de l'espace Loop. Les plus utiles: réunion d'équipe, rétro sprint, planification, post-mortem, point client. Chaque template est un composant Loop qu'on peut coller dans n'importe quel canal Teams ou courriel. Suggérer de créer une bibliothèque de templates Loop partagée avec l'équipe.",
+      "bullets": [
+        "Microsoft fournit des templates Loop pour les réunions courantes",
+        "Chaque template est un composant Loop prêt à coller dans Teams, Outlook ou Word",
+        "Créez une bibliothèque d'équipe avec vos templates préférés"
+      ],
+      "cards": [
+        {
+          "title": "Templates disponibles",
+          "color": "green",
+          "lines": [
+            "Réunion d'équipe:",
+            "ordre du jour + notes",
+            "+ action items",
+            "",
+            "Rétro sprint:",
+            "ce qui a bien été,",
+            "ce qui peut être amélioré",
+            "+ actions",
+            "",
+            "Planification:",
+            "objectifs, ressources,",
+            "risques, échéancier",
+            "",
+            "Post-mortem:",
+            "chronologie, 5 pourquoi,",
+            "causes racines, actions"
+          ],
+          "icon": "layout-template"
+        },
+        {
+          "title": "Comment les utiliser",
+          "color": "blue",
+          "lines": [
+            "1. Ouvrir Loop →",
+            "   sélectionner le template",
+            "",
+            "2. Demander à Copilot",
+            "   de remplir le template",
+            "   avec le contexte",
+            "   de votre réunion",
+            "",
+            "3. Coller le composant",
+            "   dans le canal Teams",
+            "   ou l'invitation Outlook",
+            "",
+            "4. Toute l'équipe édite",
+            "   simultanément"
+          ],
+          "icon": "sparkles"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "À retenir — Loop et Whiteboard",
+      "speaker_notes": "Résumé: Whiteboard pour brainstormer avec Copilot, Loop pour créer des composants collaboratifs qui se synchronisent partout, et Loop comme hub de planification de projet. Bonus: les templates Loop pour vos réunions courantes. Défi: lors de votre prochaine réunion d'équipe, créez un composant Loop d'ordre du jour, collez-le dans le canal Teams et éditez-le en temps réel avec l'équipe. Vous verrez la différence!",
+      "cards": [
+        {
+          "title": "Whiteboard",
+          "desc": "Brainstorming avec\nCopilot → idées\ndirectement sur le tableau",
+          "icon": "lightbulb"
+        },
+        {
+          "title": "Composants Loop",
+          "desc": "Blocs collaboratifs\nsynchronisés partout:\nTeams, Outlook, Word",
+          "icon": "waypoints"
+        },
+        {
+          "title": "Planification",
+          "desc": "Espace Loop = hub\ncentral du projet\navec Copilot",
+          "icon": "workflow"
+        }
+      ],
+      "bonus": "Défi: Avant votre prochaine réunion, créez un template Loop d'ordre du jour et collez-le dans le canal Teams!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

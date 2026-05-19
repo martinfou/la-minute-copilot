@@ -1,0 +1,223 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Copilot dans PowerPoint",
+  "author": "Martin Fournier",
+  "date": "2026-06-21",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Copilot dans PowerPoint",
+      "footer": "Créer, améliorer, résumer, transformer • Des présentations en un temps record",
+      "speaker_notes": "Accueil : «Bonjour tout le monde! Cette semaine, on termine notre série sur les applications Copilot avec PowerPoint. Créer une présentation complète en un prompt, améliorer le design, résumer une présentation existante et même transformer un document Word en PowerPoint. Préparez-vous à être impressionnés!»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Créer une présentation complète en 1 prompt",
+      "subtitle": "Décrivez votre sujet, Copilot génère les slides",
+      "speaker_notes": "Démo : ouvrir PowerPoint, cliquer sur l'icône Copilot dans le ruban. Dans le volet, taper : «Crée une présentation sur le déploiement de Copilot M365 chez nous. 7 slides : contexte, objectifs, bénéfices, plan de déploiement, formation, échéancier, prochaines étapes». Montrer le résultat : slides générées avec titres, contenu, images stock et mise en page cohérente. Insister : en 30 secondes, une base solide prête à être peaufinée. Idéal pour les réunions de dernière minute!",
+      "bullets": [
+        "Ouvrir PowerPoint → icône Copilot dans le ruban",
+        "Décrire le sujet, le nombre de slides et les sections souhaitées",
+        "Copilot génère la présentation complète avec contenu et design"
+      ],
+      "cards": [
+        {
+          "title": "Exemple de prompt",
+          "color": "green",
+          "lines": [
+            "«Crée une présentation de 8 slides",
+            "sur la migration vers Windows 11",
+            "pour notre organisation.",
+            "",
+            "Inclus :",
+            "1. Pourquoi migrer (enjeux sécurité)",
+            "2. Échéancier proposé",
+            "3. Impact sur les équipes",
+            "4. Formation et accompagnement",
+            "5. Prochaines étapes»"
+          ],
+          "icon": "presentation"
+        },
+        {
+          "title": "Conseils pour un bon résultat",
+          "color": "blue",
+          "lines": [
+            "Précisez le nombre de slides",
+            "Décrivez chaque section clairement",
+            "Indiquez l'audience visée",
+            "Ajoutez des exemples ou données",
+            "",
+            "Prompt précis = résultat impeccable"
+          ],
+          "icon": "list-ordered"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Ajouter des slides et améliorer le design",
+      "subtitle": "Votre présentation existe déjà? Copilot l'enrichit",
+      "speaker_notes": "Démo : ouvrir une présentation existante (même simple). Dans le volet Copilot, montrer deux choses : (1) «Ajoute une slide sur les risques identifiés» → Copilot crée la slide au bon endroit avec contenu. (2) «Améliore le design de cette présentation» → Copilot propose un nouveau thème, applique une mise en page cohérente. Montrer la différence avant/après. Insister : pas besoin d'être designer graphique. PowerPoint + Copilot = présentations professionnelles en 2 minutes.",
+      "bullets": [
+        "Demander d'ajouter des slides sur un sujet spécifique",
+        "Demander d'améliorer le design — Copilot applique un thème cohérent",
+        "Travailler slide par slide ou sur l'ensemble de la présentation"
+      ],
+      "cards": [
+        {
+          "title": "Ajouter des slides",
+          "color": "green",
+          "lines": [
+            "«Ajoute une slide sur les",
+            "risques de sécurité»",
+            "",
+            "«Ajoute une slide de conclusion",
+            "avec 3 points clés»",
+            "",
+            "«Ajoute une slide 'Questions'",
+            "avec vos coordonnées»"
+          ],
+          "icon": "plus-square"
+        },
+        {
+          "title": "Améliorer le design",
+          "color": "blue",
+          "lines": [
+            "«Améliore le design de",
+            "cette présentation»",
+            "",
+            "«Applique un thème plus",
+            "professionnel»",
+            "",
+            "«Ajoute des images pertinentes",
+            "sur chaque slide»"
+          ],
+          "icon": "palette"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Résumer une présentation existante",
+      "subtitle": "Vous avez reçu 40 slides? Copilot les résume en 3 puces",
+      "speaker_notes": "Démo : ouvrir une présentation reçue (par exemple d'un partenaire, d'un fournisseur ou d'une équipe projet). Ouvrir le volet Copilot. Taper : «Résume cette présentation en 5 points clés». Montrer la réponse concise. Puis montrer des variations : «Quelles sont les échéances mentionnées?», «Quels sont les risques identifiés?», «Donne-moi un résumé pour ma direction». Insister : idéal pour P2 qui reçoit des présentations complexes et ne sait pas par où commencer. P1 : plus besoin de tout lire!",
+      "bullets": [
+        "Ouvrir la présentation reçue ou partagée",
+        "Ouvrir le volet Copilot dans PowerPoint",
+        "Demander un résumé ou une information spécifique"
+      ],
+      "cards": [
+        {
+          "title": "Prompts de résumé",
+          "color": "green",
+          "lines": [
+            "«Résume cette présentation",
+            "en 3 puces pour ma direction»",
+            "",
+            "«Quels sont les risques",
+            "et échéances mentionnés?»",
+            "",
+            "«Prépare un résumé pour",
+            "mon gestionnaire»",
+            "",
+            "«Quelles sont les décisions",
+            "à prendre?»"
+          ],
+          "icon": "file-text"
+        },
+        {
+          "title": "Quand l'utiliser?",
+          "color": "amber",
+          "lines": [
+            "Présentation partenaire reçue",
+            "Préparation de réunion",
+            "Revue de projet — 40 slides",
+            "Présentation d'appel d'offres",
+            "Rapport de conformité",
+            "",
+            "Gain : 20 minutes par présentation"
+          ],
+          "icon": "clock"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Transformer un document Word en PowerPoint",
+      "subtitle": "Le rapport de 20 pages devient une présentation en 30 secondes",
+      "speaker_notes": "Démo : ouvrir PowerPoint. Dans le volet Copilot, taper : «Crée une présentation à partir de ce document Word». Puis sélectionner le fichier Word (rapport, politique, guide). Copilot analyse le document, extrait les points clés, structure les slides, et génère la présentation complète. Insister : c'est magique pour transformer des rapports longs en présentations de réunion. Pour P3 : montrer que la structure suit la hiérarchie des titres du document Word. Bon à savoir pour optimiser ses documents!",
+      "bullets": [
+        "Ouvrir PowerPoint → volet Copilot",
+        "Demander : «Crée une présentation à partir de ce document»",
+        "Sélectionner le fichier Word — Copilot extrait, structure et génère les slides"
+      ],
+      "cards": [
+        {
+          "title": "Exemple d'utilisation",
+          "color": "green",
+          "lines": [
+            "Rapport de conformité 30 pages",
+            "→ Présentation direction 8 slides",
+            "",
+            "Guide de migration 50 pages",
+            "→ Présentation formation 12 slides",
+            "",
+            "Politique institutionnelle 20 pages",
+            "",
+            "Gain : 1h par document!"
+          ],
+          "icon": "file-output"
+        },
+        {
+          "title": "Astuce pro",
+          "color": "blue",
+          "lines": [
+            "Pour un meilleur résultat :",
+            "",
+            "1. Structurez votre Word avec",
+            "   des titres (Titre 1, 2, 3)",
+            "",
+            "2. Hiérarchie claire = slides",
+            "   bien organisées",
+            "",
+            "3. Ajoutez des notes ou",
+            "   résumés en bas de page",
+            "   pour le contenu des slides"
+          ],
+          "icon": "lightbulb"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Les 3 astuces + le bonus",
+      "speaker_notes": "Récapitulation : créer une présentation de A à Z en un prompt, enrichir et améliorer le design d'une présentation existante, résumer une présentation reçue, et transformer un document Word en PowerPoint. Défi de la semaine : prendre une présentation existante (ou un document Word), ouvrir Copilot PowerPoint et essayer AU MOINS une des astuces. Vous allez gagner un temps fou!",
+      "cards": [
+        {
+          "title": "Créer",
+          "desc": "Un prompt = présentation\ncomplète en 30 s",
+          "icon": "presentation"
+        },
+        {
+          "title": "Améliorer",
+          "desc": "Ajouter des slides\nDesign professionnel",
+          "icon": "palette"
+        },
+        {
+          "title": "Résumer",
+          "desc": "40 slides → 3 puces",
+          "icon": "file-text"
+        },
+        {
+          "title": "Transformer",
+          "desc": "Word → PowerPoint\n30 secondes!",
+          "icon": "file-output"
+        }
+      ],
+      "bonus": "Défi: Prenez un document Word existant et demandez à Copilot PowerPoint de le transformer en présentation cette semaine!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

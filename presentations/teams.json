@@ -1,0 +1,239 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Copilot dans Teams",
+  "author": "Martin Fournier",
+  "date": "2026-05-24",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Copilot dans Teams",
+      "footer": "Résumés de conversations, réponses rapides, mises à jour d'équipe • 100% Teams",
+      "speaker_notes": "Accueil : «Bonjour tout le monde! Bienvenue à cette minute Copilot. Aujourd'hui, on explore Copilot dans Teams — l'outil qu'on ouvre tous les jours, mais qu'on utilise peut-être pas à son plein potentiel. Résumés de canaux, réponses professionnelles, mises à jour d'équipe... C'est parti!»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Résumer une conversation Teams",
+      "subtitle": "50 messages en 2 secondes — même les messages manqués",
+      "speaker_notes": "Démo : ouvrir un canal Teams avec une longue discussion. Montrer le bouton Copilot en haut à droite de la conversation — Ouvrir Copilot dans Teams. Cliquer sur «Résumer» ou taper le prompt. Insister : «Quand vous revenez de congé, d'une réunion, ou même juste après un dîner, 50 messages rattrapés en un clic!»",
+      "bullets": [
+        "Ouvrir la conversation ou le canal dans Teams",
+        "Cliquer sur «Ouvrir Copilot» dans le coin supérieur droit",
+        "Choisir «Résumer» ou taper un prompt personnalisé"
+      ],
+      "cards": [
+        {
+          "title": "Exemples de prompts",
+          "color": "green",
+          "lines": [
+            "«Résume les messages depuis hier»",
+            "«Quelles décisions ont été prises?»",
+            "«Qui a posé une question sans réponse?»",
+            "«Quels sont les points d'action?»"
+          ],
+          "icon": "message-square"
+        },
+        {
+          "title": "Quand l'utiliser?",
+          "color": "amber",
+          "lines": [
+            "Retour de congé ou de réunion",
+            "Canal avec +50 messages non lus",
+            "Projet en accéléré — tout rattraper",
+            "Fin de journée — bilan rapide"
+          ],
+          "icon": "clock"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Rédiger une réponse professionnelle",
+      "subtitle": "Décrivez en 5 mots, Copilot rédige le message complet",
+      "speaker_notes": "Démo : cliquer sur la zone de réponse dans Teams. Icône Copilot apparaît (le petit crayon/étincelle). Montrer : taper «Explique le retard du livrable à l'équipe» → Copilot rédige le message. Montrer les boutons «Ajuster le ton», «Raccourcir», «Allonger». Insister : «Pour P1 c'est un accélérateur ; pour P2 c'est une bouée de sauvetage — plus jamais peur d'écrire le mauvais message.»",
+      "bullets": [
+        "Dans la zone de réponse Teams, l'icône Copilot propose d'écrire pour vous",
+        "Décrivez l'intention en langage naturel (français parfait!)",
+        "Ajustez le ton — professionnel, amical, concis, persuasif"
+      ],
+      "cards": [
+        {
+          "title": "Prompts rapides",
+          "color": "blue",
+          "lines": [
+            "«Confirme la réunion de demain à l'équipe»",
+            "«Remercie Marie pour son travail sur le projet»",
+            "«Explique pourquoi on repousse l'échéance»",
+            "«Demande une mise à jour à chaque membre»"
+          ],
+          "icon": "pen-line"
+        },
+        {
+          "title": "Ajustements de ton",
+          "color": "green",
+          "lines": [
+            "«Rends ça plus professionnel»",
+            "«Rends ça plus amical»",
+            "«Rends ça plus concis»",
+            "«Rends ça plus persuasif»",
+            "",
+            "Un clic, le ton change!"
+          ],
+          "icon": "sliders-horizontal"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Préparer une mise à jour de statut d'équipe",
+      "subtitle": "Copilot compile les messages récents en un résumé structuré",
+      "speaker_notes": "Démo : ouvrir Copilot dans Teams (volet latéral avec le grand champ de prompt). Taper un prompt de mise à jour. Montrer comment Copilot lit les messages récents du canal et produit un bulletin structuré. Idéal pour le Scrum Master, le chef de projet ou quiconque doit faire un suivi hebdomadaire. Conseil : sauvegarder le prompt pour le réutiliser chaque semaine.",
+      "bullets": [
+        "Ouvrir le volet Copilot dans le canal de votre projet",
+        "Demander une mise à jour basée sur les messages récents",
+        "Copilot compile automatiquement avancement, prochaines étapes et blocages"
+      ],
+      "cards": [
+        {
+          "title": "Prompt de mise à jour",
+          "color": "green",
+          "lines": [
+            "«À partir des messages de ce",
+            "canal cette semaine, prépare",
+            "un bulletin de statut :",
+            "1. Ce qui a été accompli",
+            "2. Prochaines étapes",
+            "3. Blocages / questions en suspens",
+            "4. Qui fait quoi cette semaine»"
+          ],
+          "icon": "clipboard-list"
+        },
+        {
+          "title": "Parfait pour",
+          "color": "amber",
+          "lines": [
+            "Scrum Masters — daily standup",
+            "Chefs de projet — suivi hebdo",
+            "Équipes TI — mise à jour sprint",
+            "Gestionnaires — vue d'équipe",
+            "",
+            "Gain : 15 minutes par semaine!"
+          ],
+          "icon": "users"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 4 — Copilot dans les réunions Teams",
+      "subtitle": "Notes, actions, décisions — sans preneur de notes",
+      "speaker_notes": "Démo : ouvrir l'onglet «Récapitulatif» d'une réunion passée dans Teams. Montrer les notes automatiques générées par Copilot, les actions assignées, les décisions. Insister : «Plus besoin de courir après les notes après une réunion — tout est déjà là, structuré, avec les noms et les actions.» Rappeler que ça fonctionne pour les réunions enregistrées et celles avec transcription activée.",
+      "bullets": [
+        "Après une réunion Teams, ouvrir l'onglet «Récapitulatif»",
+        "Copilot génère automatiquement : résumé, actions, décisions, intervenants",
+        "Disponible pour toutes les réunions avec transcription activée"
+      ],
+      "cards": [
+        {
+          "title": "Ce que Copilot produit",
+          "color": "blue",
+          "lines": [
+            "Résumé de la réunion",
+            "Actions assignées (avec nom et échéance)",
+            "Décisions prises",
+            "Sujets clés abordés",
+            "Prochaines étapes"
+          ],
+          "icon": "file-text"
+        },
+        {
+          "title": "Astuce pro",
+          "color": "green",
+          "lines": [
+            "Avant une réunion, ouvrez",
+            "Copilot et tapez :",
+            "",
+            "«Résume le dernier suivi",
+            "du projet [nom] pour me",
+            "préparer à la réunion»",
+            "",
+            "Arrivez préparé en 30 s!"
+          ],
+          "icon": "lightbulb"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Les @mentions et le contexte",
+      "subtitle": "Comment Copilot comprend vos références dans Teams",
+      "speaker_notes": "Insister sur la magie des @mentions. Quand vous mentionnez quelqu'un dans un prompt Copilot, Teams sait de qui vous parlez, quel est son rôle, et peut même retrouver ses messages récents. Pareil pour les canaux et les fichiers. Exemple : «Résume les commentaires de @Sylvie sur le document Chiffres_Q2.pptx» — Copilot sait qui est Sylvie, retrouve ses commentaires dans le fichier partagé, et produit un résumé ciblé.",
+      "bullets": [
+        "@mentions dans le prompt Copilot = contexte précis (personne, canal, fichier)",
+        "Copilot utilise les métadonnées de l'organisation (rôle, département, hiérarchie)",
+        "Fonctionne aussi avec les fichiers partagés dans la conversation"
+      ],
+      "cards": [
+        {
+          "title": "@mentions utiles",
+          "color": "green",
+          "lines": [
+            "«Résume les commentaires",
+            "de @Sylvie sur le document",
+            "Chiffres_Q2.pptx»",
+            "",
+            "«Que pense @Michel du",
+            "calendrier de migration?»",
+            "",
+            "«Donne-moi les messages",
+            "récents du @Canal-ProjetX»"
+          ],
+          "icon": "at-sign"
+        },
+        {
+          "title": "Ce que Copilot comprend",
+          "color": "blue",
+          "lines": [
+            "Qui est la personne (rôle, département)",
+            "Ses messages récents dans le canal",
+            "Les fichiers qu'elle a partagés",
+            "Les réactions aux messages",
+            "",
+            "Toujours dans vos permissions!"
+          ],
+          "icon": "circle-check"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Les 4 astuces + le bonus",
+      "speaker_notes": "Récapitulation rapide. Défi de la semaine : au lieu de scroller 50 messages dans un canal, ouvrir Copilot et demander un résumé. Ou la prochaine fois que quelqu'un pose une question complexe dans Teams, utiliser Copilot pour rédiger la réponse — vous verrez la différence!",
+      "cards": [
+        {
+          "title": "Résumer",
+          "desc": "50 messages → résumé",
+          "icon": "message-square"
+        },
+        {
+          "title": "Rédiger",
+          "desc": "5 mots = réponse complète",
+          "icon": "pen-line"
+        },
+        {
+          "title": "Mise à jour",
+          "desc": "Bulletin d'équipe",
+          "icon": "clipboard-list"
+        },
+        {
+          "title": "Réunions",
+          "desc": "Notes + actions sans effort",
+          "icon": "file-text"
+        }
+      ],
+      "bonus": "Défi: Utilisez une @mention dans votre prochain prompt Copilot dans Teams!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

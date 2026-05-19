@@ -1,0 +1,185 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Gestion des versions et des documents",
+  "author": "Martin Fournier",
+  "date": "2026-06-02",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Gestion des versions et des documents",
+      "footer": "3 astuces • Documents • Versions • Saison 2",
+      "speaker_notes": "Accueil : «Bonjour à tous! Aujourd'hui, on parle de quelque chose qui nous concerne tous : la gestion des versions de documents. Vous savez, ce moment où vous vous demandez : 'Qui a modifié quoi? Et quand?' ou 'Est-ce que j'ai la bonne version?' Copilot peut vous aider à y voir clair en quelques secondes.»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Comparer deux versions d'un document",
+      "subtitle": "Copilot vous montre ce qui a changé, pas juste un diff technique",
+      "speaker_notes": "Démo : ouvrir un document Word qui a plusieurs versions. Aller dans Fichier → Historique. Copilot propose un bouton «Comparer». Cliquer pour voir les différences. Mais mieux : dans le volet Copilot, demander directement «Qu'est-ce qui a changé depuis la version précédente?». Copilot vous donne un résumé en langage naturel : 'Le paragraphe 3 a été ajouté, la date de livraison est passée au 15 juin, et l'annexe B a été retirée.' Beaucoup plus clair qu'un diff de code rouge-vert!",
+      "bullets": [
+        "Ouvrir un document Word avec historique de versions",
+        "Utiliser le bouton «Comparer» dans l'historique",
+        "Ou demander à Copilot : «Qu'est-ce qui a changé?»"
+      ],
+      "cards": [
+        {
+          "title": "Prompts à essayer",
+          "color": "green",
+          "lines": [
+            "«Qu'est-ce qui a changé depuis ma dernière visite?»",
+            "«Montre-moi les modifications de [collègue]»",
+            "«Résume les 3 derniers changements»",
+            "«Qui a modifié la section sur le budget?»"
+          ],
+          "icon": "git-compare"
+        },
+        {
+          "title": "P1 et P2 — rassurant",
+          "color": "amber",
+          "lines": [
+            "Pas besoin de comprendre le suivi des modifications",
+            "Copilot traduit les différences en français clair",
+            "Utile après des allers-retours dans un document partagé",
+            "Fini le syndrome 'quelle est la bonne version?'"
+          ],
+          "icon": "file-text"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Restaurer une version antérieure",
+      "subtitle": "Rembobiner sans perdre le travail récent",
+      "speaker_notes": "Démo : ouvrir un document où quelqu'un a supprimé une section importante. Montrer l'historique des versions. Demander à Copilot : «Restaure la section qui parle du budget telle qu'elle était dans la version du 1er mai». Copilot peut identifier le contenu perdu et le réintégrer — sans restaurer tout le document. Insister : on peut restaurer du contenu spécifique, pas juste la version complète. C'est une réparation chirurgicale, pas un retour en arrière brutal.",
+      "bullets": [
+        "Ouvrir l'historique des versions (Fichier → Historique)",
+        "Demander à Copilot de retrouver du contenu spécifique",
+        "Coplier peut réintégrer UNE section sans restaurer TOUT le document"
+      ],
+      "cards": [
+        {
+          "title": "Prompts de restauration",
+          "color": "green",
+          "lines": [
+            "«Retrouve le paragraphe sur les échéances de la version du 15 mai»",
+            "«Réintègre la section supprimée sur la conformité»",
+            "«Quel était le montant budgétaire dans la version du 1er mai?»",
+            "«Restaure seulement l'annexe C de l'ancienne version»"
+          ],
+          "icon": "rotate-ccw"
+        },
+        {
+          "title": "Pourquoi c'est utile",
+          "color": "blue",
+          "lines": [
+            "Restauration chirurgicale, pas de tout le document",
+            "Section effacée par erreur? Copilot la retrouve",
+            "Modification non approuvée? Vue précise du changement",
+            "Idéal pour les documents à plusieurs contributeurs"
+          ],
+          "icon": "file-stack"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Suivre les modifications dans un document partagé",
+      "subtitle": "Soyez l'investigateur de votre document collaboratif",
+      "speaker_notes": "Démo : ouvrir un document partagé qui a été modifié par plusieurs collègues. Ouvrir le volet Copilot. Demander : «Qui a fait quoi et quand dans ce document?». Copilot peut retrouver les contributeurs, les dates et le type de modification. Très utile pour savoir qui a introduit une modification, vérifier qui a approuvé quoi, ou simplement comprendre l'évolution du document. Pensez à votre document de spécifications techniques — savoir que c'est Jean qui a modifié la section architecture la semaine dernière, ça change tout.",
+      "bullets": [
+        "Ouvrir un document partagé modifié par plusieurs personnes",
+        "Ouvrir le volet Copilot",
+        "Demander le suivi des modifications par contributeur et par période"
+      ],
+      "cards": [
+        {
+          "title": "Prompts de suivi",
+          "color": "green",
+          "lines": [
+            "«Résume les modifications de cette semaine»",
+            "«Qui a modifié la section architecture?»",
+            "«Liste les changements de [nom collègue]»",
+            "«Y a-t-il des modifications non résolues?»"
+          ],
+          "icon": "history"
+        },
+        {
+          "title": "Scénarios concrets",
+          "color": "amber",
+          "lines": [
+            "Document de spécifications — savoir qui a changé quoi",
+            "Procès-verbal de réunion — vérifier les actions",
+            "Offre de service — retracer les versions client/fournisseur",
+            "Rapport d'analyse — identifier les contributeurs"
+          ],
+          "icon": "file-clock"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — «Qu'est-ce qui a changé depuis ma dernière visite?»",
+      "subtitle": "Le prompt ultime pour reprendre un document",
+      "speaker_notes": "Démonstration : ouvrir un document quitté depuis une semaine. Dans le volet Copilot, taper le prompt magique : «Qu'est-ce qui a changé depuis ma dernière visite?». Copilot analyse l'historique, identifie votre dernier accès et résume TOUT ce qui a changé depuis. C'est le prompt à sauvegarder en QuickPart [CP] Dernière visite. Particulièrement utile pour P1 : pas besoin de tout relire, Copilot fait le tri pour vous.",
+      "bullets": [
+        "Prompt simple et universel : «Qu'est-ce qui a changé depuis ma dernière visite?»",
+        "Copilot détecte automatiquement votre dernier accès",
+        "Résumé complet des modifications : qui, quoi, quand"
+      ],
+      "cards": [
+        {
+          "title": "Sauvegardez-le!",
+          "color": "green",
+          "lines": [
+            "QuickPart recommandé :",
+            "«[CP] Dernière visite»",
+            "",
+            "Contenu du prompt :",
+            "«Qu'est-ce qui a changé",
+            "depuis ma dernière visite",
+            "dans ce document?»",
+            "",
+            "Utilisable dans Word et dans Outlook"
+          ],
+          "icon": "bookmark"
+        },
+        {
+          "title": "Variation utile",
+          "color": "blue",
+          "lines": [
+            "«Résume les changements des 7 derniers jours»",
+            "«Qu'est-ce qui a été ajouté depuis lundi?»",
+            "«Montre-moi uniquement les sections modifiées»",
+            "«Y a-t-il des commentaires non résolus?»"
+          ],
+          "icon": "message-square"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Les 3 astuces + le bonus",
+      "speaker_notes": "Récapitulation : (1) Comparer deux versions avec un résumé en français clair, (2) Restaurer une section spécifique sans tout rembobiner, (3) Suivre les modifications par contributeur. Bonus : le prompt «Qu'est-ce qui a changé depuis ma dernière visite?» — à sauvegarder dès maintenant!",
+      "cards": [
+        {
+          "title": "Comparer",
+          "desc": "Deux versions en un prompt",
+          "icon": "git-compare"
+        },
+        {
+          "title": "Restaurer",
+          "desc": "Section par section",
+          "icon": "rotate-ccw"
+        },
+        {
+          "title": "Suivre",
+          "desc": "Qui a fait quoi et quand",
+          "icon": "history"
+        }
+      ],
+      "bonus": "Créez votre QuickPart «[CP] Dernière visite» cette semaine — vous l'utiliserez plus souvent que vous ne le pensez!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

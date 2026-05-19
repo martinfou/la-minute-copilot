@@ -1,0 +1,281 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Copilot dans les réunions Teams",
+  "author": "Martin Fournier",
+  "date": "2026-07-06",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Copilot dans les réunions Teams",
+      "footer": "Résumé automatique · Action items · Rattrapage · Questions en direct · 3 astuces",
+      "speaker_notes": "Accueil: «Bonjour à tous! Vous arrive-t-il de sortir d'une réunion Teams de 60 minutes en vous demandant 'Mais qu'est-ce qui a été décidé exactement?' Ou pire — vous avez manqué la réunion. Aujourd'hui on voit comment Copilot s'occupe du compte rendu PENDANT la réunion pour que vous, vous vous concentriez sur la conversation.»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Activer Copilot dans une réunion Teams",
+      "subtitle": "Enregistrement + transcription = Copilot peut travailler",
+      "speaker_notes": "Démo: dans une réunion Teams en cours, montrer l'icône Copilot dans la barre de contrôle. Cliquer sur «Notes et tâches Copilot». Insister sur le prérequis: l'organisateur doit activer l'enregistrement ou la transcription. Sans ça, Copilot ne peut pas fonctionner. Montrer comment vérifier: ... ou ... dans la réunion → Enregistrer et transcrire. Rôle de l'organisateur: c'est lui qui décide d'activer les fonctionnalités Copilot comme «Recap» avant même la réunion.",
+      "bullets": [
+        "L'organisateur doit activer l'enregistrement ou la transcription AVANT la réunion",
+        "Pendant la réunion: cliquer sur l'icône Copilot → «Notes et tâches Copilot»",
+        "Copilot suit la conversation en temps réel — pas besoin de prendre des notes"
+      ],
+      "cards": [
+        {
+          "title": "Prérequis",
+          "color": "amber",
+          "lines": [
+            "L'organisateur active",
+            "Enregistrer et transcrire",
+            "avant ou au début",
+            "de la réunion",
+            "",
+            "Copilot ne fonctionne",
+            "que si la transcription",
+            "est active",
+            "",
+            "Les participants voient",
+            "un avis de transcription"
+          ],
+          "icon": "video"
+        },
+        {
+          "title": "Pendant la réunion",
+          "color": "green",
+          "lines": [
+            "Barre de contrôle →",
+            "icône Copilot (✨)",
+            "",
+            "Options disponibles:",
+            "• «Que dit-on de moi?»",
+            "• «Résume la conversation»",
+            "• «Quelles décisions»",
+            "  ont été prises?»",
+            "• «Quels sont les",
+            "  points en suspens?»"
+          ],
+          "icon": "headphones"
+        },
+        {
+          "title": "Conseil TI",
+          "color": "blue",
+          "lines": [
+            "Politique de l'institution:",
+            "vérifiez si la transcription",
+            "est autorisée pour les",
+            "réunions avec clients",
+            "ou sujets sensibles",
+            "",
+            "Par défaut: activée",
+            "pour les réunions",
+            "internes d'équipe"
+          ],
+          "icon": "shield-check"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Obtenir le résumé et les action items après la réunion",
+      "subtitle": "La réunion est finie, le compte rendu apparaît tout seul",
+      "speaker_notes": "Démo: après la réunion, montrer le récapitulatif automatique dans le canal Teams ou dans l'onglet Détails de la réunion dans le calendrier Outlook. Montrer les sections: résumé, chapitres, action items, prochaines réunions. Insister sur la valeur: plus besoin de prendre des notes pendant la réunion — Copilot le fait pour vous. Personne ne note plus rien (ou presque). Conseiller aux P1 d'ouvrir systématiquement le recap après chaque réunion pour s'habituer.",
+      "bullets": [
+        "Le récapitulatif Copilot apparaît automatiquement dans le canal ou le calendrier Outlook",
+        "Sections clés: résumé, chapitres, action items, speakers par thème",
+        "Les action items sont cliquables — vous pouvez les assigner à quelqu'un directement"
+      ],
+      "cards": [
+        {
+          "title": "Où trouver le recap",
+          "color": "green",
+          "lines": [
+            "1. Dans le canal Teams:",
+            "   onglet «Récapitulatif»",
+            "",
+            "2. Dans le calendrier Outlook:",
+            "   ouvrir l'invitation →",
+            "   onglet «Récapitulatif de",
+            "   la réunion»",
+            "",
+            "3. Dans le chat de la",
+            "   réunion Teams:",
+            "   lien vers le recap"
+          ],
+          "icon": "file-text"
+        },
+        {
+          "title": "Ce que contient le recap",
+          "color": "blue",
+          "lines": [
+            "Résumé automatique en",
+            "quelques phrases",
+            "",
+            "Chapitres par sujet:",
+            "«On a parlé de X de",
+            "0:00 à 5:23, puis de Y»",
+            "",
+            "Action items avec",
+            "personne assignée",
+            "",
+            "Prochaine étape:",
+            "date de la prochaine",
+            "réunion ou échéance"
+          ],
+          "icon": "list-checks"
+        },
+        {
+          "title": "Rappel important",
+          "color": "amber",
+          "lines": [
+            "Copilot fait le résumé",
+            "— c'est VOUS qui",
+            "validez avant de",
+            "partager!",
+            "",
+            "Relisez toujours le",
+            "recap avant de",
+            "l'envoyer à quelqu'un",
+            "qui n'était pas présent"
+          ],
+          "icon": "eye"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Rattraper une réunion manquée",
+      "subtitle": "15 minutes de lecture au lieu de 60 minutes d'écoute",
+      "speaker_notes": "Démo: ouvrir l'invitation de la réunion manquée dans le calendrier Outlook. Montrer le récapitulatif Copilot. Expliquer qu'on peut même poser des questions spécifiques: «Est-ce que mon nom a été mentionné?», «Quelle décision a été prise sur le budget?», «Qu'est-ce que j'ai manqué?». C'est comme avoir un assistant qui vous résume ce que vous avez raté. Insister: c'est l'une des fonctionnalités les plus appréciées par ceux qui reviennent de congé ou qui ont des réunions en parallèle.",
+      "bullets": [
+        "Ouvrir l'invitation dans le calendrier Outlook → récapitulatif Copilot",
+        "Poser des questions spécifiques via le volet Copilot: «Qu'est-ce que j'ai manqué?»",
+        "Voir les action items assignés aux autres membres de l'équipe"
+      ],
+      "cards": [
+        {
+          "title": "Questions de rattrapage",
+          "color": "green",
+          "lines": [
+            "«Résume la réunion en",
+            "3 points clés»",
+            "",
+            "«Est-ce que mon nom",
+            "a été mentionné ?",
+            "Dans quel contexte?»",
+            "",
+            "«Quelles décisions ont",
+            "été prises sur le",
+            "projet X?»",
+            "",
+            "«Quels sont les action",
+            "items et qui est",
+            "responsable?»"
+          ],
+          "icon": "message-square-quote"
+        },
+        {
+          "title": "Scénarios gagnants",
+          "color": "blue",
+          "lines": [
+            "Retour de vacances:",
+            "rattrapez 5 réunions",
+            "en 15 minutes",
+            "",
+            "Réunions en parallèle:",
+            "choisissez l'une des",
+            "deux, rattrapez l'autre",
+            "",
+            "Absence imprévue:",
+            "vous savez tout ce",
+            "qui s'est dit",
+            "",
+            "Gestionnaires: suivez",
+            "plusieurs équipes sans",
+            "assister à toutes les",
+            "réunions"
+          ],
+          "icon": "clock"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Les questions à poser à Copilot PENDANT une réunion",
+      "subtitle": "Copilot en mode discret — vous posez des questions sans déranger personne",
+      "speaker_notes": "Le bonus le plus utile: pendant la réunion, ouvrez le volet Copilot et posez des questions en SILENCE. Copilot répond dans le volet, PERSONNE ne voit ce que vous avez demandé. C'est particulièrement utile quand: le sujet dévie et vous avez perdu le fil; quelqu'un cite un document que vous n'avez pas; une décision est prise rapidement et vous voulez la note. Rappeler aux P2: c'est un filet de sécurité — si vous avez peur de manquer quelque chose, Copilot est là.",
+      "bullets": [
+        "Ouvrir Copilot dans le volet latéral pendant la réunion — personne ne voit vos questions",
+        "Poser des questions discrètes sur ce qui vient d'être dit",
+        "Copilot répond en privé — idéal pour les réunions où on n'ose pas interrompre"
+      ],
+      "cards": [
+        {
+          "title": "Questions utiles en direct",
+          "color": "green",
+          "lines": [
+            "«Résume ce qui a été dit",
+            "dans les 5 dernières",
+            "minutes»",
+            "",
+            "«Quels sont les sujets",
+            "déjà couverts?»",
+            "",
+            "«Qu'est-ce que [Nom]",
+            "vient de dire exactement?»",
+            "",
+            "«Est-ce que quelqu'un",
+            "a mentionné une date",
+            "de livraison?»",
+            "",
+            "«Note la décision sur",
+            "le budget dans mes notes»"
+          ],
+          "icon": "info"
+        },
+        {
+          "title": "Pourquoi c'est génial",
+          "color": "blue",
+          "lines": [
+            "Pour les anxieux (P2):",
+            "vous suivez SANS",
+            "peur de rater",
+            "",
+            "Pour les introvertis:",
+            "pas besoin d'interrompre",
+            "",
+            "Pour tous: Copilot",
+            "note pendant que",
+            "vous écoutez"
+          ],
+          "icon": "sparkles"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Les 3 astuces + le bonus",
+      "speaker_notes": "Résumé: activez la transcription pour que Copilot suive la réunion; après la réunion, le recap apparaît dans le calendrier ou le canal; si vous manquez la réunion, posez des questions à Copilot dans le recap. Bonus: en réunion, Copilot répond à vos questions en privé. Défi: lors de votre prochaine réunion d'équipe, activez Copilot et posez-lui UNE question en silence. Vous verrez, c'est magique!",
+      "cards": [
+        {
+          "title": "Activer",
+          "desc": "Transcription activée\n→ Copilot suit la réunion",
+          "icon": "video"
+        },
+        {
+          "title": "Après la réunion",
+          "desc": "Recap + action items\ndans le calendrier Outlook",
+          "icon": "file-text"
+        },
+        {
+          "title": "Rattrapage",
+          "desc": "Questions à Copilot\n15 min au lieu de 60",
+          "icon": "clock"
+        }
+      ],
+      "bonus": "Défi: Lors de votre prochaine réunion, ouvrez Copilot en silence et posez-lui UNE question!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

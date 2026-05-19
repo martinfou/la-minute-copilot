@@ -1,0 +1,209 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Copilot dans Word",
+  "author": "Martin Fournier",
+  "date": "2026-05-31",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Copilot dans Word",
+      "footer": "Rédaction, révision, résumé, plan • Votre assistant de rédaction IA dans Word",
+      "speaker_notes": "Accueil : «Bonjour à tous! Cette semaine, on plonge dans Copilot dans Word. Rédiger un document, réviser le ton, résumer un rapport de 50 pages, générer un plan... Tout ça en langage naturel, sans toucher à la mise en page. Que vous soyez débutant ou expert, vous allez adorer!»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Rédiger un document à partir d'un prompt détaillé",
+      "subtitle": "Décrivez ce que vous voulez, Copilot écrit le document complet",
+      "speaker_notes": "Démo : ouvrir Word, document vierge, cliquer sur l'icône Copilot dans le ruban. Dans le volet, taper : «Rédige une note de service sur les nouvelles mesures de sécurité TI pour le personnel, format professionnel, 3 sections : contexte, mesures, prochaines étapes». Montrer le résultat quasi instantané. Insister : plus le prompt est détaillé, meilleur est le résultat. Pas besoin d'être un expert en rédaction — décrivez ce que vous voulez!",
+      "bullets": [
+        "Ouvrir Word → cliquer sur l'icône Copilot dans le ruban",
+        "Décrire le document souhaité : sujet, audience, ton, sections",
+        "Copilot génère le contenu directement dans le document"
+      ],
+      "cards": [
+        {
+          "title": "Exemples de prompts",
+          "color": "green",
+          "lines": [
+            "«Rédige une note de service sur",
+            "les nouvelles mesures de sécurité",
+            "TI, style professionnel, 3 sections»",
+            "",
+            "«Écris un rapport d'incident",
+            "informatique pour la direction, ton",
+            "formel, avec causes et solutions»",
+            "",
+            "«Rédige un billet d'information",
+            "interne sur le déploiement",
+            "M365, ton accessible, 2 paragraphes»"
+          ],
+          "icon": "file-text"
+        },
+        {
+          "title": "Recette gagnante",
+          "color": "blue",
+          "lines": [
+            "1. Sujet — de quoi parle le doc",
+            "2. Audience — qui va le lire",
+            "3. Ton — professionnel, informel",
+            "4. Structure — sections, longueur",
+            "",
+            "Plus de détails = meilleur résultat"
+          ],
+          "icon": "list-ordered"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Réviser et améliorer le ton",
+      "subtitle": "Votre texte existe déjà? Copilot l'améliore en un clic",
+      "speaker_notes": "Démo : sélectionner un paragraphe existant dans le document. Cliquer sur l'icône Copilot qui apparaît à gauche de la sélection. Choisir «Réécrire» → Copilot propose des alternatives. Montrer les options : professionnel, concis, créatif, informel. Insister : «C'est magique pour les courriels importants, les rapports de conformité, ou quand vous voulez juste qu'un texte sonne mieux sans tout réécrire.» Pour P1 : le meilleur point d'entrée. Pour P2 : fini l'anxiété du «est-ce que c'est bien écrit?».",
+      "bullets": [
+        "Sélectionner le texte à améliorer dans Word",
+        "Cliquer sur l'icône Copilot (s'affiche à gauche de la sélection)",
+        "Choisir «Réécrire» ou «Ajuster le ton» — plusieurs options disponibles"
+      ],
+      "cards": [
+        {
+          "title": "Réécrire (même contenu)",
+          "color": "green",
+          "lines": [
+            "«Rends ça plus professionnel»",
+            "«Rends ça plus concis»",
+            "«Rends ça plus créatif»",
+            "«Rends ça plus informel»",
+            "",
+            "Même message, ton différent"
+          ],
+          "icon": "pen-line"
+        },
+        {
+          "title": "Améliorer (contenu +)",
+          "color": "blue",
+          "lines": [
+            "Ajouter un exemple concret",
+            "Clarifier une explication",
+            "Ajouter une citation",
+            "Ajouter des statistiques",
+            "",
+            "Idéal pour valider votre texte"
+          ],
+          "icon": "sparkles"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Résumer un document long",
+      "subtitle": "Rapport de 50 pages → résumé de 3 puces en 5 secondes",
+      "speaker_notes": "Démo : ouvrir un long document Word (rapport, politique, manuel). Ouvrir le volet Copilot. Taper : «Résume ce document en 3 puces. Quels sont les points clés?». Montrer le résumé instantané. Puis montrer des variations : «Quels sont les risques identifiés?», «Qui sont les personnes responsables?», «Quelles sont les échéances?». Insister : pour les P2 qui reçoivent des documents intimidants de 30 pages — plus d'excuse!",
+      "bullets": [
+        "Ouvrir le document long dans Word",
+        "Ouvrir le volet Copilot (icône dans le ruban à droite)",
+        "Demander un résumé ou une information spécifique"
+      ],
+      "cards": [
+        {
+          "title": "Prompts de résumé",
+          "color": "green",
+          "lines": [
+            "«Résume ce document en 5 points clés»",
+            "«Quels sont les risques mentionnés?»",
+            "«Donne les échéances et dates limites»",
+            "«Qui sont les intervenants?»"
+          ],
+          "icon": "list"
+        },
+        {
+          "title": "Scénarios concrets",
+          "color": "amber",
+          "lines": [
+            "Politique institutionnelle de 40 pages",
+            "Rapport d'audit trimestriel",
+            "Cahier de charge d'un projet TI",
+            "Manuel de procédures ITSM",
+            "",
+            "Gain : 30 minutes par document!"
+          ],
+          "icon": "clock"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Générer un plan de document",
+      "subtitle": "Commencez par le plan, Copilot remplit les sections ensuite",
+      "speaker_notes": "Démo : ouvrir un document vierge. Dans le volet Copilot, taper : «Propose un plan pour un guide de migration de Windows 10 vers Windows 11 destiné aux utilisateurs. Inclus : introduction, préparation, installation, post-migration, FAQ». Copilot génère le plan structuré avec titres de section et sous-sections. Cliquer sur «Ajouter au document». Ensuite, section par section, demander à Copilot de rédiger. Montrer un exemple complet. Proposer de sauvegarder son meilleur prompt de plan dans OneNote ou QuickPart.",
+      "bullets": [
+        "Commencez par un prompt décrivant la structure souhaitée",
+        "Copilot génère un plan structuré avec titres et sous-sections",
+        "Cliquez «Ajouter au document» → le plan apparaît directement dans Word"
+      ],
+      "cards": [
+        {
+          "title": "Exemple de prompt",
+          "color": "blue",
+          "lines": [
+            "«Propose un plan pour un guide",
+            "de migration W10 vers W11 pour",
+            "les utilisateurs non techniques.",
+            "",
+            "Inclus :",
+            "1. Introduction (pourquoi migrer)",
+            "2. Préparation (avant la migration)",
+            "3. Installation (étape par étape)",
+            "4. Post-migration (vérifications)",
+            "5. FAQ et dépannage rapide»"
+          ],
+          "icon": "layout-template"
+        },
+        {
+          "title": "Pourquoi c'est puissant",
+          "color": "green",
+          "lines": [
+            "Le plan = 50% du travail",
+            "Copilot structure la pensée",
+            "Plus de page blanche angoissante",
+            "Sections déjà numérotées",
+            "",
+            "Ensuite : section par section,",
+            "demandez la rédaction"
+          ],
+          "icon": "lightbulb"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Les 3 astuces + le bonus",
+      "speaker_notes": "Récapitulation : rédiger un document complet, réviser le ton, résumer des documents longs, générer un plan. Défi de la semaine : prendre un document existant (même un petit), sélectionner un paragraphe et essayer les options «Réécrire» et «Ajuster le ton». Vous verrez la différence en 10 secondes!",
+      "cards": [
+        {
+          "title": "Rédiger",
+          "desc": "Décrivez → Copilot écrit",
+          "icon": "file-text"
+        },
+        {
+          "title": "Réviser",
+          "desc": "Sélection → Ajuster le ton",
+          "icon": "pen-line"
+        },
+        {
+          "title": "Résumer",
+          "desc": "50 pages en 3 puces",
+          "icon": "list"
+        },
+        {
+          "title": "Planifier",
+          "desc": "Plan de doc en un prompt",
+          "icon": "layout-template"
+        }
+      ],
+      "bonus": "Défi: Créez un plan de document avec Copilot cette semaine — de la page blanche au plan en 10 secondes!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

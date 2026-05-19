@@ -1,0 +1,212 @@
+{
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json",
+  "title": "La minute Copilot",
+  "subtitle": "Copilot pour les nouveaux employés",
+  "author": "Martin Fournier",
+  "date": "2026-05-24",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Copilot pour les nouveaux employés",
+      "footer": "3 astuces pour les nouveaux collègues • Un allié pour l'intégration",
+      "speaker_notes": "Accueil : «Bonjour à tous! Aujourd'hui, on parle des nouveaux collègues. Quand on arrive dans une nouvelle équipe, c'est beaucoup d'information en peu de temps. Saviez-vous que Copilot peut vous aider à intégrer plus vite? Pas besoin d'attendre qu'un collègue soit disponible — Copilot répond à vos questions en quelques secondes. C'est votre meilleur allié pour les premières semaines!»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Rattraper l'historique d'un projet",
+      "subtitle": "Comprendre le contexte sans lire 400 courriels",
+      "speaker_notes": "Démo : ouvrir un fil Teams ou un dossier Outlook d'un projet existant. Montrer le volet Copilot. Taper : «Résume l'historique de ce projet : qui sont les intervenants, les grandes étapes et l'état actuel». Montrer la réponse structurée. Insister : «C'est comme avoir un collègue qui vous fait un 5 à 7 en 30 secondes — sans café!»",
+      "bullets": [
+        "Ouvrir le fil de discussion Teams ou les courriels du projet",
+        "Ouvrir le volet Copilot et demander un résumé de l'historique",
+        "Identifiez les intervenants, les décisions passées et l'état actuel"
+      ],
+      "cards": [
+        {
+          "title": "Prompts pour l'historique",
+          "color": "green",
+          "lines": [
+            "«Résume l'historique de ce projet :",
+            "intervenants, étapes et statut actuel»",
+            "",
+            "«Quelles décisions ont été prises",
+            "dans les 3 derniers mois?»",
+            "",
+            "«Qui est responsable de quoi",
+            "dans ce dossier?»"
+          ],
+          "icon": "folder-clock"
+        },
+        {
+          "title": "Pourquoi c'est utile",
+          "color": "amber",
+          "lines": [
+            "Arriver préparé aux réunions : vous savez déjà où on en est",
+            "Comprendre les dynamiques d'équipe sans les non-dits",
+            "Gagner des heures : 30 secondes au lieu de 2 heures de lecture",
+            "",
+            "Indispensable aussi pour les",
+            "retours de congé ou changement de poste"
+          ],
+          "icon": "rocket"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Comprendre la structure de l'organisation",
+      "subtitle": "Qui fait quoi? Copilot vous guide dans l'organigramme",
+      "speaker_notes": "Démo : ouvrir le volet Copilot dans Outlook. Demander : «Quelle est la structure de l'équipe TI et qui sont les gestionnaires?» Montrer la réponse générée à partir du catalogue et des courriels. Ajouter : «On peut aussi demander : À qui dois-je parler pour [sujet]?» Rappeler que Copilot utilise l'index sémantique M365 — vos données d'org, les profils et les structures d'équipe sont accessibles (dans la limite de vos permissions).",
+      "bullets": [
+        "Copilot exploite l'annuaire M365, le catalogue Teams et votre boîte courriel",
+        "Demandez en langage naturel pour naviguer l'organisation",
+        "Identifiez rapidement les bons interlocuteurs sans déranger tout le monde"
+      ],
+      "cards": [
+        {
+          "title": "Prompts organisation",
+          "color": "green",
+          "lines": [
+            "«Quelle est la structure de l'équipe",
+            "des opérations TI?»",
+            "",
+            "«À qui dois-je parler pour un",
+            "problème d'accès réseau?»",
+            "",
+            "«Qui sont les gestionnaires dans",
+            "le secteur conformité?»"
+          ],
+          "icon": "building-2"
+        },
+        {
+          "title": "Pour les nouveaux (et les autres)",
+          "color": "blue",
+          "lines": [
+            "Nouveau : savoir qui contacter sans demander 3 fois",
+            "Nouveau : comprendre l'orgue sans lire un PowerPoint de 50 pages",
+            "Établi : trouver un interlocuteur dans un service qu'on ne côtoie pas",
+            "",
+            "Copilot devient votre bottin intelligent"
+          ],
+          "icon": "users"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Poser des questions sur les politiques et procédures",
+      "subtitle": "Consultez la base de connaissances sans déranger les collègues",
+      "speaker_notes": "Démo : ouvrir le volet Copilot. Taper : «Quelle est la politique de télétravail pour notre département?» Montrer la réponse. Préciser : Copilot cherche dans SharePoint, OneDrive, Teams et les fichiers partagés auxquels vous avez accès — si la politique est en ligne quelque part dans M365, Copilot la trouve. Insister sur l'avantage humain : on peut poser 20 questions sans sentir qu'on dérange. Idéal pour les premières semaines où on ne veut pas «embêter» les collègues à chaque minute.",
+      "bullets": [
+        "Ouvrir le volet Copilot dans n'importe quelle app M365",
+        "Posez vos questions directement : politiques, procédures, gabarits",
+        "Copilot cherche dans SharePoint, Teams et OneDrive là où vous avez accès"
+      ],
+      "cards": [
+        {
+          "title": "Questions pour les nouveaux",
+          "color": "green",
+          "lines": [
+            "«Quelle est la procédure pour",
+            "demander un accès VPN?»",
+            "",
+            "«Où trouver le gabarit de demande",
+            "d'achat TI?»",
+            "",
+            "«Quels sont les horaires de",
+            "disponibilité du soutien technique?»"
+          ],
+          "icon": "file-question"
+        },
+        {
+          "title": "L'avantage humain",
+          "color": "amber",
+          "lines": [
+            "Poser toutes ses questions sans gêne",
+            "Obtenir une réponse complète en 10 secondes",
+            "Réduire l'anxiété des premières semaines",
+            "Libérer le temps des collègues qui répondent aux mêmes questions 5 fois",
+            "",
+            "Copilot est patient. Lui, on peut",
+            "lui poser la même question 3 fois!"
+          ],
+          "icon": "smile-plus"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Votre prompt-magique pour débarquer dans un projet",
+      "speaker_notes": "Défi de la semaine : la prochaine fois que vous arrivez dans un nouveau dossier, utilisez ce prompt. Enregistrez-le en QuickPart avec le nom «[CP] Démarrer projet». Ça vous servira chaque fois que vous héritez d'un projet existant. Montrer une dernière fois le prompt complet.",
+      "bullets": [
+        "Utilisez ce prompt dès que vous arrivez dans un nouveau projet, dossier ou équipe",
+        "Sauvegardez-le en QuickPart dans Outlook pour le réutiliser",
+        "Partagez-le à vos collègues qui intègrent de nouvelles équipes"
+      ],
+      "cards": [
+        {
+          "title": "Le prompt de démarrage",
+          "color": "blue",
+          "lines": [
+            "«Résume ce que je dois savoir",
+            "sur ce projet en 5 points :",
+            "1. Nom et objectif",
+            "2. Intervenants principaux",
+            "3. État d'avancement actuel",
+            "4. Prochaines échéances",
+            "5. Où trouver les documents clés»",
+            "",
+            "À sauvegarder :",
+            "QuickPart «[CP] Démarrer projet»"
+          ],
+          "icon": "wand-2"
+        },
+        {
+          "title": "Variantes selon le contexte",
+          "color": "green",
+          "lines": [
+            "«Résume les 5 décisions les plus",
+            "importantes prises dans ce dossier»",
+            "",
+            "«Quels sont les risques actuels",
+            "de ce projet?»",
+            "",
+            "«Qui contacter pour chaque",
+            "volet de ce projet?»"
+          ],
+          "icon": "list"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "3 astuces + le bonus pour bien commencer",
+      "speaker_notes": "Récapitulation : historique de projet en 30 secondes, naviguer la structure de l'organisation, poser toutes ses questions sans déranger. Et le bonus : le prompt «5 points» pour démarrer n'importe quel projet. Message de la semaine : «Copilot est votre meilleur allié pour intégrer — n'ayez pas peur de poser des questions, Copilot ne juge pas!»",
+      "cards": [
+        {
+          "title": "Historique projet",
+          "desc": "30 s au lieu de 2 h",
+          "icon": "folder-clock"
+        },
+        {
+          "title": "Structure org",
+          "desc": "Qui fait quoi sans gêne",
+          "icon": "building-2"
+        },
+        {
+          "title": "Politiques",
+          "desc": "Questions sans déranger",
+          "icon": "file-question"
+        },
+        {
+          "title": "Prompt 5 points",
+          "desc": "Démarrer tout projet",
+          "icon": "wand-2"
+        }
+      ],
+      "bonus": "Défi : Sauvegardez le prompt «5 points» en QuickPart et utilisez-le dès votre prochain projet!",
+      "footer": "La minute Copilot — À la semaine prochaine! 👋"
+    }
+  ]
+}

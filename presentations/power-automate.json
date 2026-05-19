@@ -1,0 +1,188 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Copilot et Power Automate",
+  "author": "Martin Fournier",
+  "date": "2026-06-16",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Copilot et Power Automate",
+      "footer": "3 astuces • Automatisation • Power Automate • Saison 2",
+      "speaker_notes": "Accueil : «Bonjour à tous! Aujourd'hui, on parle d'automatisation avec Copilot et Power Automate. Si le mot 'automatisation' vous fait peur, rassurez-vous : on ne va pas coder. Power Automate, c'est comme expliquer à un assistant ce que vous voulez en français, et il crée l'automatisation pour vous. Copilot est là pour vous guider et même écrire les étapes à votre place. P1, P2, P3, tout le monde est bienvenu!»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Décrire un flux en langage naturel",
+      "subtitle": "Parlez à Power Automate comme vous parleriez à un collègue",
+      "speaker_notes": "Démo : ouvrir Power Automate. Cliquer sur «Créer un flux automatisé». Montrer la nouvelle option «Décrire un flux» avec Copilot. Taper : «Quand je reçois un courriel avec une pièce jointe, sauvegarde la pièce jointe dans OneDrive et envoie-moi un message Teams». Copilot crée le flux automatiquement : déclencheur, actions, paramètres. Pas une seule ligne de code. Montrer la surprise de voir à quel point c'est simple. Insister : si vous savez décrire ce que vous voulez, Power Automate peut le faire.",
+      "bullets": [
+        "Ouvrir Power Automate → Nouveau flux → Décrire un flux",
+        "Taper ce qu'on veut en langage naturel",
+        "Copilot génère le flux complet : déclencheur + actions + conditions"
+      ],
+      "cards": [
+        {
+          "title": "Exemples de descriptions",
+          "color": "green",
+          "lines": [
+            "«Quand je reçois un courriel de mon gestionnaire, envoie-moi une notification mobile»",
+            "«Sauvegarde automatiquement les pièces jointes dans OneDrive et crée un lien dans le courriel»",
+            "«Quand un document est modifié dans SharePoint, envoie un courriel à l'équipe»",
+            "«Le premier du mois, crée un dossier dans Teams pour les rapports mensuels»"
+          ],
+          "icon": "message-square"
+        },
+        {
+          "title": "P1 — rassurant",
+          "color": "amber",
+          "lines": [
+            "Zéro code. Aucune programmation.",
+            "Décrivez ce que vous voulez, Copilot construit le flux",
+            "Si le flux ne fonctionne pas, vous pouvez le modifier visuellement",
+            "Les connecteurs (Outlook, Teams, OneDrive) sont pré-intégrés"
+          ],
+          "icon": "thumbs-up"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Automatiser les approbations de documents",
+      "subtitle": "Fini les chaînes de courriels pour une signature",
+      "speaker_notes": "Démo : créer un flux d'approbation. Dans Copilot, taper : «Quand un document est déposé dans le dossier Approbations SharePoint, envoie une demande d'approbation au gestionnaire, et si approuvé, déplace le document dans le dossier Approuvé et envoie un courriel de confirmation». Montrer le flux généré avec l'étape d'approbation. Insister : c'est un processus qui prenait 5 courriels et 2 jours de délai, automatisé en 1 minute de configuration. Particulièrement utile dans un environnement TI avec des demandes de changement, des approbations de code ou des validations de documentation.",
+      "bullets": [
+        "Décrire le flux d'approbation à Copilot",
+        "Copilot crée les étapes : déclencheur → approbation → action conditionnelle",
+        "Tout se fait sans intervention manuelle une fois le flux lancé"
+      ],
+      "cards": [
+        {
+          "title": "Cas d'usage TI",
+          "color": "green",
+          "lines": [
+            "Approbation de demandes de changement",
+            "Validation de documentation technique",
+            "Approbation de congés et dépenses",
+            "Revue de code ou de spécifications",
+            "",
+            "Gagnez des jours sur chaque cycle d'approbation"
+          ],
+          "icon": "workflow"
+        },
+        {
+          "title": "Comment ça marche",
+          "color": "blue",
+          "lines": [
+            "Déclencheur : nouveau fichier, nouveau courriel, nouveau formulaire",
+            "Action : demande d'approbation par Teams ou courriel",
+            "Condition : si approuvé → action A / si refusé → action B",
+            "Notification : courriel, Teams, mobile"
+          ],
+          "icon": "zap"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Créer des alertes intelligentes",
+      "subtitle": "Soyez averti de ce qui compte vraiment, pas de tout",
+      "speaker_notes": "Démo : créer une alerte intelligente. Prompt dans Copilot : «Surveille ma boîte de réception et envoie-moi un résumé chaque matin des courriels marqués comme urgents et des courriels de mon gestionnaire». Copilot crée un flux qui : (1) vérifie les nouveaux courriels, (2) filtre par importance et expéditeur, (3) compile un résumé, (4) envoie un message Teams ou un courriel récapitulatif. Montrer la différence avec une alerte stupide qui notifie sur TOUT. Avec Copilot + Power Automate, vous créez des alertes contextuelles qui comprennent le contenu, pas juste l'objet.",
+      "bullets": [
+        "Décrire le critère d'alerte à Copilot",
+        "Copilot configure le déclencheur et les conditions de filtrage",
+        "L'alerte s'adapte au contenu, pas juste aux champs"
+      ],
+      "cards": [
+        {
+          "title": "Exemples d'alertes intelligentes",
+          "color": "green",
+          "lines": [
+            "«Alerte-moi quand un courriel parle d'incident critique»",
+            "«Résume chaque matin mes courriels non lus importants»",
+            "«Notifie-moi sur Teams quand une date d'échéance approche»",
+            "«Envoie un SMS si un ticket de priorité haute est créé»"
+          ],
+          "icon": "bell"
+        },
+        {
+          "title": "Pourquoi c'est puissant",
+          "color": "amber",
+          "lines": [
+            "Filtrage intelligent : Copilot comprend le CONTENU, pas juste les mots-clés",
+            "Notifications contextualisées : un résumé, pas un ping à chaque courriel",
+            "Multi-canal : Teams, courriel, mobile, SMS",
+            "Configurable en 30 secondes, applicable à vie"
+          ],
+          "icon": "brain"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — «Envoie-moi un résumé quotidien de mes courriels urgents»",
+      "subtitle": "Le prompt parfait pour commencer avec Power Automate",
+      "speaker_notes": "Démonstration : taper ce prompt exact dans Power Automate avec Copilot : «Tous les matins à 8h, prends mes courriels non lus de la veille marqués comme urgents ou venant de mon gestionnaire, crée un résumé dans Teams avec les actions à prendre». Montrer le flux généré pas à pas. Insister que c'est le premier flux à créer pour voir la puissance de l'outil. P1 : c'est le flux le plus simple à configurer. P2 : vous verrez tout de suite la valeur. P3 : vous pouvez ajouter des conditions avancées.",
+      "bullets": [
+        "Le prompt parfait pour un premier flux : «Résumé quotidien de mes courriels urgents dans Teams»",
+        "Déclencheur planifié : tous les matins à 8h",
+        "Résultat : un message Teams prêt à lire avant votre café"
+      ],
+      "cards": [
+        {
+          "title": "Prompt complet à copier",
+          "color": "green",
+          "lines": [
+            "«Tous les matins à 8h,",
+            "vérifie mes courriels non lus",
+            "marqués urgents ou de mon",
+            "gestionnaire, crée un résumé",
+            "et envoie-le dans Teams",
+            "avec les actions à prendre.»",
+            "",
+            "Copiez, collez, c'est fait!"
+          ],
+          "icon": "clipboard-list"
+        },
+        {
+          "title": "Les ingrédients du succès",
+          "color": "blue",
+          "lines": [
+            "Déclencheur planifié (récurrence)",
+            "Filtrage Copilot (contenu intelligent)",
+            "Action Teams ou courriel (livraison)",
+            "",
+            "15 minutes de configuration",
+            "Des heures d'économisées par mois"
+          ],
+          "icon": "zap"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Les 3 astuces + le bonus",
+      "speaker_notes": "Récapitulation : (1) Décrire un flux en langage naturel — aucun code requis, (2) Automatiser les approbations de documents — fini les chaînes de courriels, (3) Créer des alertes intelligentes qui comprennent le contenu. Bonus : le résumé quotidien de courriels urgents dans Teams. Défi : créez votre premier flux cette semaine avec le prompt du bonus — 15 minutes et vous verrez la différence!",
+      "cards": [
+        {
+          "title": "Décrire",
+          "desc": "Langage naturel → flux",
+          "icon": "message-square"
+        },
+        {
+          "title": "Approbations",
+          "desc": "Automatisé sans courriels",
+          "icon": "workflow"
+        },
+        {
+          "title": "Alertes",
+          "desc": "Intelligentes et contextuelles",
+          "icon": "bell"
+        }
+      ],
+      "bonus": "Défi : créez votre premier flux Power Automate cette semaine avec le prompt «Envoie-moi un résumé quotidien de mes courriels urgents»!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

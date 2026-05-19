@@ -1,0 +1,212 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Copilot dans Excel",
+  "author": "Martin Fournier",
+  "date": "2026-06-07",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Copilot dans Excel",
+      "footer": "Analyse de données, formules complexes, tendances et anomalies • Pour TI mais surtout pour non-TI",
+      "speaker_notes": "Accueil : «Bonjour tout le monde! Aujourd'hui, Copilot dans Excel. Et je sais ce que certains pensent : 'Excel et l'IA, c'est pour les analystes financiers, pas pour moi.' Détrompez-vous! Copilot rend Excel accessible à tout le monde — même si vos formules se limitent à SOMME et SI. Analyse de données, formules complexes, tendances et graphiques : tout en français!»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Analyser des données avec un prompt",
+      "subtitle": "Posez une question sur vos données, Copilot répond",
+      "speaker_notes": "Démo : ouvrir un fichier Excel avec des données (ex. : suivi de tickets, budget, inventaire). Cliquer sur l'icône Copilot dans le ruban «Accueil». Le volet s'ouvre à droite. Taper : «Analyse ces données et donne-moi les tendances principales». Montrer la réponse. Insister : pas besoin d'être data analyst — demandez en français ce que vous voulez savoir. Idéal pour P1 qui ne sait pas quoi faire de ses colonnes de données!",
+      "bullets": [
+        "Ouvrir un fichier Excel avec des données structurées",
+        "Cliquer sur l'icône Copilot (ruban Accueil, à droite)",
+        "Poser une question en langage naturel sur vos données"
+      ],
+      "cards": [
+        {
+          "title": "Exemples de prompts",
+          "color": "green",
+          "lines": [
+            "«Analyse ces données et donne",
+            "les tendances clés»",
+            "",
+            "«Quel est le ticket moyen",
+            "par catégorie?»",
+            "",
+            "«Combien d'incidents critiques",
+            "ce mois-ci vs le mois dernier?»"
+          ],
+          "icon": "chart-bar"
+        },
+        {
+          "title": "Pour qui?",
+          "color": "amber",
+          "lines": [
+            "TI : tickets, incidents, inventaire",
+            "Finance : budgets, dépenses",
+            "RH : absences, effectifs",
+            "Projets : échéancier, ressources",
+            "",
+            "Tout le monde peut analyser"
+          ],
+          "icon": "users"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Générer des formules complexes",
+      "subtitle": "Fini les formules à 10 imbrications qui ne marchent jamais du premier coup",
+      "speaker_notes": "Démo : dans le volet Copilot, taper : «Crée une formule qui calcule le nombre total de tickets par priorité (haute, moyenne, basse) pour le mois en cours». Copilot génère : NB.SI.ENS. Montrer comment Copilot explique la formule et comment l'insérer. Insister : même les formules avancées (RECHERCHEX, INDEX/EQUIV, SOMMEPROD) sont accessibles. Pour les devs P3 : montrer que Copilot comprend les tableaux structurés et les plages nommées. Pour P2 : plus jamais peur des erreurs #N/A!",
+      "bullets": [
+        "Décrire en français ce que la formule doit calculer",
+        "Copilot génère la formule complète avec explication",
+        "Un clic pour insérer la formule dans la cellule active"
+      ],
+      "cards": [
+        {
+          "title": "Formules faciles avec Copilot",
+          "color": "green",
+          "lines": [
+            "«Calcule la moyenne des ventes",
+            "pour les 3 derniers mois»",
+            "",
+            "«Trouve le nom du responsable",
+            "ayant le plus de tickets ouverts»",
+            "",
+            "«Compte le nombre d'incidents",
+            "par priorité pour juin 2026»"
+          ],
+          "icon": "function-square"
+        },
+        {
+          "title": "Ce que Copilot maîtrise",
+          "color": "blue",
+          "lines": [
+            "RECHERCHEV / RECHERCHEX",
+            "NB.SI / NB.SI.ENS",
+            "SOMME.SI / SOMME.SI.ENS",
+            "SI / SI.SI / SI.ENS",
+            "INDEX / EQUIV",
+            "SOMMEPROD",
+            "Tableaux structurés",
+            "Plages nommées"
+          ],
+          "icon": "list-ordered"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Mettre en évidence des tendances et anomalies",
+      "subtitle": "Copilot repère ce qui sort de l'ordinaire dans vos données",
+      "speaker_notes": "Démo : après l'analyse, demander : «Quelles sont les anomalies dans ces données?». Copilot identifie les valeurs aberrantes, les tendances, les hausses ou baisses inhabituelles, etc. Puis : «Ajoute une mise en forme conditionnelle pour les anomalies». Copilot colorise les cellules automatiquement. Insister : idéal pour la détection de fraudes, les écarts budgétaires, les pics de tickets. Pour les auditeurs et conformité!",
+      "bullets": [
+        "Demander à Copilot d'identifier les anomalies ou tendances",
+        "Copilot repère les valeurs aberrantes, hausses/baisses inhabituelles",
+        "Demander la mise en forme conditionnelle — Copilot l'applique automatiquement"
+      ],
+      "cards": [
+        {
+          "title": "Prompts de détection",
+          "color": "green",
+          "lines": [
+            "«Repère les anomalies dans",
+            "ces données mensuelles»",
+            "",
+            "«Quels mois ont une valeur",
+            "anormalement haute ou basse?»",
+            "",
+            "«Identifie les tendances",
+            "à la hausse dans les tickets»",
+            "",
+            "«Ajoute une mise en forme",
+            "conditionnelle pour anomalies»"
+          ],
+          "icon": "search"
+        },
+        {
+          "title": "Applications en TI",
+          "color": "amber",
+          "lines": [
+            "Pics de tickets incidents",
+            "Écarts budgétaires inattendus",
+            "Anomalies dans les logs",
+            "Variations d'utilisation serveur",
+            "Sécurité — détection d'accès",
+            "",
+            "Auditeurs et conformité : adorent!"
+          ],
+          "icon": "triangle-alert"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Créer des graphiques à partir d'une description",
+      "subtitle": "Décrivez le graphique, Copilot le dessine",
+      "speaker_notes": "Démo : dans le volet Copilot, taper : «Crée un graphique à barres comparant le nombre de tickets par priorité pour chaque mois». Copilot analyse les données, choisit le type de graphique, le crée et l'insère dans la feuille. Insister : vous n'avez pas besoin de savoir quel type de graphique utiliser ni comment le configurer — décrivez ce que vous voulez voir et Copilot s'occupe du reste.",
+      "bullets": [
+        "Décrire le graphique souhaité en langage naturel",
+        "Spécifier le type : barres, lignes, secteurs, histogramme...",
+        "Copilot analyse, crée et insère le graphique directement dans la feuille"
+      ],
+      "cards": [
+        {
+          "title": "Exemples de prompts",
+          "color": "blue",
+          "lines": [
+            "«Crée un graphique à barres :",
+            "tickets par priorité, par mois»",
+            "",
+            "«Génère un graphique en lignes",
+            "de l'évolution mensuelle»",
+            "",
+            "«Fais un diagramme circulaire",
+            "de la répartition par équipe»"
+          ],
+          "icon": "bar-chart"
+        },
+        {
+          "title": "Types de graphiques",
+          "color": "green",
+          "lines": [
+            "Barres — comparaisons",
+            "Lignes — tendances dans le temps",
+            "Secteurs — proportions",
+            "Histogramme — distribution",
+            "Boîte à moustaches — statistiques",
+            "",
+            "Dites ce que vous voulez voir,",
+            "Copilot choisit le meilleur type"
+          ],
+          "icon": "pie-chart"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Les 3 astuces + le bonus",
+      "speaker_notes": "Récapitulation : analyser les données en français, générer des formules complexes en un prompt, repérer anomalies et tendances, créer des graphiques sans effort. Défi de la semaine : ouvrir un fichier Excel existant (même petit), ouvrir Copilot, et poser une question sur vos données. Un seul prompt — voyez ce que ça donne!",
+      "cards": [
+        {
+          "title": "Analyser",
+          "desc": "Questions en français\nRéponses instantanées",
+          "icon": "chart-bar"
+        },
+        {
+          "title": "Formules",
+          "desc": "Décrivez → Copilot écrit\nFini les #N/A!",
+          "icon": "function-square"
+        },
+        {
+          "title": "Tendances",
+          "desc": "Anomalies détectées\nMise en forme auto",
+          "icon": "search"
+        }
+      ],
+      "bonus": "Défi: Ouvrez un fichier Excel cette semaine et demandez à Copilot de créer un graphique — sans toucher aux options de graphique!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

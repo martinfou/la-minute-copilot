@@ -1,0 +1,207 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Sécurité et confidentialité des prompts",
+  "author": "Martin Fournier",
+  "date": "2026-06-14",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Sécurité et confidentialité des prompts",
+      "footer": "Ce que Copilot voit, ce qu'il ne voit pas, et comment protéger ses données • 100% M365",
+      "speaker_notes": "Accueil : «Bonjour à tous! Aujourd'hui, un sujet qui revient très souvent : la sécurité et la confidentialité de Copilot. Et je veux commencer par rassurer tout le monde : Copilot respecte la même sécurité que le reste de M365. On va voir ensemble comment ça fonctionne, ce qui est protégé, et les bonnes pratiques. Si vous êtes dans le groupe des anxieux — cette minute est pour vous!»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Copilot a les mêmes permissions que vous",
+      "subtitle": "Copilot ne voit pas plus que ce que vous avez le droit de voir",
+      "speaker_notes": "C'est le point le plus important de toute la minute. Copilot hérite de vos permissions M365. Si vous avez accès à un document, Copilot peut y accéder via votre contexte. Si vous n'y avez pas accès, Copilot non plus. Ce n'est pas un super-utilisateur qui peut tout voir. Démo : montrer que Copilot dans Word ne peut pas ouvrir un document qui n'est pas partagé avec vous. Insister : «Vos accès = ses accès. Point final.»",
+      "bullets": [
+        "Copilot utilise votre identité et vos permissions M365",
+        "Si vous n'avez pas accès à un document, Copilot non plus",
+        "Copilot n'est pas un admin — il ne voit que ce que vous voyez"
+      ],
+      "cards": [
+        {
+          "title": "Ce que Copilot peut voir",
+          "color": "green",
+          "lines": [
+            "Vos courriels (boîte O365)",
+            "Vos fichiers OneDrive et SharePoint",
+            "Vos conversations Teams",
+            "Votre calendrier Outlook",
+            "Les documents que vous pouvez lire",
+            "",
+            "Toujours dans vos permissions"
+          ],
+          "icon": "eye"
+        },
+        {
+          "title": "Ce que Copilot ne voit PAS",
+          "color": "amber",
+          "lines": [
+            "Les documents sans partage",
+            "Les courriels d'autres personnes",
+            "Les fichiers hors M365",
+            "Les bases de données externes",
+            "Votre mot de passe",
+            "",
+            "Ça rassure, non?"
+          ],
+          "icon": "eye-off"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Ce qui est traité dans le tenant vs. ce qui part à l'extérieur",
+      "subtitle": "La différence entre le traitement Microsoft et la protection des données",
+      "speaker_notes": "Expliquer clairement : quand vous utilisez Copilot dans M365 (Outlook, Teams, Word, Excel, PowerPoint, Copilot Chat en mode travail), les données restent dans votre tenant Microsoft 365, à l'intérieur des frontières de conformité de votre organisation. Elles ne sont PAS utilisées pour entraîner les modèles. Par contre, Copilot Web (copilot.microsoft.com) peut envoyer des données au modèle via Internet. Distinction cruciale : mode Travail vs mode Web, avec le bouclier vert. Insister pour P2 : «Tant que vous voyez le bouclier vert 'Protégé', vos données restent dans le tenant.»",
+      "bullets": [
+        "Copilot M365 (bouclier vert) : traitement dans votre tenant — données protégées",
+        "Copilot Web : peut envoyer des données hors tenant — attention à ce que vous tapez",
+        "Microsoft n'utilise PAS vos données pour entraîner les modèles (tenant commercial)"
+      ],
+      "cards": [
+        {
+          "title": "Mode Travail (sécurisé)",
+          "color": "green",
+          "lines": [
+            "Bouclier vert «Protégé»",
+            "Données dans votre tenant",
+            "Conformité organisationnelle",
+            "Non utilisé pour entraînement",
+            "",
+            "À utiliser par défaut"
+          ],
+          "icon": "shield-check"
+        },
+        {
+          "title": "Mode Web (attention!)",
+          "color": "red",
+          "lines": [
+            "Pas de bouclier vert",
+            "Données hors tenant possibles",
+            "Protection moindre",
+            "",
+            "Évitez les données",
+            "sensibles ou confidentielles",
+            "",
+            "Idéal : recherche publique seulement"
+          ],
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Les données à ne jamais partager dans un prompt",
+      "subtitle": "Bon sens numérique appliqué à Copilot",
+      "speaker_notes": "Règles simples qui s'appliquent à TOUT outil, pas juste Copilot. Jamais de mots de passe, NIP, informations bancaires complètes, numéros d'assurance sociale, données biométriques. Et surtout : ne mettez pas de données personnelles identifiables. Insister : «Si vous ne le mettriez pas dans un courriel à un collègue inconnu, ne le mettez pas dans Copilot.» Pour P2 : dire «Quand on garde ces principes simples en tête, Copilot est aussi sécuritaire — sinon plus — qu'un courriel interne.»",
+      "bullets": [
+        "Règle d'or : rien que vous ne mettriez dans un courriel professionnel interne",
+        "Jamais : mots de passe, NAS, NIP, données bancaires complètes",
+        "Pseudonymiser les clients et partenaires — «Client A» au lieu du nom réel"
+      ],
+      "cards": [
+        {
+          "title": "À ne JAMAIS mettre",
+          "color": "red",
+          "lines": [
+            "Mots de passe et codes d'accès",
+            "NIP et numéros de compte",
+            "Numéro d'assurance sociale",
+            "Données biométriques",
+            "Informations bancaires complètes",
+            "Dossiers médicaux identifiants"
+          ],
+          "icon": "ban"
+        },
+        {
+          "title": "Bonnes pratiques",
+          "color": "green",
+          "lines": [
+            "Utilisez des pseudonymes",
+            "«Client A» au lieu du nom réel",
+            "«Projet X» au lieu du nom sensible",
+            "Supprimez les pièces jointes",
+            "sensibles avant les prompts",
+            "",
+            "Pseudonymiser = même analyse,"
+          ],
+          "icon": "circle-check"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — L'onglet «Sources»",
+      "subtitle": "Comprenez d'où vient la réponse de Copilot",
+      "speaker_notes": "Démo : montrer un prompt Copilot où la réponse inclut des citations. Cliquer sur la citation ou le numéro → l'onglet «Sources» s'ouvre, montrant le document exact utilisé. Insister : «C'est l'une des fonctionnalités les plus rassurantes. Copilot ne cache pas ses sources. Chaque information est traçable jusqu'au document d'origine. Transparence totale!» Montrer que les sources sont cliquables — on peut ouvrir le fichier source et vérifier.",
+      "bullets": [
+        "Dans Copilot Chat et Copilot M365, la réponse cite souvent ses sources",
+        "Cliquez sur une citation → l'onglet «Sources» ouvre le document original",
+        "Transparence totale : vérifiez chaque information à la source"
+      ],
+      "cards": [
+        {
+          "title": "Comment vérifier les sources",
+          "color": "blue",
+          "lines": [
+            "1. Regardez les nombres en exposant",
+            "   dans la réponse Copilot",
+            "",
+            "2. Cliquez sur un nombre → onglet",
+            "   «Sources» ouvre le document",
+            "",
+            "3. Consultez la source — même page,",
+            "   même paragraphe",
+            "",
+            "Transparence totale"
+          ],
+          "icon": "file-search"
+        },
+        {
+          "title": "Pourquoi c'est important",
+          "color": "green",
+          "lines": [
+            "Vérifiez l'exactitude",
+            "Comprenez le contexte",
+            "Gagnez en confiance",
+            "Formation : outil pédagogique",
+            "",
+            "Bonus pour P2 : si une réponse",
+            "vous semble bizarre, cliquez sur",
+            "la source et vérifiez!"
+          ],
+          "icon": "circle-check"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Les 3 astuces + le bonus",
+      "speaker_notes": "Récapitulation : Copilot a vos permissions = il ne voit que ce que vous voyez. Données dans le tenant M365 vs Copilot Web. Les bonnes pratiques de prompt. Et l'onglet Sources pour vérifier. Message rassurant : Copilot M365 respecte la même sécurité que le reste de notre environnement Microsoft. Avec les bons réflexes — pseudonymes, mode travail, vérification des sources — vous l'utilisez en toute confiance. Défi : la prochaine fois que Copilot cite une source, cliquez dessus et explorez le document original!",
+      "cards": [
+        {
+          "title": "Permissions",
+          "desc": "Copilot = vos accès",
+          "icon": "eye"
+        },
+        {
+          "title": "Tenant M365",
+          "desc": "Données protégées\nBouclier vert",
+          "icon": "shield-check"
+        },
+        {
+          "title": "Bons réflexes",
+          "desc": "Pseudonymes, pas de\nmots de passe, sources",
+          "icon": "circle-check"
+        }
+      ],
+      "bonus": "Défi: La prochaine réponse Copilot avec source — cliquez sur la citation et vérifiez le document original!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

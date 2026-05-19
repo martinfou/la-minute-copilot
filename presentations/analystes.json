@@ -1,0 +1,180 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Copilot pour les analystes d'affaires",
+  "author": "Martin Fournier",
+  "date": "2026-06-09",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Copilot pour les analystes d'affaires",
+      "footer": "3 astuces • Analyse • Synthèse • Saison 2",
+      "speaker_notes": "Accueil : «Bonjour à tous! Aujourd'hui, on s'adresse particulièrement aux analystes d'affaires, aux QA, aux PO proxy — bref, à tous ceux et celles qui travaillent avec des données, des rapports, des spécifications. On va voir comment Copilot peut faire le travail de synthèse à votre place, pas la prise de décision. On ne remplace pas l'analyste, on lui donne un assistant surpuissant.»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Synthétiser des données de plusieurs sources",
+      "subtitle": "Un prompt, plusieurs documents, une seule vue d'ensemble",
+      "speaker_notes": "Démo : ouvrir plusieurs documents pertinents — un rapport Excel, un document Word et quelques courriels Outlook qui parlent du même projet. Ouvrir le volet Copilot. Demander : «Synthétise les informations de ce projet à partir des documents ouverts». Montrer comment Copilot croise les sources, identifie les informations redondantes et produit une synthèse cohérente. Insister : Copilot lit le contenu, pas juste les noms de fichier. Il comprend les relations entre les informations.",
+      "bullets": [
+        "Ouvrir tous les documents pertinents (Word, Excel, courriels)",
+        "Ouvrir le volet Copilot",
+        "Demander une synthèse transversale de toutes les sources"
+      ],
+      "cards": [
+        {
+          "title": "Prompts de synthèse multi-sources",
+          "color": "green",
+          "lines": [
+            "«Synthétise les informations de ce projet à partir des documents ouverts»",
+            "«Quels sont les points communs entre ces 3 rapports?»",
+            "«Y a-t-il des contradictions entre ces sources?»",
+            "«Extrais toutes les dates d'échéance de ces documents»"
+          ],
+          "icon": "bar-chart-3"
+        },
+        {
+          "title": "P3 — conseil technique",
+          "color": "blue",
+          "lines": [
+            "Référencez les fichiers par leur nom si plusieurs sont ouverts",
+            "Exemple : «Compare le rapport du 1er juin avec le courriel de Sophie»",
+            "Copilot peut citer la source de chaque information",
+            "Vérifiez les citations — Copilot résume, il ne remplace pas la lecture"
+          ],
+          "icon": "sparkles"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Créer un rapport d'analyse structuré",
+      "subtitle": "De la donnée brute au rapport prêt à présenter",
+      "speaker_notes": "Démo : ouvrir un fichier Excel ou un document avec des données brutes. Dans le volet Copilot, demander : «Crée un rapport d'analyse structuré : contexte, constats, recommandations». Copilot organise l'information en sections, ajoute une introduction et une conclusion, et propose des recommandations basées sur les données. P2 : l'anxiété de la page blanche? Copilot vous donne une structure et vous n'avez qu'à valider et ajuster. P3 : vous pouvez préciser le format, le ton, le public cible.",
+      "bullets": [
+        "Ouvrir le document source contenant les données ou les notes",
+        "Demander un rapport structuré avec sections prédéfinies",
+        "Ajuster le format, le ton et le niveau de détail"
+      ],
+      "cards": [
+        {
+          "title": "Prompts de rapport",
+          "color": "green",
+          "lines": [
+            "«Crée un rapport structuré : contexte, analyse, recommandations»",
+            "«Rédige un résumé exécutif de ce document en 1 paragraphe»",
+            "«Transforme ces notes en rapport formel pour la direction»",
+            "«Propose 3 recommandations basées sur ces données»"
+          ],
+          "icon": "file-chart-column-increasing"
+        },
+        {
+          "title": "P2 — rassurant",
+          "color": "amber",
+          "lines": [
+            "Plus de page blanche : Copilot vous donne la structure",
+            "Vous validez et ajustez — vous gardez le contrôle",
+            "Gagnez 30 minutes sur chaque rapport d'analyse",
+            "Idéal pour les livrables de fin de sprint ou d'itération"
+          ],
+          "icon": "thumbs-up"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Détecter des tendances et patterns dans les données",
+      "subtitle": "L'œil humain voit les détails, Copilot voit les tendances",
+      "speaker_notes": "Démo : ouvrir un fichier Excel avec des données historiques — par exemple, des chiffres de performance sur plusieurs mois. Demander à Copilot : «Analyse ces données et identifie les tendances». Copilot repère des patterns : hausses saisonnières, corrélations, anomalies. Exemple concret avec des données de tickets TI : Copilot peut vous dire «Il y a une augmentation des tickets le lundi matin, surtout pour les réinitialisations de mot de passe». P3 : vous pouvez demander le format de sortie — tableau, graphique, ou texte narratif.",
+      "bullets": [
+        "Ouvrir un fichier Excel ou un jeu de données structuré",
+        "Demander une analyse de tendances et de patterns",
+        "Préciser le format de sortie : tableau, résumé ou recommandations"
+      ],
+      "cards": [
+        {
+          "title": "Prompts d'analyse de tendances",
+          "color": "green",
+          "lines": [
+            "«Quelles tendances observes-tu dans ces données?»",
+            "«Y a-t-il des anomalies ou des valeurs aberrantes?»",
+            "«Quels sont les 3 constats principaux à retenir?»",
+            "«Peux-tu regrouper ces données par catégorie et tendance?»"
+          ],
+          "icon": "trending-up"
+        },
+        {
+          "title": "P2 et P3 — attention!",
+          "color": "red",
+          "lines": [
+            "Copilot repère des tendances, il ne fait PAS de statistiques avancées",
+            "Toujours croiser avec Excel Copilot pour les calculs précis",
+            "Les corrélations ne sont pas des causalités — votre jugement compte",
+            "Utilisez Copilot comme détecteur d'anomalies, pas comme décideur"
+          ],
+          "icon": "triangle-alert"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Combiner Copilot + Excel Copilot pour une analyse complète",
+      "subtitle": "Le duo gagnant de l'analyste d'affaires",
+      "speaker_notes": "Démonstration en deux temps : (1) Dans Excel, Copilot peut calculer des moyennes, des écarts, générer des graphiques et mettre en forme des tableaux. (2) Les conclusions sont ensuite partagées avec Copilot dans Word ou Outlook pour rédiger le rapport. Le flux idéal : données brutes dans Excel → analyse quantitative avec Excel Copilot → synthèse qualitative avec Copilot dans Word → rapport final prêt en 10 minutes. Insister : les deux outils se complètent. Excel Copilot pour les chiffres, Copilot pour le texte.",
+      "bullets": [
+        "Excel Copilot : calculs, graphiques, mise en forme",
+        "Copilot dans Word : rédaction du rapport et des recommandations",
+        "Le flux parfait : données → analyse → rapport en 10 minutes"
+      ],
+      "cards": [
+        {
+          "title": "Excel Copilot — la partie chiffrée",
+          "color": "green",
+          "lines": [
+            "«Calcule la moyenne des ventes par trimestre»",
+            "«Crée un graphique des tendances mensuelles»",
+            "«Surligne en rouge les valeurs sous le seuil»",
+            "«Trouve les valeurs aberrantes dans cette colonne»"
+          ],
+          "icon": "bar-chart-3"
+        },
+        {
+          "title": "Copilot — la partie rédaction",
+          "color": "blue",
+          "lines": [
+            "«Résume les tendances identifiées dans le rapport Excel»",
+            "«Crée un rapport avec ces constats et 3 recommandations»",
+            "«Rédige un résumé exécutif pour la direction»",
+            "«Ajoute un tableau comparatif des KPI dans le document»"
+          ],
+          "icon": "file-text"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Les 3 astuces + le bonus",
+      "speaker_notes": "Récapitulation : (1) Synthétiser des données de plusieurs sources en une vue d'ensemble, (2) Créer un rapport structuré prêt à présenter, (3) Détecter des tendances et patterns. Bonus : le duo Copilot + Excel Copilot pour une analyse complète chiffres + texte. Rappel important : Copilot est un assistant d'analyse, pas un analyste. Le jugement, c'est vous!",
+      "cards": [
+        {
+          "title": "Synthétiser",
+          "desc": "Multi-sources en une vue",
+          "icon": "bar-chart-3"
+        },
+        {
+          "title": "Rapport",
+          "desc": "Structure prête à présenter",
+          "icon": "file-chart-column-increasing"
+        },
+        {
+          "title": "Tendances",
+          "desc": "Patterns et anomalies",
+          "icon": "trending-up"
+        }
+      ],
+      "bonus": "Défi : la prochaine fois que vous préparez un rapport d'analyse, utilisez le duo Copilot + Excel Copilot — promis, vous ne reviendrez pas en arrière!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}

@@ -1,0 +1,268 @@
+{
+  "title": "La minute Copilot",
+  "subtitle": "Quick Parts — Bibliothèque de prompts",
+  "author": "Martin Fournier",
+  "date": "2026-06-29",
+  "slides": [
+    {
+      "type": "title",
+      "title": "La minute Copilot",
+      "subtitle": "Quick Parts — Bibliothèque de prompts",
+      "footer": "Organiser · Partager · Réutiliser · 3 astuces pour TI et non-TI",
+      "speaker_notes": "Accueil: «Bonjour à tous! Vous rappelez-vous du bonus sur les Quick Parts dans l'épisode Outlook? Aujourd'hui on va BEAUCOUP plus loin — on va construire une vraie bibliothèque de prompts réutilisables, les partager avec l'équipe et même y mettre des champs dynamiques. Une fois que vous aurez ça en place, vos prompts Copilot seront toujours à portée de clic.»"
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 1 — Structurer sa bibliothèque de Quick Parts par catégorie",
+      "subtitle": "Rangez vos prompts comme vos dossiers SharePoint",
+      "speaker_notes": "Démo: ouvrir Outlook, montrer la galerie Quick Parts existante. Montrer comment nommer les Quick Parts avec préfixes pour les retrouver vite. [CP] pour Copilot général, [CP-OUTLOOK] pour les prompts Outlook, [CP-TEAMS] pour Teams, etc. Insister: un Quick Part mal nommé = perdu. Un Quick Part bien nommé = retrouvé en 2 secondes. Suggérer de créer des sous-catégories en utilisant des séparateurs visuels (ligne vide ou emoji) dans le contenu du Quick Part.",
+      "bullets": [
+        "Nommez vos Quick Parts avec un préfixe [CP] suivi d'une catégorie",
+        "Créez des sous-catégories: [CP-OUTLOOK], [CP-TEAMS], [CP-WORD], [CP-EXCEL]",
+        "Une bibliothèque propre = des prompts retrouvés en 2 secondes"
+      ],
+      "cards": [
+        {
+          "title": "Structure recommandée",
+          "color": "green",
+          "lines": [
+            "[CP] Résumer fil discussion",
+            "[CP] Réponse professionnelle",
+            "[CP-OUTLOOK] Statut projet",
+            "[CP-TEAMS] Résumé réunion",
+            "[CP-WORD] Compte rendu",
+            "[CP-EXCEL] Analyse données",
+            "",
+            "Chaque préfixe = une",
+            "catégorie. Rangez dans",
+            "l'ordre alphabétique."
+          ],
+          "icon": "library"
+        },
+        {
+          "title": "Astuce de nommage",
+          "color": "amber",
+          "lines": [
+            "Évitez les noms vagues:",
+            "«Mon prompt» → perdu",
+            "",
+            "Préférez des noms",
+            "actionnables:",
+            "«[CP-OUTLOOK] Statut",
+            "projet avec délais»",
+            "",
+            "Les points ou emojis en",
+            "début de nom aident",
+            "au classement visuel"
+          ],
+          "icon": "bookmark"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 2 — Partager ses Quick Parts avec l'équipe",
+      "subtitle": "Un template partagé = toute l'équipe gagne du temps",
+      "speaker_notes": "Démo: montrer comment exporter les Quick Parts via le fichier NormalEmail.dotm. Expliquer le chemin: dossier Templates au niveau du poste. Montrer comment copier ce fichier sur un SharePoint d'équipe pour que chacun le télécharge. Alternative simple: créer un courriel modèle dans Outlook avec tous les prompts déjà écrits. L'équipe le garde en brouillon et copie-colle. C'est moins technique mais tout aussi efficace. Insister pour les P1: commencez par le brouillon partagé, ce sera déjà un grand pas.",
+      "bullets": [
+        "Quick Parts = stockés dans votre modèle NormalEmail.dotm",
+        "Copiez ce fichier sur SharePoint pour partager avec l'équipe",
+        "Alternative simple: créez un courriel brouillon partagé avec tous les prompts"
+      ],
+      "cards": [
+        {
+          "title": "Pour les avancés (P3)",
+          "color": "blue",
+          "lines": [
+            "1. Fichier → Options →",
+            "   Personnaliser le ruban",
+            "2. Développeur →",
+            "   Modèles de documents",
+            "3. Ouvrir le dossier des",
+            "   modèles utilisateur",
+            "4. Copier NormalEmail.dotm",
+            "   vers SharePoint",
+            "",
+            "Chacun télécharge et",
+            "remplace son fichier"
+          ],
+          "icon": "share-2"
+        },
+        {
+          "title": "Alternative simple (P1)",
+          "color": "green",
+          "lines": [
+            "Créez un courriel dans",
+            "Outlook avec TOUS vos",
+            "prompts en texte:",
+            "",
+            "«[CP-OUTLOOK] Résumer fil»",
+            "→ Résume ce fil...",
+            "",
+            "Gardez-le en brouillon.",
+            "Partagez le lien vers",
+            "ce brouillon avec l'équipe."
+          ],
+          "icon": "file-text"
+        },
+        {
+          "title": "Idéal pour l'équipe",
+          "color": "amber",
+          "lines": [
+            "Nouvel employé:",
+            "tous les prompts prêts",
+            "dès le premier jour",
+            "",
+            "Équipe TI: mêmes prompts,",
+            "mêmes résultats,",
+            "même qualité de réponse",
+            "",
+            "Prompts uniformes = ",
+            "communication uniforme"
+          ],
+          "icon": "users"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 3 — Utiliser des champs dynamiques dans les prompts",
+      "subtitle": "Un Quick Part qui s'adapte tout seul à chaque situation",
+      "speaker_notes": "Démo: montrer comment insérer des champs comme [Nom du projet], [Date de livraison], [Nom du client] dans un Quick Part. Quand on l'insère dans un courriel, ces champs restent comme des espaces à remplir. On peut aussi utiliser les champs Outlook automatiques comme le nom du destinataire, la date du jour, etc. Insister: c'est la différence entre un prompt figé et un template réutilisable pour TOUTES les situations. Montrer comment les champs apparaissent et se remplissent.",
+      "bullets": [
+        "Insérez des champs entre crochets comme [Nom du projet] ou [Date]",
+        "Utilisez les champs Outlook automatiques (date, destinataire, sujet...)",
+        "Un seul Quick Part sert pour tous vos projets — changez juste les champs"
+      ],
+      "cards": [
+        {
+          "title": "Quick Part avec champs",
+          "color": "green",
+          "lines": [
+            "«En tant que chef de",
+            "projet, résume l'avancement",
+            "du projet [Nom du projet].",
+            "",
+            "Ajoute les actions à prendre",
+            "avec responsables et",
+            "échéances.",
+            "",
+            "Écris les points critiques",
+            "pour [Destinataire].",
+            "Date d'aujourd'hui: [Date]»",
+            "",
+            "→ Insérez, remplissez",
+            "les champs, envoyez"
+          ],
+          "icon": "variable"
+        },
+        {
+          "title": "Exemples de champs",
+          "color": "blue",
+          "lines": [
+            "[Date] — date du jour",
+            "[Destinataire] — nom du contact",
+            "[Société] — entreprise du contact",
+            "[Objet] — objet du courriel",
+            "",
+            "Champs personnalisés:",
+            "[Nom du projet]",
+            "[Date de livraison]",
+            "[Client]",
+            "[Priorité]",
+            "[Risques]",
+            "",
+            "Créez vos propres champs!"
+          ],
+          "icon": "separator-horizontal"
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "title": "Bonus — Créer un Quick Part «Template complet»",
+      "subtitle": "Persona + Contexte + Tâche + Format, prêt à remplir",
+      "speaker_notes": "Le bonus ultime: un seul Quick Part qui contient TOUTE la structure d'un prompt parfait. Persona, contexte, tâche, format — avec des champs dynamiques pour chaque section. On l'insère, on remplit les champs entre crochets, et c'est prêt. Suggérer de créer ce Quick Part [CP] Template complet dès aujourd'hui. Montrer comment le retrouver dans la galerie Quick Parts et l'utiliser en un clic.",
+      "bullets": [
+        "Un seul Quick Part contient la structure complète d'un prompt",
+        "Champs dynamiques pour chaque section: persona, contexte, action, format",
+        "Insérez, remplissez les champs, envoyez — 10 secondes chrono"
+      ],
+      "cards": [
+        {
+          "title": "[CP] Template complet",
+          "color": "blue",
+          "lines": [
+            "«En tant que [Persona],",
+            "dans le cadre de [Contexte],",
+            "réalise [Tâche]",
+            "en respectant ces critères:",
+            "",
+            "• [Critère 1]",
+            "• [Critère 2]",
+            "• [Critère 3]",
+            "",
+            "Format de la réponse:",
+            "[Format souhaité]",
+            "",
+            "Ajoute les points critiques",
+            "pour [Destinataire].",
+            "Date: [Date]»",
+            "",
+            "→ INSÉREZ CE QUICK PART",
+            "→ REMPLISSEZ LES CHAMPS",
+            "→ ENVOYEZ!"
+          ],
+          "icon": "layout-template"
+        },
+        {
+          "title": "Exemple rempli",
+          "color": "green",
+          "lines": [
+            "«En tant que chef de",
+            "projet TI, dans le cadre",
+            "de la migration ServiceNow,",
+            "réalise un bilan d'avancement",
+            "en respectant ces critères:",
+            "",
+            "• Statut actuel par phase",
+            "• Risques identifiés",
+            "• Actions à prendre",
+            "",
+            "Format: 5 puces avec",
+            "responsable et échéance.",
+            "",
+            "Ajoute les points critiques",
+            "pour le directeur TI. »"
+          ],
+          "icon": "circle-check"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "À retenir — Quick Parts avancées",
+      "speaker_notes": "Récapitulation : structurez vos Quick Parts par catégorie avec préfixes, partagez-les avec l'équipe via le modèle NormalEmail.dotm ou un brouillon simple, utilisez des champs dynamiques pour un template réutilisable partout. Défi : créez votre Quick Part [CP] Template complet dès aujourd'hui et partagez-le avec un collègue!",
+      "cards": [
+        {
+          "title": "Structure",
+          "desc": "Préfixes [CP] par\ncatégorie pour\nretrouver rapidement",
+          "icon": "library"
+        },
+        {
+          "title": "Partage",
+          "desc": "NormalEmail.dotm ou\nbrouillon partagé\n— toute l'équipe gagne",
+          "icon": "share-2"
+        },
+        {
+          "title": "Champs dynamiques",
+          "desc": "[Projet], [Date],\n[Destinataire]\n— un template tout usage",
+          "icon": "variable"
+        }
+      ],
+      "bonus": "Défi: Créez et partagez un Quick Part [CP] Template complet avec votre équipe cette semaine!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
+    }
+  ],
+  "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"
+}
