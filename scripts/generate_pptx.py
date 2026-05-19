@@ -6,8 +6,8 @@ Lit un fichier JSON de contenu (avec schéma validé) et génère un .pptx.
 Le format JSON est documenté dans schema/la-minute-copilot.schema.json.
 
 Usage:
-    python3 scripts/generate_pptx.py presentations/ep01-outlook.json
-    python3 scripts/generate_pptx.py presentations/ep01-outlook.json -o mon_fichier.pptx
+    python3 scripts/generate_pptx.py presentations/outlook.json
+    python3 scripts/generate_pptx.py presentations/outlook.json -o mon_fichier.pptx
 
 Dépendances: python-pptx (pip install python-pptx)
 """

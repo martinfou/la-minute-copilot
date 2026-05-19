@@ -79,19 +79,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: pip install check-jsonschema
-      - run: check-jsonschema --schemafile schema/la-minute-copilot.schema.json presentations/ep*.json
+      - run: check-jsonschema --schemafile schema/la-minute-copilot.schema.json presentations/*.json
 ```
 
 ## Épisodes
 
 | # | Sujet | JSON | PPTX |
 |---|-------|------|------|
-| 1 | Outlook — 3 astuces + sauvegarder ses prompts | `ep01-outlook.json` | `La_Minute_Copilot_Outlook.pptx` |
-| 2 | Personas — L'importance des personas dans les prompts | `ep02-personas.json` | `La_Minute_Copilot_Personas.pptx` |
-| 3 | Modèles — Les modèles de langage expliqués | `ep03-modeles.json` | `La_Minute_Copilot_Modeles.pptx` |
-| 4 | SharePoint & OneDrive — Copilot et vos fichiers | `ep04-sharepoint-onedrive.json` | `La_Minute_Copilot_SharePoint.pptx` |
-| 5 | Prompts avancés — CoT, ToT, Red/Blue Team | `ep05-prompts-avances.json` | `La_Minute_Copilot_PromptsAvances.pptx` |
-| 6 | Architecture — Le voyage du prompt en entreprise | `ep06-architecture-prompt.json` | `La_Minute_Copilot_Architecture.pptx` |
+| 1 | Outlook — 3 astuces + sauvegarder ses prompts | `outlook.json` | `La_Minute_Copilot_Outlook.pptx` |
+| 2 | Personas — L'importance des personas dans les prompts | `personas.json` | `La_Minute_Copilot_Personas.pptx` |
+| 3 | Modèles — Les modèles de langage expliqués | `modeles.json` | `La_Minute_Copilot_Modeles.pptx` |
+| 4 | SharePoint & OneDrive — Copilot et vos fichiers | `sharepoint-onedrive.json` | `La_Minute_Copilot_SharePoint.pptx` |
+| 5 | Prompts avancés — CoT, ToT, Red/Blue Team | `prompts-avances.json` | `La_Minute_Copilot_PromptsAvances.pptx` |
+| 6 | Architecture — Le voyage du prompt en entreprise | `architecture-prompt.json` | `La_Minute_Copilot_Architecture.pptx` |
 
 ## Générer une présentation
 
@@ -105,14 +105,14 @@ pip install -r requirements.txt
 ### Ensuite
 ```bash
 # Générer la dernière présentation
-./generate.sh presentations/ep01-outlook.json
+./generate.sh presentations/outlook.json
 
 # Ou vers un fichier spécifique
-./generate.sh presentations/ep01-outlook.json -o mon_fichier.pptx
+./generate.sh presentations/outlook.json -o mon_fichier.pptx
 ```
 
 ### Créer un nouvel épisode
-1. Copier `presentations/ep01-outlook.json` en `presentations/ep02-sujet.json`
+1. Copier `presentations/outlook.json` en `presentations/sujet.json`
 2. Éditer le JSON (titres, cartes, contenu)
-3. `./generate.sh presentations/ep02-sujet.json`
+3. `./generate.sh presentations/sujet.json`
 4. Présenter!
