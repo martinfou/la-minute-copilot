@@ -1,13 +1,15 @@
 {
   "title": "La minute Copilot",
   "subtitle": "L'importance des personas dans les prompts",
+  "author": "Martin Fournier",
+  "date": "2026-05-17",
   "slides": [
     {
       "type": "title",
       "title": "La minute Copilot",
       "subtitle": "L'importance des personas dans les prompts",
       "footer": "Donnez un rôle à Copilot pour des réponses 10x meilleures",
-      "speaker_notes": "Accueil: Aujourd'hui on va voir un truc qui change TOUT: donner un persona à Copilot."
+      "speaker_notes": "Accueil: Aujourd'hui on va voir un truc qui change TOUT: donner un persona à Copilot. C'est simple, ça prend 5 secondes, et ça transforme une réponse générique en réponse experte."
     },
     {
       "type": "tips",
@@ -16,28 +18,36 @@
       "bullets": [
         "Un persona = un rôle + un contexte + un ton",
         "Copilot adapte sa réponse selon le persona donné",
-        "Sans persona: réponse générique et moyenne",
-        "Avec persona: réponse experte et ciblée"
+        "Sans persona: réponse générique, hors contexte",
+        "Avec persona: réponse experte, ciblée, prête à utiliser"
       ],
-      "speaker_notes": "Un persona c'est dire à Copilot QUI il est. Montrer la différence entre réponse avec et sans persona.",
+      "speaker_notes": "Un persona c'est dire à Copilot QUI il est avant de lui donner une tâche. Montrer la différence entre réponse avec et sans persona. Insister: la réponse sans persona n'est pas mauvaise — elle est juste applicable à personne en particulier.",
       "cards": [
         {
-          "title": "Sans persona (moyen)",
+          "title": "Sans persona (hors contexte)",
           "color": "red",
           "lines": [
             "«Rédige un courriel de suivi»",
             "",
-            "→ Réponse générique, sans personnalité, applicable à personne"
+            "→ Réponse générique,",
+            "sans personnalité,",
+            "applicable à n'importe",
+            "quelle entreprise.",
+            "À réécrire entièrement."
           ],
           "icon": "circle-x"
         },
         {
-          "title": "Avec persona (puissant)",
+          "title": "Avec persona (ciblé)",
           "color": "green",
           "lines": [
-            "«En tant que chef de projet senior, rédige un courriel de suivi technique»",
+            "«En tant que chef de projet",
+            "senior, rédige un courriel",
+            "de suivi technique sur",
+            "la migration ServiceNow»",
             "",
-            "→ Réponse experte, ton adapté, détails pertinents"
+            "→ Ton adapté, détails",
+            "pertinents. Prêt à envoyer."
           ],
           "icon": "user-check"
         }
@@ -45,40 +55,106 @@
     },
     {
       "type": "tips",
-      "title": "3 personas indispensables dans Outlook",
+      "title": "La recette: Persona + Contexte + Tâche + Format",
+      "subtitle": "La formule magique du prompt parfait",
+      "bullets": [
+        "Persona: Qui es-tu? (analyste risques, chef de projet, auditeur...)",
+        "Contexte: De quoi parlons-nous? (ce courriel, ce client, ce projet...)",
+        "Tâche: Que veux-tu? (résumer, rédiger, analyser, comparer...)",
+        "Format: Comment? (3 puces, tableau, courriel formel, rapport...)"
+      ],
+      "speaker_notes": "La formule magique. Applicable partout: Outlook, Teams, Word, Copilot Chat. Montrer le template universel — inviter les gens à le photographier ou le noter. C'est la diapo la plus importante de l'épisode.",
+      "cards": [
+        {
+          "title": "Template universel",
+          "color": "blue",
+          "lines": [
+            "«En tant que [persona],",
+            "dans le contexte de [sujet],",
+            "[action] en [format].»",
+            "",
+            "Photographiez cette diapo!"
+          ],
+          "icon": "layout-template"
+        },
+        {
+          "title": "Exemple institution financière",
+          "color": "green",
+          "lines": [
+            "«En tant qu'analyste en",
+            "gestion des risques, dans",
+            "le cadre de l'audit Q2,",
+            "résume les écarts identifiés",
+            "en 3 puces avec niveau",
+            "de risque (faible/moyen/élevé).»"
+          ],
+          "icon": "file-text"
+        },
+        {
+          "title": "Sauvegarder",
+          "color": "amber",
+          "lines": [
+            "Quick Parts Outlook:",
+            "votre template favori",
+            "",
+            "OneNote: vos personas",
+            "préférés par contexte",
+            "",
+            "Copilot Lab:",
+            "copilot.cloud.microsoft/prompts"
+          ],
+          "icon": "save"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "3 personas indispensables en institution financière",
       "subtitle": "Pour chaque situation, le bon rôle",
       "bullets": [
         "Ajoutez le persona au début du prompt",
-        "Copilot garde le contexte",
-        "Combinez persona + consigne + format"
+        "Combinez persona + contexte + tâche + format",
+        "Sauvegardez vos personas les plus utiles en Quick Parts"
       ],
-      "speaker_notes": "3 personas clés. Sauvegardez-les dans Quick Parts!",
+      "speaker_notes": "3 personas clés adaptés au contexte d'une institution financière. Chacun change radicalement le ton et le contenu de la réponse. Insister: le même prompt avec trois personas différents donne trois réponses très différentes. Démontrer si le temps le permet.",
       "cards": [
         {
           "title": "Persona professionnel",
           "color": "blue",
           "lines": [
-            "«En tant que directeur général, réponds à un partenaire d'affaires. Ton formel mais pas froid.»",
+            "«En tant que directeur",
+            "de projet, réponds à ce",
+            "partenaire d'affaires.",
+            "Ton formel mais direct.»",
             "",
-            "Parfait pour clients et partenaires"
+            "Parfait pour clients,",
+            "fournisseurs, partenaires"
           ],
           "icon": "briefcase"
         },
         {
-          "title": "Persona collaborateur",
+          "title": "Persona conformité",
           "color": "green",
           "lines": [
-            "«En tant que collègue, écris à mon équipe. On se tutoie. Sois direct et amical.»",
+            "«En tant qu'agent de",
+            "conformité réglementaire,",
+            "analyse cette procédure",
+            "et identifie les écarts",
+            "par rapport aux normes.»",
             "",
-            "Parfait pour interne"
+            "Parfait pour audits, risques"
           ],
-          "icon": "users"
+          "icon": "shield-check"
         },
         {
           "title": "Persona vulgarisateur",
           "color": "amber",
           "lines": [
-            "«En tant que formateur, explique ce concept technique simplement. Pas de jargon.»",
+            "«En tant que formateur,",
+            "explique ce concept",
+            "technique simplement.",
+            "Pas de jargon.",
+            "Public non-TI.»",
             "",
             "Parfait pour IT vers non-IT"
           ],
@@ -88,22 +164,26 @@
     },
     {
       "type": "bonus",
-      "title": "Exemples concrets — Avant / Après",
+      "title": "Avant / Après — Le persona en action",
+      "subtitle": "Le même prompt, deux résultats radicalement différents",
       "bullets": [
-        "AVANT: «Résume ce fil» → réponse plate",
-        "APRÈS: «En tant que chef de projet, résume ce fil et identifie les risques» → réponse actionable",
+        "AVANT: prompt sans persona → réponse plate et générique",
+        "APRÈS: prompt avec persona → réponse experte et actionable",
         "",
-        "Persona + Consigne + Format = Prompt parfait"
+        "Persona + Contexte + Tâche + Format = Prompt parfait"
       ],
-      "speaker_notes": "Lire les deux versions. Le persona change COMMENT c'est présenté, pas ce qu'on demande.",
+      "speaker_notes": "Lire les deux versions à voix haute. Bien insister sur la différence de ton et de contenu. Le persona change COMMENT c'est présenté et QUOI est inclus — pas seulement le style.",
       "cards": [
         {
           "title": "AVANT — Sans persona",
           "color": "red",
           "lines": [
-            "«Draft a reply to this email»",
+            "«Résume ce fil de courriels»",
             "",
-            "→ Réponse générique, sans contexte. Temps perdu à réécrire."
+            "→ Résumé générique,",
+            "liste de faits sans",
+            "priorisation.",
+            "Temps perdu à réécrire."
           ],
           "icon": "circle-x"
         },
@@ -111,58 +191,23 @@
           "title": "APRÈS — Avec persona",
           "color": "green",
           "lines": [
-            "«As a senior project manager, draft a reply to this stakeholder. Propose a timeline.»",
+            "«En tant que chef de projet",
+            "senior, résume ce fil et",
+            "identifie les risques pour",
+            "la livraison du trimestre.»",
             "",
-            "→ Réponse ciblée, ton professionnel. Prêt à envoyer!"
+            "→ Risques ciblés,",
+            "ton professionnel.",
+            "Prêt à partager."
           ],
           "icon": "circle-check"
         }
       ]
     },
     {
-      "type": "tips",
-      "title": "La recette: Persona + Contexte + Tâche + Format",
-      "subtitle": "La formule magique du prompt parfait",
-      "bullets": [
-        "Persona: Qui es-tu? (chef de projet, développeur, formateur...)",
-        "Contexte: De quoi parlons-nous? (ce courriel, ce client...)",
-        "Tâche: Que veux-tu? (résumer, rédiger, analyser...)",
-        "Format: Comment? (3 puces, tableau, courriel formel...)"
-      ],
-      "speaker_notes": "La formule magique. Applicable partout: Outlook, Teams, Word, Copilot Chat.",
-      "cards": [
-        {
-          "title": "Template universel",
-          "color": "blue",
-          "lines": [
-            "«En tant que [persona], dans le contexte de [sujet], [action] en [format].»"
-          ],
-          "icon": "layout-template"
-        },
-        {
-          "title": "Exemple",
-          "color": "green",
-          "lines": [
-            "«En tant que chef de projet, dans le cadre du projet Alpha, résume l'avancement en 3 puces.»"
-          ],
-          "icon": "file-text"
-        },
-        {
-          "title": "Sauvegarder",
-          "color": "amber",
-          "lines": [
-            "Quick Parts: votre template",
-            "OneNote: vos personas préférés",
-            "Copilot Lab: copilot.cloud.microsoft/prompts"
-          ],
-          "icon": "save"
-        }
-      ]
-    },
-    {
       "type": "summary",
       "title": "À retenir",
-      "speaker_notes": "Défi de la semaine: essayer UN prompt avec persona au lieu de sans.",
+      "speaker_notes": "Défi de la semaine: essayer UN prompt avec persona au lieu de sans. Choisir la prochaine tâche dans Outlook ou Copilot Chat et ajouter «En tant que [votre rôle]» au début. Observer la différence.",
       "cards": [
         {
           "title": "1. Persona",
@@ -171,16 +216,16 @@
         },
         {
           "title": "2. Structure",
-          "desc": "Persona + Contexte + Tâche + Format",
+          "desc": "Persona + Contexte\n+ Tâche + Format",
           "icon": "list-tree"
         },
         {
           "title": "3. Sauvegardez",
-          "desc": "Quick Parts pour vos prompts",
+          "desc": "Quick Parts pour\nvos prompts favoris",
           "icon": "bookmark"
         }
       ],
-      "bonus": "Défi: Ajoutez un persona à TOUS vos prompts cette semaine!",
+      "bonus": "Défi: Ajoutez «En tant que [votre rôle]» à votre prochain prompt Copilot!",
       "footer": "La minute Copilot — À la semaine prochaine!"
     }
   ],

@@ -63,17 +63,31 @@
             "«Rends ça plus amical»",
             "«Rends ça plus concis»",
             "«Réécris dans un ton neutre»",
+            "",
             "Pour tout le monde!"
           ],
           "icon": "sliders-horizontal"
+        },
+        {
+          "title": "Demandes rapides à essayer",
+          "color": "blue",
+          "lines": [
+            "«Décline poliment cette invitation»",
+            "«Remercie et confirme vendredi»",
+            "«Demande une extension d'échéance»",
+            "«Résume ma position en 2 phrases»",
+            "",
+            "Une idée = un prompt"
+          ],
+          "icon": "pen-line"
         }
       ]
     },
     {
       "type": "tips",
-      "title": "Astuce 3 — Prioriser sa boîte de réception",
-      "subtitle": "Laissez Copilot trier vos 50+ courriels non lus",
-      "speaker_notes": "Démo : ouvrir le volet Copilot. Montrer le prompt. Expliquer que c'est utile le lundi matin ou après un congé. Rappeler qu'on peut tout demander en français.",
+      "title": "Astuce 3 — Trier sa boîte de réception",
+      "subtitle": "Retrouvez l'essentiel en 30 secondes, pas en 30 minutes",
+      "speaker_notes": "Démo : ouvrir le volet Copilot. Montrer le prompt. Expliquer que c'est utile le lundi matin ou après un congé. Rappeler qu'on peut tout demander en français. Distinction avec Astuce 5: ici on TRIE ce qui est arrivé (réactif). L'Astuce 5, c'est PLANIFIER ce qui s'en vient (proactif).",
       "bullets": [
         "Ouvrir le volet Copilot (icône dans le ruban à droite)",
         "Écrire : «Montre-moi mes courriels non lus les plus urgents d'aujourd'hui»",
@@ -114,15 +128,18 @@
       ],
       "cards": [
         {
-          "title": "Exemples de prompts",
+          "title": "Prompt tout-en-un",
           "color": "green",
           "lines": [
-            "«Donne le statut du projet [nom] : avancement, risques et prochaines étapes»",
-            "«Liste les actions à prendre avec responsable et date limite»",
-            "«Quels éléments sont en attente, de qui on attend une réponse, et depuis quand?»",
+            "«Bilan du projet [nom] :",
+            "statut d'avancement,",
+            "actions à prendre avec",
+            "responsable et date,",
+            "éléments en attente",
+            "et depuis quand.»",
             "",
-            "Tout en un :",
-            "«Bilan du projet [nom] : statut, actions à prendre, en attente»"
+            "Sauvegardez-le en",
+            "QuickPart [CP] Statut projet"
           ],
           "icon": "clipboard-list"
         },
@@ -130,7 +147,7 @@
           "title": "Qui? Pourquoi?",
           "color": "amber",
           "lines": [
-            "Chefs de projet : lister risques et échéances avant un point avec les parties prenantes",
+            "Chefs de projet : risques et échéances avant une rencontre",
             "Gestionnaires : suivre plusieurs projets sans tout relire",
             "TI et non-TI : savoir qui bloque et sur quoi",
             "",
@@ -143,8 +160,8 @@
     {
       "type": "tips",
       "title": "Astuce 5 — Planifier sa journée et sa semaine",
-      "subtitle": "Fin de journée, lundi ou vendredi — le bon prompt au bon moment",
-      "speaker_notes": "Démo rapide des trois moments : 16 h vendredi → planifier demain ; lundi 8 h → planifier la semaine ; vendredi après-midi → semaine prochaine. Insister : Copilot s'appuie sur vos courriels récents et votre calendrier Outlook. Conseiller de sauvegarder les 3 prompts en QuickPart : [CP] Plan demain, [CP] Plan semaine, [CP] Semaine prochaine.",
+      "subtitle": "Regardez en avant — demain, cette semaine, la prochaine",
+      "speaker_notes": "Distinction avec Astuce 3: ici on PLANIFIE ce qui s'en vient (proactif), on ne trie pas la boîte reçue. Démo rapide des trois moments : 16h vendredi → planifier demain ; lundi 8h → planifier la semaine ; vendredi après-midi → semaine prochaine. Insister : Copilot s'appuie sur vos courriels récents et votre calendrier Outlook. Conseiller de sauvegarder les 3 prompts en QuickPart.",
       "bullets": [
         "Ouvrir le volet Copilot en fin de journée, le lundi matin ou le vendredi",
         "S'appuyer sur les courriels récents, les fils ouverts et le calendrier",
@@ -156,7 +173,7 @@
           "color": "green",
           "lines": [
             "Fin de journée (planifier demain) :",
-            "«À partir de mes courriels et réunions d'aujourd'hui, propose un plan pour demain : priorités, actions à prendre et créneaux suggérés»",
+            "«À partir de mes courriels et réunions d'aujourd'hui, propose un plan pour demain : priorités, actions et créneaux suggérés»",
             "",
             "Lundi (planifier la semaine) :",
             "«Aide-moi à planifier ma semaine : courriels urgents, échéances, réunions et 3 priorités par jour»",
@@ -172,7 +189,7 @@
           "lines": [
             "Fin de journée : quitter sans oublier un suivi important",
             "Lundi matin : démarrer la semaine avec une vue claire",
-            "Vendredi : anticiper la semaine prochaine, esprit plus léger",
+            "Vendredi : anticiper, esprit plus léger pour le week-end",
             "",
             "Gestionnaires, TI et non-TI : même rituel, 3 minutes"
           ],
@@ -182,8 +199,8 @@
     },
     {
       "type": "bonus",
-      "title": "Bonus — Sauvegarder ses prompts",
-      "speaker_notes": "Astuce préférée! Les prompts Copilot ne se sauvegardent pas automatiquement. Avec les QuickPart, on les réutilise en un clic. Montrer la démo : créer un QuickPart, l'utiliser dans un nouveau courriel.",
+      "title": "Bonus — Sauvegarder ses prompts avec QuickPart",
+      "speaker_notes": "Astuce préférée! Les prompts Copilot ne se sauvegardent pas automatiquement. Avec les QuickPart, on les réutilise en un clic dans n'importe quel courriel. Montrer la démo : créer un QuickPart, l'utiliser dans un nouveau courriel. Le préfixe [CP] sert à retrouver facilement ses prompts Copilot dans la liste des QuickPart.",
       "bullets": [
         "QuickPart : Insertion → QuickPart → Enregistrer la sélection",
         "OneNote : page de garde «Mes prompts Copilot»",
@@ -197,8 +214,13 @@
             "1. Nouveau courriel → tapez votre prompt",
             "2. Sélectionnez le texte",
             "3. Insertion → QuickPart → Enregistrer la sélection",
-            "4. Nommez : «[CP] Résumer fil», «[CP] Statut projet»,",
-            "   «[CP] Plan demain», «[CP] Plan semaine», «[CP] Semaine prochaine»",
+            "4. Nommez : «[CP] Résumer fil»,",
+            "   «[CP] Statut projet»,",
+            "   «[CP] Plan demain»,",
+            "   «[CP] Plan semaine»",
+            "",
+            "Le préfixe [CP] regroupe vos",
+            "prompts Copilot dans la liste.",
             "",
             "Pour réutiliser :",
             "Insertion → QuickPart → votre prompt"
@@ -223,7 +245,7 @@
     {
       "type": "summary",
       "title": "Les 5 astuces + le bonus",
-      "speaker_notes": "Récapitulation : résumer, rédiger, prioriser, statut de projet, planifier (demain / semaine / semaine prochaine). Encourager à créer les 3 QuickPart de planification dès cette semaine. Rappeler le prochain rendez-vous!",
+      "speaker_notes": "Récapitulation : résumer, rédiger, trier, statut de projet, planifier (demain / semaine / semaine prochaine). Encourager à créer les QuickPart de planification dès cette semaine. Rappeler le prochain rendez-vous!",
       "cards": [
         {
           "title": "Résumer",
@@ -236,8 +258,8 @@
           "icon": "pen-line"
         },
         {
-          "title": "Prioriser",
-          "desc": "50 courriels triés en 30 s",
+          "title": "Trier",
+          "desc": "50 courriels en 30 s",
           "icon": "inbox"
         },
         {
@@ -251,7 +273,7 @@
           "icon": "calendar-range"
         }
       ],
-      "bonus": "Sauvegardez vos prompts avec les QuickPart!",
+      "bonus": "Créez vos QuickPart [CP] cette semaine — vos prompts Copilot en un clic!",
       "footer": "La minute Copilot — À la semaine prochaine!"
     }
   ],

@@ -9,17 +9,17 @@
       "title": "La minute Copilot",
       "subtitle": "Prompts avancés: CoT, ToT, Red/Blue Team",
       "footer": "Des techniques de prompt qui font réfléchir Copilot... littéralement",
-      "speaker_notes": "Accueil: «Aujourd'hui on passe au niveau supérieur. On a vu les bases — les personas, les modèles. Maintenant on va voir comment faire réfléchir Copilot plus profondément avec des techniques de prompt avancées. Rassurez-vous, c'est simple à utiliser!»"
+      "speaker_notes": "Accueil: «Aujourd'hui on passe au niveau supérieur. On a vu les bases — les personas, les modèles. Maintenant on va voir comment faire réfléchir Copilot plus profondément avec des techniques de prompt avancées. Rassurez-vous, c'est simple à utiliser et immédiatement applicable dans votre quotidien!»"
     },
     {
       "type": "tips",
       "title": "Chain of Thought (CoT) — Penser étape par étape",
-      "subtitle": "La technique la plus puissante et la plus simple",
-      "speaker_notes": "Expliquer: au lieu de demander une réponse directe, on demande à Copilot de «réfléchir à voix haute». Ça réduit drastiquement les erreurs, surtout pour les tâches logiques. Exemple: calculer un budget, analyser un problème de conformité, résoudre un problème technique.",
+      "subtitle": "La technique la plus puissante et la plus simple à adopter",
+      "speaker_notes": "Expliquer: au lieu de demander une réponse directe, on demande à Copilot de «réfléchir à voix haute». Ça réduit les erreurs sur les tâches logiques, surtout pour les analyses de conformité, les calculs ou les problèmes techniques. Un seul ajout au prompt — «étape par étape» — change tout. Insister: c'est la technique à maîtriser en premier.",
       "bullets": [
-        "Demandez à Copilot de «raisonner étape par étape» avant de répondre",
-        "Réduit les erreurs de 50-80% sur les tâches logiques",
-        "Fonctionne avec TOUS les modèles, même en Quick Response"
+        "Ajoutez «étape par étape» ou «raisonne avant de répondre» à votre prompt",
+        "Copilot décompose le problème au lieu de sauter directement à la conclusion",
+        "Réduit considérablement les erreurs sur les tâches logiques et analytiques"
       ],
       "cards": [
         {
@@ -31,8 +31,9 @@
             "politique?»",
             "",
             "→ Copilot répond vite,",
-            "peut oublier des",
-            "détails importants"
+            "peut sauter des règles",
+            "importantes.",
+            "Résultat peu fiable."
           ],
           "icon": "triangle-alert"
         },
@@ -45,9 +46,9 @@
             "suivant notre politique.",
             "Est-elle conforme?»",
             "",
-            "→ Copilot décompose,",
-            "vérifie chaque point,",
-            "réponse fiable"
+            "→ Copilot liste chaque",
+            "règle, vérifie une à une,",
+            "conclut avec justification."
           ],
           "icon": "list-ordered"
         }
@@ -56,24 +57,26 @@
     {
       "type": "tips",
       "title": "Tree of Thought (ToT) — Explorer plusieurs pistes",
-      "subtitle": "Comme Chain of Thought, mais en explorant plusieurs chemins",
-      "speaker_notes": "Le Tree of Thought va plus loin que le Chain of Thought: au lieu d'une seule ligne de raisonnement, Copilot explore plusieurs options, les compare, puis choisit la meilleure. C'est parfait pour la prise de décision, l'analyse de risques, la résolution de problèmes complexes. Utilisez-le en mode Think Deeper pour de meilleurs résultats.",
+      "subtitle": "Comme Chain of Thought, mais Copilot compare plusieurs chemins",
+      "speaker_notes": "Le Tree of Thought va plus loin que le CoT: au lieu d'une seule ligne de raisonnement, Copilot explore plusieurs options, les compare, puis recommande la meilleure. C'est parfait pour les décisions stratégiques, les appels d'offres, les analyses de risques. Utilisez-le en mode Think Deeper pour de meilleurs résultats.",
       "bullets": [
         "Copilot explore plusieurs scénarios ou solutions en parallèle",
-        "Compare les options et choisit la meilleure",
-        "Idéal pour prises de décision, analyses de risques, planification"
+        "Compare les options selon des critères clairs (coût, risque, effort...)",
+        "Idéal pour prises de décision, appels d'offres, analyses comparatives"
       ],
       "cards": [
         {
-          "title": "Exemple ToT",
+          "title": "Exemple institution financière",
           "color": "blue",
           "lines": [
-            "«Nous devons migrer notre",
-            "serveur de fichiers. Explore",
-            "3 options: SharePoint,",
-            "OneDrive, Azure Files.",
-            "Compare coûts, sécurité,",
-            "effort et recommande."
+            "«Nous devons choisir un",
+            "fournisseur de solution",
+            "de gestion documentaire.",
+            "Explore 3 options.",
+            "Compare: coûts, sécurité,",
+            "conformité, effort.",
+            "Recommande avec",
+            "justification.»"
           ],
           "icon": "git-branch"
         },
@@ -81,10 +84,11 @@
           "title": "Quand l'utiliser",
           "color": "green",
           "lines": [
-            "Décisions stratégiques",
+            "Sélection de fournisseur",
+            "Approbation de budget",
             "Analyse coûts/bénéfices",
-            "Choix techniques",
-            "Planification de projet",
+            "Choix d'architecture technique",
+            "Planification de migration",
             "",
             "En mode Think Deeper",
             "pour meilleurs résultats"
@@ -96,13 +100,12 @@
     {
       "type": "tips",
       "title": "Red Team / Blue Team — Se challenger soi-même",
-      "subtitle": "Une technique où Copilot critique sa propre réponse",
-      "speaker_notes": "Le Red Team/Blue Team, c'est demander à Copilot de jouer deux rôles: l'un qui propose une solution (Blue Team), l'autre qui la critique et cherche les failles (Red Team). C'est comme avoir un avocat du diable intégré. Très utile pour la conformité, la sécurité, les décisions importantes. On peut le faire en un seul prompt ou en deux rounds.",
+      "subtitle": "Copilot propose une solution, puis en cherche les failles",
+      "speaker_notes": "Le Red Team/Blue Team, c'est demander à Copilot de jouer deux rôles: l'un qui propose une solution (Blue Team), l'autre qui la critique et cherche les failles (Red Team). C'est comme avoir un avocat du diable intégré. Très utile pour la conformité, la sécurité, les décisions importantes. Tout dans un seul prompt ou en deux rounds.",
       "bullets": [
-        "Blue Team: propose une solution ou un plan",
-        "Red Team: critique, cherche les failles, les risques",
-        "Le tout dans un seul prompt!",
-        "Parfait pour conformité, sécurité, décisions importantes"
+        "Blue Team: propose la meilleure solution ou recommandation",
+        "Red Team: joue l'avocat du diable — cherche les failles et les risques",
+        "Tout dans un seul prompt — parfait pour conformité et décisions importantes"
       ],
       "cards": [
         {
@@ -112,7 +115,7 @@
             "Propose la meilleure",
             "solution",
             "",
-            "Optimiste",
+            "Optimiste,",
             "centré sur les",
             "opportunités"
           ],
@@ -125,9 +128,9 @@
             "Cherche les failles",
             "et les risques",
             "",
-            "Pessimiste",
+            "Pessimiste,",
             "centré sur la",
-            "sécurité"
+            "sécurité et la conformité"
           ],
           "icon": "swords"
         },
@@ -141,7 +144,7 @@
             "éclairée et robuste",
             "",
             "Indispensable en",
-            "finance!"
+            "institution financière!"
           ],
           "icon": "circle-check"
         }
@@ -149,14 +152,14 @@
     },
     {
       "type": "bonus",
-      "title": "Exemple complet — Red/Blue Team dans Outlook",
-      "subtitle": "Un prompt qui combine les trois techniques",
-      "speaker_notes": "Montrer le prompt complet. Expliquer que les trois techniques peuvent être combinées. L'exemple est directement applicable dans leur quotidien. Suggérer de l'essayer cette semaine sur une vraie décision.",
+      "title": "Le prompt qui combine les 3 techniques",
+      "subtitle": "Persona + CoT + ToT + Red Team — dans un seul prompt",
+      "speaker_notes": "Montrer le prompt complet. C'est le niveau expert. Les trois techniques peuvent être combinées avec un persona. L'exemple est directement applicable dans leur quotidien — approbation de budget, sélection de fournisseur, révision de politique. Suggérer de l'essayer cette semaine sur une vraie décision.",
       "bullets": [
+        "Persona: donne le contexte expert",
         "Chain of Thought: raisonner étape par étape",
-        "Tree of Thought: explorer plusieurs options",
-        "Red/Blue Team: challenger la réponse",
-        "Tout ça dans un seul prompt!"
+        "Tree of Thought: explorer plusieurs scénarios",
+        "Red Team: challenger la recommandation finale"
       ],
       "cards": [
         {
@@ -170,13 +173,11 @@
             "",
             "Explore 2 scénarios:",
             "A) Approuver tel quel",
-            "B) Demander des",
-            "modifications",
+            "B) Demander des modifications",
             "",
             "Puis joue le rôle de",
-            "l'auditeur interne (Red",
-            "Team) et challenge ta",
-            "propre recommandation.»"
+            "l'auditeur interne (Red Team)",
+            "et challenge ta recommandation.»"
           ],
           "icon": "file-code"
         },
@@ -184,17 +185,17 @@
           "title": "Pourquoi ça marche",
           "color": "green",
           "lines": [
-            "CoT: raisonnement",
-            "structuré, pas de saut",
+            "Persona: contexte expert",
             "",
-            "ToT: 2 options",
-            "explorées, comparées",
+            "CoT: raisonnement structuré,",
+            "pas de raccourci",
             "",
-            "Red Team: biais",
-            "réduit, décision",
-            "robuste",
+            "ToT: 2 scénarios comparés",
             "",
-            "Utilisez-le sur votre",
+            "Red Team: biais réduit,",
+            "décision robuste",
+            "",
+            "Essayez sur votre",
             "prochaine décision!"
           ],
           "icon": "lightbulb"
@@ -204,7 +205,7 @@
     {
       "type": "summary",
       "title": "Les 3 techniques avancées",
-      "speaker_notes": "Résumé rapide. Défi: essayer au moins une technique cette semaine. Le Chain of Thought est le plus facile pour commencer. Le Red/Blue Team est le plus puissant pour les décisions importantes.",
+      "speaker_notes": "Résumé rapide. Défi: essayer au moins une technique cette semaine. Le Chain of Thought est le plus facile pour commencer — il suffit d'ajouter «étape par étape». Le Red/Blue Team est le plus puissant pour les décisions importantes avec enjeux de conformité.",
       "cards": [
         {
           "title": "Chain of Thought",
@@ -222,7 +223,7 @@
           "icon": "swords"
         }
       ],
-      "bonus": "Défi: Essayez «Analyse étape par étape... puis challenge ta réponse» cette semaine!",
+      "bonus": "Défi: Commencez par CoT — ajoutez «étape par étape» à votre prochain prompt d'analyse!",
       "footer": "La minute Copilot — À la semaine prochaine!"
     }
   ],
