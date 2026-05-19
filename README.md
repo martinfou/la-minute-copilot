@@ -13,9 +13,9 @@ la-minute-copilot/
 ├── schema/
 │   └── la-minute-copilot.schema.json  ← Schéma JSON (partageable avec d'autres outils)
 ├── prompts/                ← Archive des prompts Copilot
-├── .venv/                  ← Dépendances Python
-├── requirements.txt
-├── generate.sh             ← Script de convenience
+├── .venv/                  ← Environnement virtuel Python
+├── pyproject.toml          ← Métadonnées et dépendances (moderne, remplace requirements.txt)
+├── generate.sh             ← Script de convenience (détecte uv ou pip)
 └── README.md
 ```
 
@@ -95,19 +95,30 @@ jobs:
 
 ## Générer une présentation
 
-### Première fois
+### Avec uv (recommandé — plus rapide, Rust)
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+# Installation unique
+uv venv --python 3.11
+uv sync
+
+# Générer
+./generate.sh presentations/outlook.json
 ```
 
-### Ensuite
+### Avec pip
 ```bash
-# Générer la dernière présentation
-./generate.sh presentations/outlook.json
+# Installation unique
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e .
 
-# Ou vers un fichier spécifique
+# Générer
+./generate.sh presentations/outlook.json
+```
+
+### Avec le script automatique (détecte uv → pip)
+```bash
+./generate.sh presentations/outlook.json
 ./generate.sh presentations/outlook.json -o mon_fichier.pptx
 ```
 

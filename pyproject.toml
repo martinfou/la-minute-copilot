@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "la-minute-copilot"
+version = "1.0.0"
+description = "Générateur PowerPoint pour La minute Copilot — lit un JSON et produit un .pptx"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "python-pptx>=1.0",
+]
+keywords = ["copilot", "presentation", "pptx", "generator"]
+
+[project.urls]
+Repository = "https://github.com/martinfou/la-minute-copilot"
+Issues = "https://github.com/martinfou/la-minute-copilot/issues"
+
+[tool.setuptools.packages.find]
+include = ["scripts*"]

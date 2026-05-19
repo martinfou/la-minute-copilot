@@ -1,0 +1,14 @@
+# Python venv
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated presentations (source JSON is the source of truth)
+presentations/*.pptx
+
+# OS
+.DS_Store
+Thumbs.db
