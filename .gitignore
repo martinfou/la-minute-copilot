@@ -9,8 +9,12 @@ __pycache__/
 # Icônes Lucide rasterisées (régénérées à la volée)
 assets/icons/cache/
 
-# Generated presentations (source JSON is the source of truth)
+# Generated presentations (source JSON is the source de vérité)
 presentations/*.pptx
+
+# BMAD Method — artefacts générés et config personnelle
+_bmad-output/
+_bmad/custom/config.user.toml
 
 # OS
 .DS_Store
