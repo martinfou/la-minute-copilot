@@ -1,19 +1,19 @@
 {
   "title": "La minute Copilot",
-  "subtitle": "🔧 Architecture d'un prompt Copilot en entreprise",
+  "subtitle": "Architecture d'un prompt Copilot en entreprise",
   "author": "Martin Fournier",
   "date": "2026-05-17",
   "slides": [
     {
       "type": "title",
-      "title": "🤖 La minute Copilot",
-      "subtitle": "🔧 Architecture d'un prompt en entreprise",
+      "title": "La minute Copilot",
+      "subtitle": "Architecture d'un prompt en entreprise",
       "footer": "Ce qui se passe sous le capot • Métaprompt • Température • Tokens • Sécurité",
       "speaker_notes": "Accueil: «Vous tapez un prompt et Copilot répond. Mais que se passe-t-il entre les deux? Aujourd'hui on lève le voile sur l'architecture: le métaprompt, la température, les tokens, le caching, les filtres et la sécurité. C'est technique mais je vous promets que c'est fascinant!»"
     },
     {
       "type": "tips",
-      "title": "📦 Votre prompt n'arrive jamais seul",
+      "title": "Votre prompt n'arrive jamais seul",
       "subtitle": "Ce que Microsoft ajoute AVANT d'envoyer votre requête au modèle",
       "speaker_notes": "Expliquer le métaprompt: Microsoft ajoute un énorme contexte invisible autour de votre prompt. Ça inclut les instructions de sécurité, le format de réponse attendu, les sources d'information, les politiques d'utilisation. C'est la raison pour laquelle Copilot est «safe» — ce n'est pas le modèle, c'est le métaprompt qui l'entoure. Le métaprompt fait environ 10 000 tokens, ce qui laisse moins de place pour votre contenu.",
       "bullets": [
@@ -24,7 +24,6 @@
       ],
       "cards": [
         {
-          "icon": "📤",
           "title": "Ce que vous écrivez",
           "color": "blue",
           "lines": [
@@ -32,26 +31,26 @@
             "et liste les actions»",
             "",
             "↕ 20-50 tokens"
-          ]
+          ],
+          "icon": "pencil"
         },
         {
-          "icon": "⚙️",
           "title": "Ce que le serveur reçoit",
           "color": "amber",
           "lines": [
             "[Métaprompt système]",
-            "  • Instructions de sécurité",
-            "  • Politiques conformité",
-            "  • Sources autorisées",
-            "  • Format de réponse",
-            "  • Règles anti-hallucination",
+            "• Instructions de sécurité",
+            "• Politiques conformité",
+            "• Sources autorisées",
+            "• Format de réponse",
+            "• Règles anti-hallucination",
             "",
             "[Votre prompt]",
-            "  • Résume ce document..."
-          ]
+            "• Résume ce document..."
+          ],
+          "icon": "server"
         },
         {
-          "icon": "🧠",
           "title": "Total au modèle",
           "color": "green",
           "lines": [
@@ -59,15 +58,16 @@
             "+ Votre message: ~50 tokens",
             "= 10 050 tokens",
             "",
-            "💡 Le métaprompt mange",
-            "   la majorité du contexte!"
-          ]
+            "Le métaprompt mange",
+            "la majorité du contexte!"
+          ],
+          "icon": "layers"
         }
       ]
     },
     {
       "type": "tips",
-      "title": "🌡️ La température — Qu'est-ce que c'est?",
+      "title": "La température — Qu'est-ce que c'est?",
       "subtitle": "Un paramètre qui contrôle la créativité du modèle",
       "speaker_notes": "La température contrôle le degré de «créativité» du modèle. Plus elle est élevée, plus le modèle prend de risques, plus il est créatif. Plus elle est basse, plus il est déterministe et conserveur. Microsoft 365 Copilot utilise une température basse (0.1-0.3) pour la fiabilité. Copilot Web en mode Quick utilise une température légèrement plus élevée. Le mode Think Deeper utilise une température basse avec plus d'étapes de raisonnement.",
       "bullets": [
@@ -78,53 +78,53 @@
       ],
       "cards": [
         {
-          "icon": "🧊",
           "title": "Basse (0.1-0.3)",
           "color": "blue",
           "lines": [
             "Copilot M365",
             "",
-            "✅ Réponse fiable",
-            "✅ Déterministe",
-            "✅ Reproductible",
+            "Réponse fiable",
+            "Déterministe",
+            "Reproductible",
             "",
-            "📋 Documents, courriels",
-            "   analyses financières"
-          ]
+            "Documents, courriels",
+            "analyses financières"
+          ],
+          "icon": "thermometer-snowflake"
         },
         {
-          "icon": "🌡️",
           "title": "Moyenne (0.3-0.7)",
           "color": "amber",
           "lines": [
             "Copilot Web (Quick)",
             "",
-            "🔄 Un peu de créativité",
-            "✅ Reste fiable",
+            "Un peu de créativité",
+            "Reste fiable",
             "",
-            "💬 Chat, brainstorming",
-            "   idées générales"
-          ]
+            "Chat, brainstorming",
+            "idées générales"
+          ],
+          "icon": "thermometer"
         },
         {
-          "icon": "🔥",
           "title": "Haute (0.7-1.0+)",
           "color": "red",
           "lines": [
             "Non utilisé en entreprise",
             "",
-            "❌ Risque d'hallucination",
-            "❌ Réponses imprévisibles",
+            "Risque d'hallucination",
+            "Réponses imprévisibles",
             "",
-            "🎨 Création artistique",
-            "   (hors cadre M365)"
-          ]
+            "Création artistique",
+            "(hors cadre M365)"
+          ],
+          "icon": "flame"
         }
       ]
     },
     {
       "type": "tips",
-      "title": "⚡ Cache et Tokens — La mécanique interne",
+      "title": "Cache et Tokens — La mécanique interne",
       "subtitle": "Comment Copilot gère la mémoire et les limites",
       "speaker_notes": "Le caching: quand plusieurs utilisateurs posent des questions similaires, la réponse peut être mise en cache pour accélérer le traitement. C'est fait au niveau du tenant, jamais entre tenants. Les tokens: limite d'environ 16K à 128K tokens selon le modèle. Le métaprompt mange une partie. Les tokens sont comptés en entrée ET en sortie. Chaque requête consomme des ressources — c'est pour ça que les appels Copilot sont mesurés dans votre licence.",
       "bullets": [
@@ -135,47 +135,47 @@
       ],
       "cards": [
         {
-          "icon": "💾",
           "title": "Cache serveur",
           "color": "blue",
           "lines": [
-            "🔹 Même prompt + contexte",
-            "   = même résultat en cache",
+            "Même prompt + contexte",
+            "= même résultat en cache",
             "",
-            "🔹 Par tenant uniquement",
-            "   (jamais entre clients)",
+            "Par tenant uniquement",
+            "(jamais entre clients)",
             "",
-            "🔹 Accélère les réponses",
-            "   fréquentes",
+            "Accélère les réponses",
+            "fréquentes",
             "",
-            "✅ Sécurité: pas de fuite",
-            "   entre organisations"
-          ]
+            "Sécurité: pas de fuite",
+            "entre organisations"
+          ],
+          "icon": "database"
         },
         {
-          "icon": "🎫",
           "title": "Limites de tokens",
           "color": "green",
           "lines": [
             "GPT-5.5: 128K tokens max",
             "",
             "Ce qui consomme:",
-            "  • Métaprompt: ~10K",
-            "  • Votre prompt: variable",
-            "  • Contexte SharePoint:",
-            "    peut être énorme",
-            "  • Réponse générée",
+            "• Métaprompt: ~10K",
+            "• Votre prompt: variable",
+            "• Contexte SharePoint:",
+            "peut être énorme",
+            "• Réponse générée",
             "",
-            "💡 Si le doc est trop",
-            "   long, Copilot le",
-            "   résume d'abord"
-          ]
+            "Si le doc est trop",
+            "long, Copilot le",
+            "résume d'abord"
+          ],
+          "icon": "gauge"
         }
       ]
     },
     {
       "type": "tips",
-      "title": "🛡️ Filtres et Sécurité — Ce qui protège vos données",
+      "title": "Filtres et Sécurité — Ce qui protège vos données",
       "subtitle": "4 couches de sécurité avant que la réponse vous parvienne",
       "speaker_notes": "Expliquer les 4 couches: 1) Filtre d'entrée (prompt injection, contenu dangereux), 2) Détection PII (numéros de carte de crédit, assurances sociales), 3) Grounding (vérification des sources), 4) Filtre de sortie (contenu généré inapproprié). Chaque couche peut bloquer ou modifier la réponse. C'est pourquoi Copilot est plus lent qu'un ChatGPT standard — chaque requête traverse ces filtres.",
       "bullets": [
@@ -186,87 +186,87 @@
       ],
       "cards": [
         {
-          "icon": "🚪",
           "title": "1. Filtre d'entrée",
           "color": "blue",
           "lines": [
             "Vérifie le prompt avant",
             "traitement",
             "",
-            "🔹 Prompt injection?",
-            "🔹 Contenu dangereux?",
-            "🔹 Demande illégale?"
-          ]
+            "Prompt injection?",
+            "Contenu dangereux?",
+            "Demande illégale?"
+          ],
+          "icon": "filter"
         },
         {
-          "icon": "🔍",
           "title": "2. Détection PII",
           "color": "green",
           "lines": [
             "Recherche les données",
             "personnelles",
             "",
-            "🔹 NAS / SSN",
-            "🔹 Numéros de carte",
-            "🔹 Adresses, téléphones"
-          ]
+            "NAS / SSN",
+            "Numéros de carte",
+            "Adresses, téléphones"
+          ],
+          "icon": "scan-eye"
         },
         {
-          "icon": "🎯",
           "title": "3. Grounding",
           "color": "amber",
           "lines": [
             "Vérifie les sources",
             "",
-            "🔹 La réponse cite-t-elle",
-            "   des sources réelles?",
-            "🔹 Pas d'hallucination",
-            "🔹 Vérifiable vs données"
-          ]
+            "La réponse cite-t-elle",
+            "des sources réelles?",
+            "Pas d'hallucination",
+            "Vérifiable vs données"
+          ],
+          "icon": "anchor"
         },
         {
-          "icon": "🚪",
           "title": "4. Filtre de sortie",
           "color": "red",
           "lines": [
             "Analyse la réponse",
             "avant de l'afficher",
             "",
-            "🔹 Contenu inapproprié?",
-            "🔹 Information sensible?",
-            "🔹 Conforme aux règles?"
-          ]
+            "Contenu inapproprié?",
+            "Information sensible?",
+            "Conforme aux règles?"
+          ],
+          "icon": "shield-check"
         }
       ]
     },
     {
       "type": "summary",
-      "title": "🎯 À retenir — L'architecture en bref",
+      "title": "À retenir — L'architecture en bref",
       "speaker_notes": "Résumé: votre prompt est enveloppé dans un métaprompt Microsoft, traité avec une température basse pour la fiabilité, les réponses sont mises en cache par tenant, et 4 couches de filtres protègent vos données avant ET après la génération. C'est ce qui fait de Copilot un outil sécuritaire pour l'entreprise.",
       "cards": [
         {
-          "icon": "📦",
           "title": "1. Métaprompt",
-          "desc": "Microsoft ajoute 10K tokens\nd'instructions AVANT votre prompt"
+          "desc": "Microsoft ajoute 10K tokens\nd'instructions AVANT votre prompt",
+          "icon": "package"
         },
         {
-          "icon": "🌡️",
           "title": "2. Température",
-          "desc": "Basse (0.1-0.3)\n= fiable, pas créatif"
+          "desc": "Basse (0.1-0.3)\n= fiable, pas créatif",
+          "icon": "thermometer"
         },
         {
-          "icon": "⚡",
           "title": "3. Cache & Tokens",
-          "desc": "Cache par tenant\n128K tokens max"
+          "desc": "Cache par tenant\n128K tokens max",
+          "icon": "coins"
         },
         {
-          "icon": "🛡️",
           "title": "4. Sécurité",
-          "desc": "4 couches de filtres\nPII, entrée, sortie, grounding"
+          "desc": "4 couches de filtres\nPII, entrée, sortie, grounding",
+          "icon": "shield"
         }
       ],
-      "bonus": "💡 En entreprise, la fiabilité et la sécurité passent avant la créativité — c'est le choix de conception de Copilot!",
-      "footer": "La minute Copilot — À la semaine prochaine! 👋"
+      "bonus": "En entreprise, la fiabilité et la sécurité passent avant la créativité — c'est le choix de conception de Copilot!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
     }
   ],
   "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"

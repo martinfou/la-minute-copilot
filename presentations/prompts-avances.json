@@ -1,19 +1,19 @@
 {
   "title": "La minute Copilot",
-  "subtitle": "🧠 Prompts avancés: Chain of Thought, Tree of Thought, Red/Blue Team",
+  "subtitle": "Prompts avancés: Chain of Thought, Tree of Thought, Red/Blue Team",
   "author": "Martin Fournier",
   "date": "2026-05-17",
   "slides": [
     {
       "type": "title",
-      "title": "🤖 La minute Copilot",
-      "subtitle": "🧠 Prompts avancés: CoT, ToT, Red/Blue Team",
+      "title": "La minute Copilot",
+      "subtitle": "Prompts avancés: CoT, ToT, Red/Blue Team",
       "footer": "Des techniques de prompt qui font réfléchir Copilot... littéralement",
       "speaker_notes": "Accueil: «Aujourd'hui on passe au niveau supérieur. On a vu les bases — les personas, les modèles. Maintenant on va voir comment faire réfléchir Copilot plus profondément avec des techniques de prompt avancées. Rassurez-vous, c'est simple à utiliser!»"
     },
     {
       "type": "tips",
-      "title": "🧠 Chain of Thought (CoT) — Penser étape par étape",
+      "title": "Chain of Thought (CoT) — Penser étape par étape",
       "subtitle": "La technique la plus puissante et la plus simple",
       "speaker_notes": "Expliquer: au lieu de demander une réponse directe, on demande à Copilot de «réfléchir à voix haute». Ça réduit drastiquement les erreurs, surtout pour les tâches logiques. Exemple: calculer un budget, analyser un problème de conformité, résoudre un problème technique.",
       "bullets": [
@@ -23,7 +23,6 @@
       ],
       "cards": [
         {
-          "icon": "❌",
           "title": "Sans CoT (risque d'erreur)",
           "color": "red",
           "lines": [
@@ -32,12 +31,12 @@
             "politique?»",
             "",
             "→ Copilot répond vite,",
-            "   peut oublier des",
-            "   détails importants"
-          ]
+            "peut oublier des",
+            "détails importants"
+          ],
+          "icon": "triangle-alert"
         },
         {
-          "icon": "✅",
           "title": "Avec CoT (fiable)",
           "color": "green",
           "lines": [
@@ -47,15 +46,16 @@
             "Est-elle conforme?»",
             "",
             "→ Copilot décompose,",
-            "   vérifie chaque point,",
-            "   réponse fiable"
-          ]
+            "vérifie chaque point,",
+            "réponse fiable"
+          ],
+          "icon": "list-ordered"
         }
       ]
     },
     {
       "type": "tips",
-      "title": "🌳 Tree of Thought (ToT) — Explorer plusieurs pistes",
+      "title": "Tree of Thought (ToT) — Explorer plusieurs pistes",
       "subtitle": "Comme Chain of Thought, mais en explorant plusieurs chemins",
       "speaker_notes": "Le Tree of Thought va plus loin que le Chain of Thought: au lieu d'une seule ligne de raisonnement, Copilot explore plusieurs options, les compare, puis choisit la meilleure. C'est parfait pour la prise de décision, l'analyse de risques, la résolution de problèmes complexes. Utilisez-le en mode Think Deeper pour de meilleurs résultats.",
       "bullets": [
@@ -65,7 +65,6 @@
       ],
       "cards": [
         {
-          "icon": "🌳",
           "title": "Exemple ToT",
           "color": "blue",
           "lines": [
@@ -75,27 +74,28 @@
             "OneDrive, Azure Files.",
             "Compare coûts, sécurité,",
             "effort et recommande."
-          ]
+          ],
+          "icon": "git-branch"
         },
         {
-          "icon": "📊",
           "title": "Quand l'utiliser",
           "color": "green",
           "lines": [
-            "✅ Décisions stratégiques",
-            "✅ Analyse coûts/bénéfices",
-            "✅ Choix techniques",
-            "✅ Planification de projet",
+            "Décisions stratégiques",
+            "Analyse coûts/bénéfices",
+            "Choix techniques",
+            "Planification de projet",
             "",
-            "💡 En mode Think Deeper",
-            "   pour meilleurs résultats"
-          ]
+            "En mode Think Deeper",
+            "pour meilleurs résultats"
+          ],
+          "icon": "circle-help"
         }
       ]
     },
     {
       "type": "tips",
-      "title": "⚔️ Red Team / Blue Team — Se challenger soi-même",
+      "title": "Red Team / Blue Team — Se challenger soi-même",
       "subtitle": "Une technique où Copilot critique sa propre réponse",
       "speaker_notes": "Le Red Team/Blue Team, c'est demander à Copilot de jouer deux rôles: l'un qui propose une solution (Blue Team), l'autre qui la critique et cherche les failles (Red Team). C'est comme avoir un avocat du diable intégré. Très utile pour la conformité, la sécurité, les décisions importantes. On peut le faire en un seul prompt ou en deux rounds.",
       "bullets": [
@@ -106,7 +106,6 @@
       ],
       "cards": [
         {
-          "icon": "🔵",
           "title": "Blue Team",
           "color": "blue",
           "lines": [
@@ -114,12 +113,12 @@
             "solution",
             "",
             "Optimiste",
-            " centré sur les",
+            "centré sur les",
             "opportunités"
-          ]
+          ],
+          "icon": "shield"
         },
         {
-          "icon": "🔴",
           "title": "Red Team",
           "color": "red",
           "lines": [
@@ -127,12 +126,12 @@
             "et les risques",
             "",
             "Pessimiste",
-            " centré sur la",
+            "centré sur la",
             "sécurité"
-          ]
+          ],
+          "icon": "swords"
         },
         {
-          "icon": "⚡",
           "title": "Résultat",
           "color": "amber",
           "lines": [
@@ -141,15 +140,16 @@
             "une décision",
             "éclairée et robuste",
             "",
-            "💰 Indispensable en",
-            "   finance!"
-          ]
+            "Indispensable en",
+            "finance!"
+          ],
+          "icon": "circle-check"
         }
       ]
     },
     {
       "type": "bonus",
-      "title": "💡 Exemple complet — Red/Blue Team dans Outlook",
+      "title": "Exemple complet — Red/Blue Team dans Outlook",
       "subtitle": "Un prompt qui combine les trois techniques",
       "speaker_notes": "Montrer le prompt complet. Expliquer que les trois techniques peuvent être combinées. L'exemple est directement applicable dans leur quotidien. Suggérer de l'essayer cette semaine sur une vraie décision.",
       "bullets": [
@@ -160,7 +160,6 @@
       ],
       "cards": [
         {
-          "icon": "📝",
           "title": "Le prompt complet",
           "color": "blue",
           "lines": [
@@ -170,60 +169,61 @@
             "approuver ce budget.",
             "",
             "Explore 2 scénarios:",
-            "  A) Approuver tel quel",
-            "  B) Demander des",
-            "     modifications",
+            "A) Approuver tel quel",
+            "B) Demander des",
+            "modifications",
             "",
             "Puis joue le rôle de",
             "l'auditeur interne (Red",
             "Team) et challenge ta",
             "propre recommandation.»"
-          ]
+          ],
+          "icon": "file-code"
         },
         {
-          "icon": "🎯",
           "title": "Pourquoi ça marche",
           "color": "green",
           "lines": [
-            "✅ CoT: raisonnement",
-            "   structuré, pas de saut",
+            "CoT: raisonnement",
+            "structuré, pas de saut",
             "",
-            "✅ ToT: 2 options",
-            "   explorées, comparées",
+            "ToT: 2 options",
+            "explorées, comparées",
             "",
-            "✅ Red Team: biais",
-            "   réduit, décision",
-            "   robuste",
+            "Red Team: biais",
+            "réduit, décision",
+            "robuste",
             "",
-            "🎯 Utilisez-le sur votre",
-            "   prochaine décision!"
-          ]
+            "Utilisez-le sur votre",
+            "prochaine décision!"
+          ],
+          "icon": "lightbulb"
         }
       ]
     },
     {
       "type": "summary",
-      "title": "🎯 Les 3 techniques avancées",
+      "title": "Les 3 techniques avancées",
       "speaker_notes": "Résumé rapide. Défi: essayer au moins une technique cette semaine. Le Chain of Thought est le plus facile pour commencer. Le Red/Blue Team est le plus puissant pour les décisions importantes.",
       "cards": [
         {
-          "icon": "🧠",
           "title": "Chain of Thought",
-          "desc": "«Raisonne étape\npar étape»\nMoins d'erreurs"
+          "desc": "«Raisonne étape\npar étape»\nMoins d'erreurs",
+          "icon": "list-ordered"
         },
         {
-          "icon": "🌳",
           "title": "Tree of Thought",
-          "desc": "Explore plusieurs\noptions, compare,\nrecommande"
+          "desc": "Explore plusieurs\noptions, compare,\nrecommande",
+          "icon": "git-branch"
         },
         {
-          "icon": "⚔️",
           "title": "Red/Blue Team",
-          "desc": "Propose + critique\nDécisions robustes"
+          "desc": "Propose + critique\nDécisions robustes",
+          "icon": "swords"
         }
       ],
-      "bonus": "🎯 Défi: Essayez «Analyse étape par étape... puis challenge ta réponse» cette semaine!",
-      "footer": "La minute Copilot — À la semaine prochaine! 👋"
+      "bonus": "Défi: Essayez «Analyse étape par étape... puis challenge ta réponse» cette semaine!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
     }
   ],
   "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"

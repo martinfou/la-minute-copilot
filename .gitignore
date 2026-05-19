@@ -6,6 +6,9 @@ venv/
 __pycache__/
 *.pyc
 
+# Icônes Lucide rasterisées (régénérées à la volée)
+assets/icons/cache/
+
 # Generated presentations (source JSON is the source of truth)
 presentations/*.pptx
 

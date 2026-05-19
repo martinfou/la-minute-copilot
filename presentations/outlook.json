@@ -6,164 +6,253 @@
   "slides": [
     {
       "type": "title",
-      "title": "🤖 La minute Copilot",
+      "title": "La minute Copilot",
       "subtitle": "Copilot dans Outlook",
-      "footer": "3 astuces pour IT et non-IT  •  Sauvegarder ses prompts",
-      "speaker_notes": "Accueil: «Bonjour à tous! Bienvenue à cette nouvelle minute Copilot. Aujourd'hui on va voir comment Copilot peut vous faire gagner du temps dans Outlook, même avec la version de base.»"
+      "footer": "5 astuces pour TI et non-TI • Sauvegarder ses prompts",
+      "speaker_notes": "Accueil : «Bonjour à tous! Bienvenue à cette nouvelle minute Copilot. Aujourd'hui, on va voir comment Copilot peut vous faire gagner du temps dans Outlook — résumés, statut de projet, planification de la journée et de la semaine.»"
     },
     {
       "type": "tips",
-      "title": "🧠 Astuce 1 — Résumer un fil de discussion",
+      "title": "Astuce 1 — Résumer un fil de discussion",
       "subtitle": "Fini les longues lectures de 15 courriels",
-      "speaker_notes": "Démo: Ouvrir un long fil Outlook. Montrer le bouton Copilot. Cliquer sur Summarize. Montrer le résumé avec les décisions et action items. Insister: «Plus besoin de tout lire!»",
+      "speaker_notes": "Démo : ouvrir un long fil Outlook. Montrer le bouton Copilot. Cliquer sur «Résumer». Montrer le résumé avec les décisions et les actions à prendre. Insister : «Plus besoin de tout lire!»",
       "bullets": [
         "Ouvrir un courriel dans un long fil",
         "Cliquer sur l'icône Copilot dans le ruban",
-        "Choisir «Summarize» ou taper sa propre demande"
+        "Choisir «Résumer» ou taper sa propre demande"
       ],
       "cards": [
         {
-          "icon": "💬",
           "title": "Exemples de prompts",
           "color": "green",
           "lines": [
             "«Résume ce fil et liste les décisions prises»",
             "«Quelles sont les dates de livraison?»",
-            "«Extrais les action items avec échéances»"
-          ]
+            "«Extrais les actions à prendre avec échéances»"
+          ],
+          "icon": "message-square"
         },
         {
-          "icon": "🎯",
           "title": "Qui? Pourquoi?",
           "color": "amber",
           "lines": [
-            "👨‍💼 Gestionnaires: suivre plusieurs projets",
-            "👩‍💻 IT: retour de congé → 50 courriels résumés",
-            "👤 Non-IT: fils clients interminables"
-          ]
+            "Gestionnaires : suivre plusieurs projets",
+            "TI : retour de congé → 50 courriels résumés",
+            "Non-TI : comprendre une demande client sans relire 12 réponses"
+          ],
+          "icon": "users"
         }
       ]
     },
     {
       "type": "tips",
-      "title": "✍️ Astuce 2 — Rédiger une réponse en 2 clics",
+      "title": "Astuce 2 — Rédiger une réponse en 2 clics",
       "subtitle": "Décrivez en 5 mots, Copilot écrit le reste",
-      "speaker_notes": "Démo: Répondre à un courriel. Montrer l'icône Copilot dans la fenêtre de réponse. Taper: «Remercie Jean, confirme livraison vendredi». Montrer le résultat. Puis montrer l'ajustement de ton: «Make this more professional».",
+      "speaker_notes": "Démo : répondre à un courriel. Montrer l'icône Copilot dans la fenêtre de réponse. Taper : «Remercie Jean, confirme la livraison vendredi». Montrer le résultat. Puis montrer l'ajustement de ton : «Rends ça plus professionnel».",
       "bullets": [
-        "Cliquer Reply → icône Copilot dans la fenêtre",
+        "Cliquer «Répondre» → icône Copilot dans la fenêtre",
         "Taper ce qu'on veut dire en langage naturel",
-        "Ajuster le ton: professional, friendly, concise"
+        "Ajuster le ton : professionnel, amical, concis"
       ],
       "cards": [
         {
-          "icon": "🎨",
-          "title": "💡 Ajustement de ton",
+          "title": "Ajustement de ton",
           "color": "green",
           "lines": [
-            "«Make this more professional»",
-            "«Make it friendlier»",
-            "«Make it more concise»",
-            "«Réécris en ton neutre»",
-            "🎯 Pour tout le monde!"
-          ]
+            "«Rends ça plus professionnel»",
+            "«Rends ça plus amical»",
+            "«Rends ça plus concis»",
+            "«Réécris dans un ton neutre»",
+            "Pour tout le monde!"
+          ],
+          "icon": "sliders-horizontal"
         }
       ]
     },
     {
       "type": "tips",
-      "title": "🎯 Astuce 3 — Prioriser sa boîte de réception",
+      "title": "Astuce 3 — Prioriser sa boîte de réception",
       "subtitle": "Laissez Copilot trier vos 50+ courriels non lus",
-      "speaker_notes": "Démo: Ouvrir le volet Copilot. Montrer le prompt. Expliquer que c'est utile le lundi matin ou après un congé. Mentionner qu'on peut aussi demander en français.",
+      "speaker_notes": "Démo : ouvrir le volet Copilot. Montrer le prompt. Expliquer que c'est utile le lundi matin ou après un congé. Rappeler qu'on peut tout demander en français.",
       "bullets": [
         "Ouvrir le volet Copilot (icône dans le ruban à droite)",
-        "Écrire: «Show me my most urgent unread emails from today»",
+        "Écrire : «Montre-moi mes courriels non lus les plus urgents d'aujourd'hui»",
         "Copilot trie et explique pourquoi chaque courriel est prioritaire"
       ],
       "cards": [
         {
-          "icon": "💬",
           "title": "Variations utiles",
           "color": "green",
           "lines": [
-            "«Prioritize my emails this week»",
+            "«Priorise mes courriels cette semaine»",
             "«Quels courriels nécessitent une action?»",
             "«Résume les courriels de mon gestionnaire»"
-          ]
+          ],
+          "icon": "list"
         },
         {
-          "icon": "🎯",
           "title": "Scénarios gagnants",
           "color": "amber",
           "lines": [
-            "Lundi matin: 50 courriels, 30 secondes",
-            "Retour de vacances: tout savoir rapidement",
-            "Fin de mois: ne rien oublier"
-          ]
+            "Lundi matin : 50 courriels, 30 secondes",
+            "Retour de vacances : tout savoir rapidement",
+            "Fin de mois : ne rien oublier"
+          ],
+          "icon": "calendar-days"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 4 — Statut d'un projet en un prompt",
+      "subtitle": "Avancement, actions à prendre et éléments en attente",
+      "speaker_notes": "Démo : ouvrir un fil de discussion lié à un projet (comité, livrable, migration). Dans le volet Copilot, coller le prompt de statut. Montrer la réponse structurée : où en est le projet, qui doit faire quoi, et ce qui bloque en attente d'une autre équipe. Astuce : nommer le projet entre crochets dans le prompt. Proposer de sauvegarder ce prompt en QuickPart «[CP] Statut projet».",
+      "bullets": [
+        "Ouvrir le fil de discussion du projet (ou les courriels concernés)",
+        "Ouvrir le volet Copilot dans Outlook",
+        "Demander le statut, les actions à prendre et les points en attente"
+      ],
+      "cards": [
+        {
+          "title": "Exemples de prompts",
+          "color": "green",
+          "lines": [
+            "«Donne le statut du projet [nom] : avancement, risques et prochaines étapes»",
+            "«Liste les actions à prendre avec responsable et date limite»",
+            "«Quels éléments sont en attente, de qui on attend une réponse, et depuis quand?»",
+            "",
+            "Tout en un :",
+            "«Bilan du projet [nom] : statut, actions à prendre, en attente»"
+          ],
+          "icon": "clipboard-list"
+        },
+        {
+          "title": "Qui? Pourquoi?",
+          "color": "amber",
+          "lines": [
+            "Chefs de projet : lister risques et échéances avant un point avec les parties prenantes",
+            "Gestionnaires : suivre plusieurs projets sans tout relire",
+            "TI et non-TI : savoir qui bloque et sur quoi",
+            "",
+            "Idéal avant une réunion de suivi ou après une absence"
+          ],
+          "icon": "folder-kanban"
+        }
+      ]
+    },
+    {
+      "type": "tips",
+      "title": "Astuce 5 — Planifier sa journée et sa semaine",
+      "subtitle": "Fin de journée, lundi ou vendredi — le bon prompt au bon moment",
+      "speaker_notes": "Démo rapide des trois moments : 16 h vendredi → planifier demain ; lundi 8 h → planifier la semaine ; vendredi après-midi → semaine prochaine. Insister : Copilot s'appuie sur vos courriels récents et votre calendrier Outlook. Conseiller de sauvegarder les 3 prompts en QuickPart : [CP] Plan demain, [CP] Plan semaine, [CP] Semaine prochaine.",
+      "bullets": [
+        "Ouvrir le volet Copilot en fin de journée, le lundi matin ou le vendredi",
+        "S'appuyer sur les courriels récents, les fils ouverts et le calendrier",
+        "Choisir le prompt selon l'horizon : demain, cette semaine ou la suivante"
+      ],
+      "cards": [
+        {
+          "title": "Prompts selon le moment",
+          "color": "green",
+          "lines": [
+            "Fin de journée (planifier demain) :",
+            "«À partir de mes courriels et réunions d'aujourd'hui, propose un plan pour demain : priorités, actions à prendre et créneaux suggérés»",
+            "",
+            "Lundi (planifier la semaine) :",
+            "«Aide-moi à planifier ma semaine : courriels urgents, échéances, réunions et 3 priorités par jour»",
+            "",
+            "Vendredi (semaine prochaine) :",
+            "«Prépare ma semaine prochaine : sujets en suspens, échéances à venir et actions avant lundi»"
+          ],
+          "icon": "calendar-range"
+        },
+        {
+          "title": "Qui? Pourquoi?",
+          "color": "amber",
+          "lines": [
+            "Fin de journée : quitter sans oublier un suivi important",
+            "Lundi matin : démarrer la semaine avec une vue claire",
+            "Vendredi : anticiper la semaine prochaine, esprit plus léger",
+            "",
+            "Gestionnaires, TI et non-TI : même rituel, 3 minutes"
+          ],
+          "icon": "calendar-check"
         }
       ]
     },
     {
       "type": "bonus",
-      "title": "💾 Bonus — Sauvegarder ses prompts",
-      "speaker_notes": "Astuce préférée! Les prompts Copilot ne se sauvegardent pas automatiquement. Avec Quick Parts, on les réutilise en un clic. Montrer la démo: créer un Quick Part, l'utiliser dans un nouveau courriel.",
+      "title": "Bonus — Sauvegarder ses prompts",
+      "speaker_notes": "Astuce préférée! Les prompts Copilot ne se sauvegardent pas automatiquement. Avec les QuickPart, on les réutilise en un clic. Montrer la démo : créer un QuickPart, l'utiliser dans un nouveau courriel.",
       "bullets": [
-        "Quick Parts: Insertion → Quick Parts → Save Selection",
-        "OneNote: page de garde «Mes prompts Copilot»",
-        "Copilot Lab: copilot.cloud.microsoft/prompts"
+        "QuickPart : Insertion → QuickPart → Enregistrer la sélection",
+        "OneNote : page de garde «Mes prompts Copilot»",
+        "Copilot Lab : copilot.cloud.microsoft/prompts"
       ],
       "cards": [
         {
-          "icon": "⭐",
-          "title": "Quick Parts (recommandé)",
+          "title": "QuickPart (recommandé)",
           "color": "blue",
           "lines": [
             "1. Nouveau courriel → tapez votre prompt",
             "2. Sélectionnez le texte",
-            "3. Insertion → Quick Parts → Sauvegarder",
-            "4. Nommez: «[CP] Résumer fil»",
+            "3. Insertion → QuickPart → Enregistrer la sélection",
+            "4. Nommez : «[CP] Résumer fil», «[CP] Statut projet»,",
+            "   «[CP] Plan demain», «[CP] Plan semaine», «[CP] Semaine prochaine»",
             "",
-            "✅ Pour réutiliser:",
-            "Insertion → Quick Parts → votre prompt"
-          ]
+            "Pour réutiliser :",
+            "Insertion → QuickPart → votre prompt"
+          ],
+          "icon": "bookmark"
         },
         {
-          "icon": "📄",
           "title": "OneNote ou Copilot Lab",
           "color": "green",
           "lines": [
-            "📄 OneNote: page partagée",
+            "OneNote : page partagée",
             "«Mes prompts Copilot»",
             "",
-            "🏪 Copilot Lab:",
+            "Copilot Lab :",
             "copilot.cloud.microsoft/prompts",
-            "Centaines de prompts officiels"
-          ]
+            "Des centaines de prompts officiels"
+          ],
+          "icon": "notebook"
         }
       ]
     },
     {
       "type": "summary",
-      "title": "🎯 Les 3 astuces + le bonus",
-      "speaker_notes": "Récapitulation rapide. Encourager à essayer AU MOINS UNE astuce cette semaine. Rappeler le prochain rendez-vous!",
+      "title": "Les 5 astuces + le bonus",
+      "speaker_notes": "Récapitulation : résumer, rédiger, prioriser, statut de projet, planifier (demain / semaine / semaine prochaine). Encourager à créer les 3 QuickPart de planification dès cette semaine. Rappeler le prochain rendez-vous!",
       "cards": [
         {
-          "icon": "🧠",
           "title": "Résumer",
-          "desc": "Fini les longs fils"
+          "desc": "Fini les longs fils",
+          "icon": "file-text"
         },
         {
-          "icon": "✍️",
           "title": "Rédiger",
-          "desc": "5 mots → Copilot écrit"
+          "desc": "5 mots → Copilot écrit",
+          "icon": "pen-line"
         },
         {
-          "icon": "🎯",
           "title": "Prioriser",
-          "desc": "50 courriels triés en 30s"
+          "desc": "50 courriels triés en 30 s",
+          "icon": "inbox"
+        },
+        {
+          "title": "Statut projet",
+          "desc": "Actions + en attente",
+          "icon": "folder-kanban"
+        },
+        {
+          "title": "Planifier",
+          "desc": "Demain, semaine, +1",
+          "icon": "calendar-range"
         }
       ],
-      "bonus": "💾 Sauvegardez vos prompts avec Quick Parts!",
-      "footer": "La minute Copilot — À la semaine prochaine! 👋"
+      "bonus": "Sauvegardez vos prompts avec les QuickPart!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
     }
   ],
   "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"

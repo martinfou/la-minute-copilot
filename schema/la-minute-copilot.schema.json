@@ -55,16 +55,16 @@
           "description": "Type de diapositive déterminant la mise en page PowerPoint",
           "enum": ["title", "tips", "bonus", "summary"],
           "enumDescriptions": [
-            "Diapositive titre — fond bleu, titre centré, sous-titre, footer. Utilisée en 1ère slide.",
-            "Diapositive de contenu — fond blanc, titre + sous-titre + puces + cartes visuelles.",
-            "Diapositive bonus — fond gris clair, astuce supplémentaire avec cartes ou puces.",
-            "Diapositive de résumé — fond bleu, cartes récapitulatives + bannière bonus + footer."
+            "Diapositive titre (style Desjardins) — panneau vert plein à gauche avec titre/sous-titre en blanc. Utilisée en 1ère slide.",
+            "Diapositive de contenu — fond vert menthe, titre vert foncé, puces et cartes blanches, pied de page « La minute Copilot ».",
+            "Diapositive bonus — fond vert menthe, astuce supplémentaire avec cartes ou puces.",
+            "Diapositive de résumé — fond vert Desjardins, cartes récapitulatives blanches, encadré bonus blanc à accent vert."
           ]
         },
         "title": {
           "type": "string",
           "description": "Titre de la diapositive (visible en haut)",
-          "examples": ["🎭 Qu'est-ce qu'un persona?", "📦 Votre prompt n'arrive jamais seul"]
+          "examples": ["Qu'est-ce qu'un persona?", "Votre prompt n'arrive jamais seul"]
         },
         "subtitle": {
           "type": "string",
@@ -106,8 +106,8 @@
         },
         "bonus": {
           "type": "string",
-          "description": "Texte bonus affiché dans une bannière jaune sur la diapositive summary",
-          "examples": ["💾 Sauvegardez vos prompts avec Quick Parts!", "🎯 Défi: Ajoutez un persona à TOUS vos prompts cette semaine!"]
+          "description": "Texte bonus affiché dans un encadré blanc (accent vert) sur la diapositive summary",
+          "examples": ["Sauvegardez vos prompts avec Quick Parts!", "Défi : ajoutez un persona à tous vos prompts cette semaine!"]
         }
       },
       "required": ["type", "title"],
@@ -128,8 +128,9 @@
       "properties": {
         "icon": {
           "type": "string",
-          "description": "Émoji ou icône pour identifier la carte visuellement",
-          "examples": ["💬", "🎯", "👔", "✅", "❌", "📝", "🧠"]
+          "description": "Nom d'icône Lucide en kebab-case (ex. message-square, users). Catalogue : https://lucide.dev/icons",
+          "pattern": "^[a-z0-9-]+$",
+          "examples": ["message-square", "users", "inbox", "bookmark"]
         },
         "title": {
           "type": "string",
@@ -138,12 +139,12 @@
         },
         "color": {
           "type": "string",
-          "description": "Couleur d'accentuation de la carte (titre + bordure visuelle)",
+          "description": "Couleur d'accentuation de la carte (titre). Le thème Desjardins remappe `blue` vers le vert corporatif pour cohérence.",
           "enum": ["green", "amber", "blue", "red"],
           "enumDescriptions": [
-            "Vert — succès, positif",
+            "Vert Desjardins — succès, positif (couleur de marque principale)",
             "Ambre — attention, astuce",
-            "Bleu — information, technique",
+            "Bleu — remappé vers le vert Desjardins (conservé pour rétrocompatibilité)",
             "Rouge — erreur, à éviter"
           ]
         },
@@ -152,7 +153,7 @@
           "description": "Lignes de texte affichées dans la carte. Supports retours à la ligne via des chaînes vides.",
           "items": {
             "type": "string",
-            "description": "Une ligne de texte. Les chaînes vides créent un espacement. L'icône 🎯 peut marquer une conclusion."
+            "description": "Une ligne de texte. Les chaînes vides créent un espacement."
           },
           "examples": [
             ["«Résume ce fil et liste les décisions prises»", "", "«Quelles sont les dates de livraison?»"]
@@ -164,7 +165,7 @@
           "examples": ["Fini les longs fils", "Donnez un rôle à Copilot"]
         }
       },
-      "required": ["icon", "title"],
+      "required": ["title"],
       "oneOf": [
         { "required": ["lines"] },
         { "required": ["desc"] }
@@ -180,19 +181,19 @@
       "slides": [
         {
           "type": "title",
-          "title": "🤖 La minute Copilot",
+          "title": "La minute Copilot",
           "subtitle": "Copilot dans Outlook",
-          "footer": "3 astuces pour IT et non-IT  •  Sauvegarder ses prompts"
+          "footer": "3 astuces pour TI et non-TI  •  Sauvegarder ses prompts"
         },
         {
           "type": "tips",
-          "title": "🧠 Astuce 1 — Résumer un fil de discussion",
+          "title": "Astuce 1 — Résumer un fil de discussion",
           "subtitle": "Fini les longues lectures de 15 courriels",
-          "bullets": ["Ouvrir un courriel dans un long fil", "Cliquer sur l'icône Copilot", "Choisir «Summarize»"],
+          "bullets": ["Ouvrir un courriel dans un long fil", "Cliquer sur l'icône Copilot", "Choisir «Résumer»"],
           "cards": [
             {
-              "icon": "💬",
               "title": "Exemples de prompts",
+              "icon": "message-square",
               "color": "green",
               "lines": ["«Résume ce fil»", "«Quelles sont les dates?»"]
             }
@@ -200,12 +201,12 @@
         },
         {
           "type": "summary",
-          "title": "🎯 Les 3 astuces + le bonus",
+          "title": "Les 3 astuces + le bonus",
           "cards": [
-            { "icon": "🧠", "title": "Résumer", "desc": "Fini les longs fils" },
-            { "icon": "✍️", "title": "Rédiger", "desc": "5 mots → Copilot écrit" }
+            { "title": "Résumer", "desc": "Fini les longs fils" },
+            { "title": "Rédiger", "desc": "5 mots → Copilot écrit" }
           ],
-          "bonus": "💾 Sauvegardez vos prompts avec Quick Parts!",
+          "bonus": "Sauvegardez vos prompts avec Quick Parts!",
           "footer": "La minute Copilot — À la semaine prochaine! 👋"
         }
       ]

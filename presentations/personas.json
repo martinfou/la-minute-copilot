@@ -4,14 +4,14 @@
   "slides": [
     {
       "type": "title",
-      "title": "🤖 La minute Copilot",
-      "subtitle": "🎭 L'importance des personas dans les prompts",
+      "title": "La minute Copilot",
+      "subtitle": "L'importance des personas dans les prompts",
       "footer": "Donnez un rôle à Copilot pour des réponses 10x meilleures",
       "speaker_notes": "Accueil: Aujourd'hui on va voir un truc qui change TOUT: donner un persona à Copilot."
     },
     {
       "type": "tips",
-      "title": "🎭 Qu'est-ce qu'un persona?",
+      "title": "Qu'est-ce qu'un persona?",
       "subtitle": "Un rôle, un contexte, une expertise",
       "bullets": [
         "Un persona = un rôle + un contexte + un ton",
@@ -22,30 +22,30 @@
       "speaker_notes": "Un persona c'est dire à Copilot QUI il est. Montrer la différence entre réponse avec et sans persona.",
       "cards": [
         {
-          "icon": "❌",
           "title": "Sans persona (moyen)",
           "color": "red",
           "lines": [
             "«Rédige un courriel de suivi»",
             "",
             "→ Réponse générique, sans personnalité, applicable à personne"
-          ]
+          ],
+          "icon": "circle-x"
         },
         {
-          "icon": "✅",
           "title": "Avec persona (puissant)",
           "color": "green",
           "lines": [
             "«En tant que chef de projet senior, rédige un courriel de suivi technique»",
             "",
             "→ Réponse experte, ton adapté, détails pertinents"
-          ]
+          ],
+          "icon": "user-check"
         }
       ]
     },
     {
       "type": "tips",
-      "title": "📝 3 personas indispensables dans Outlook",
+      "title": "3 personas indispensables dans Outlook",
       "subtitle": "Pour chaque situation, le bon rôle",
       "bullets": [
         "Ajoutez le persona au début du prompt",
@@ -55,40 +55,40 @@
       "speaker_notes": "3 personas clés. Sauvegardez-les dans Quick Parts!",
       "cards": [
         {
-          "icon": "👔",
           "title": "Persona professionnel",
           "color": "blue",
           "lines": [
             "«En tant que directeur général, réponds à un partenaire d'affaires. Ton formel mais pas froid.»",
             "",
-            "✅ Parfait pour clients et partenaires"
-          ]
+            "Parfait pour clients et partenaires"
+          ],
+          "icon": "briefcase"
         },
         {
-          "icon": "🤝",
           "title": "Persona collaborateur",
           "color": "green",
           "lines": [
             "«En tant que collègue, écris à mon équipe. On se tutoie. Sois direct et amical.»",
             "",
-            "✅ Parfait pour interne"
-          ]
+            "Parfait pour interne"
+          ],
+          "icon": "users"
         },
         {
-          "icon": "🎓",
           "title": "Persona vulgarisateur",
           "color": "amber",
           "lines": [
             "«En tant que formateur, explique ce concept technique simplement. Pas de jargon.»",
             "",
-            "✅ Parfait pour IT vers non-IT"
-          ]
+            "Parfait pour IT vers non-IT"
+          ],
+          "icon": "graduation-cap"
         }
       ]
     },
     {
       "type": "bonus",
-      "title": "💡 Exemples concrets — Avant / Après",
+      "title": "Exemples concrets — Avant / Après",
       "bullets": [
         "AVANT: «Résume ce fil» → réponse plate",
         "APRÈS: «En tant que chef de projet, résume ce fil et identifie les risques» → réponse actionable",
@@ -98,30 +98,30 @@
       "speaker_notes": "Lire les deux versions. Le persona change COMMENT c'est présenté, pas ce qu'on demande.",
       "cards": [
         {
-          "icon": "❌",
           "title": "AVANT — Sans persona",
           "color": "red",
           "lines": [
             "«Draft a reply to this email»",
             "",
             "→ Réponse générique, sans contexte. Temps perdu à réécrire."
-          ]
+          ],
+          "icon": "circle-x"
         },
         {
-          "icon": "✅",
           "title": "APRÈS — Avec persona",
           "color": "green",
           "lines": [
             "«As a senior project manager, draft a reply to this stakeholder. Propose a timeline.»",
             "",
             "→ Réponse ciblée, ton professionnel. Prêt à envoyer!"
-          ]
+          ],
+          "icon": "circle-check"
         }
       ]
     },
     {
       "type": "tips",
-      "title": "📋 La recette: Persona + Contexte + Tâche + Format",
+      "title": "La recette: Persona + Contexte + Tâche + Format",
       "subtitle": "La formule magique du prompt parfait",
       "bullets": [
         "Persona: Qui es-tu? (chef de projet, développeur, formateur...)",
@@ -132,56 +132,56 @@
       "speaker_notes": "La formule magique. Applicable partout: Outlook, Teams, Word, Copilot Chat.",
       "cards": [
         {
-          "icon": "📝",
           "title": "Template universel",
           "color": "blue",
           "lines": [
             "«En tant que [persona], dans le contexte de [sujet], [action] en [format].»"
-          ]
+          ],
+          "icon": "layout-template"
         },
         {
-          "icon": "💡",
           "title": "Exemple",
           "color": "green",
           "lines": [
             "«En tant que chef de projet, dans le cadre du projet Alpha, résume l'avancement en 3 puces.»"
-          ]
+          ],
+          "icon": "file-text"
         },
         {
-          "icon": "🏪",
           "title": "Sauvegarder",
           "color": "amber",
           "lines": [
             "Quick Parts: votre template",
             "OneNote: vos personas préférés",
             "Copilot Lab: copilot.cloud.microsoft/prompts"
-          ]
+          ],
+          "icon": "save"
         }
       ]
     },
     {
       "type": "summary",
-      "title": "🎭 À retenir",
+      "title": "À retenir",
       "speaker_notes": "Défi de la semaine: essayer UN prompt avec persona au lieu de sans.",
       "cards": [
         {
-          "icon": "🎭",
           "title": "1. Persona",
-          "desc": "Donnez un rôle à Copilot"
+          "desc": "Donnez un rôle à Copilot",
+          "icon": "user"
         },
         {
-          "icon": "📝",
           "title": "2. Structure",
-          "desc": "Persona + Contexte + Tâche + Format"
+          "desc": "Persona + Contexte + Tâche + Format",
+          "icon": "list-tree"
         },
         {
-          "icon": "💾",
           "title": "3. Sauvegardez",
-          "desc": "Quick Parts pour vos prompts"
+          "desc": "Quick Parts pour vos prompts",
+          "icon": "bookmark"
         }
       ],
-      "bonus": "🎯 Défi: Ajoutez un persona à TOUS vos prompts cette semaine!",
-      "footer": "La minute Copilot — À la semaine prochaine! 👋"
+      "bonus": "Défi: Ajoutez un persona à TOUS vos prompts cette semaine!",
+      "footer": "La minute Copilot — À la semaine prochaine!"
     }
   ],
   "$schema": "https://github.com/martinfou/la-minute-copilot/schema/la-minute-copilot.schema.json"

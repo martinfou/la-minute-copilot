@@ -1,4 +1,4 @@
-# 🎤 La minute Copilot
+# La minute Copilot
 
 Votre session hebdomadaire de 5 minutes pour maîtriser Microsoft Copilot au quotidien.
 À l'intention des employés IT et non-IT.
@@ -41,19 +41,23 @@ Les fichiers JSON d'épisodes contiennent une référence `$schema` en tête :
 
 ### Types de diapositives (`slides[].type`)
 
+Le thème graphique s'inspire de la charte **Desjardins** : vert corporatif et fond vert menthe pour le contenu.
+
+Les cartes utilisent des icônes monochromes **[Lucide](https://lucide.dev)** (glyphes vectoriels plats, cohérents avec une charte corporative). Dans le JSON, renseignez `"icon": "message-square"` (nom kebab-case du catalogue Lucide). Prérequis : `rsvg-convert` (`brew install librsvg` sur macOS).
+
 | Type | Usage | Visuel |
 |------|-------|--------|
-| `title` | 1ère slide | Fond bleu, titre + sous-titre + footer centrés |
-| `tips` | Contenu principal | Fond blanc, puces + cartes côte à côte |
-| `bonus` | Astuce supplémentaire | Fond gris clair, cartes ou puces |
-| `summary` | Dernière slide | Fond bleu, cartes récap + bannière jaune bonus |
+| `title` | 1ère slide | Panneau vert plein à gauche, titre/sous-titre en blanc, fond menthe à droite |
+| `tips` | Contenu principal | Fond vert menthe, titre vert foncé, puces et cartes blanches, pied de page avec logo |
+| `bonus` | Astuce supplémentaire | Fond vert menthe, cartes ou puces |
+| `summary` | Dernière slide | Fond vert Desjardins, cartes récap blanches, encadré bonus blanc à accent vert |
 
 ### Propriétés des cartes (`slides[].cards[]`)
 
 | Champ | Requis | Description |
 |-------|--------|-------------|
-| `icon` | ✅ | Émoji identifiant la carte |
 | `title` | ✅ | Titre en gras avec couleur d'accent |
+| `icon` | ❌ | Nom d'icône [Lucide](https://lucide.dev/icons) (kebab-case, ex. `message-square`) |
 | `color` | ❌ | `green` / `amber` / `blue` / `red` (défaut: bleu) |
 | `lines` | ⚠️ | Lignes de texte (ou `desc` pour summary) |
 | `desc` | ⚠️ | Texte court pour les cartes de résumé |
@@ -86,7 +90,7 @@ jobs:
 
 | # | Sujet | JSON | PPTX |
 |---|-------|------|------|
-| 1 | Outlook — 3 astuces + sauvegarder ses prompts | `outlook.json` | `La_Minute_Copilot_Outlook.pptx` |
+| 1 | Outlook — 5 astuces + sauvegarder ses prompts | `outlook.json` | `La_Minute_Copilot_Outlook.pptx` |
 | 2 | Personas — L'importance des personas dans les prompts | `personas.json` | `La_Minute_Copilot_Personas.pptx` |
 | 3 | Modèles — Les modèles de langage expliqués | `modeles.json` | `La_Minute_Copilot_Modeles.pptx` |
 | 4 | SharePoint & OneDrive — Copilot et vos fichiers | `sharepoint-onedrive.json` | `La_Minute_Copilot_SharePoint.pptx` |
